@@ -152,7 +152,7 @@ PlayerSettings:
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
     Android: com.Hej.pipelinetest3
-    Standalone: com.Hej.pipelinetest3
+    Standalone: com.Team4.MiniProduction_1
   buildNumber: {}
   AndroidBundleVersionCode: 1
   AndroidMinSdkVersion: 16
