@@ -38,7 +38,7 @@ namespace UnityEditor
 
             get
             {
-                return (DateTime.Now.ToString("yyyyMMddHHmm") + ".apk");
+                return ("Build" + ".apk");
             }
         }
 
