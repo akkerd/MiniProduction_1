@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{CC5CF97E-E9A0-40ED-9B93-01FC29F58407}" SchemaVersion="89">
+	<SoundBanks>
+		<WorkUnit Name="Main" ID="{CC5CF97E-E9A0-40ED-9B93-01FC29F58407}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Ambience" ID="{41A20916-6527-4734-8FBB-0B8AAA2C0E76}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Electric_anomalies" ID="{58FD1FF1-8B5D-40FD-8438-50FEE8A504B2}" WorkUnitID="{5099C182-2621-47B5-9ED2-55ED74B8F20A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Screams" ID="{E4191FD6-49DE-46A3-B5BD-E32F7B32A238}" WorkUnitID="{5099C182-2621-47B5-9ED2-55ED74B8F20A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Clicks" ID="{17A68D4A-BEBC-4B70-BD98-9B1F7432F14B}" WorkUnitID="{5099C182-2621-47B5-9ED2-55ED74B8F20A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Ventilation" ID="{B22DF292-F35E-4D65-B211-0A0E783EA51A}" WorkUnitID="{5099C182-2621-47B5-9ED2-55ED74B8F20A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Clanks" ID="{AC224A11-339F-4F08-9353-B1B00E0F00DC}" WorkUnitID="{5099C182-2621-47B5-9ED2-55ED74B8F20A}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

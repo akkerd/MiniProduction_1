@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3701179968	Play_Fuckboisz			\Default Work Unit\Play_Fuckboisz	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	558116044	Fuckboisz	Y:\Documents\GitHub\MiniProduction_1\MiniProduction_1\MiniProduction_1_WwiseProject\.cache\Windows\SFX\Fuckboisz_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Fuckboisz\Fuckboisz		39288080
+

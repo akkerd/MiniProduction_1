@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<IncrementalBankBuild Version="6" Flags="878078161">
+	<Platform GUID="{8AB45666-05BD-40FF-9DAE-B76E62679749}">
+		<Banks>
+			<Language ID="393239870">
+				<File Name="Ambience" Hash="2827993874" Timestamp="1536246719"/>
+				<File Name="Init" Hash="3228883454" Timestamp="1536245796"/>
+				<File Name="Music" Hash="3786111602" Timestamp="1536245796"/>
+				<File Name="Test" Hash="2111629074" Timestamp="1536236137"/>
+				<File Name="Virk_nu" Hash="3798876410" Timestamp="1536237051"/>
+			</Language>
+		</Banks>
+		<XMLInfo>
+			<Language ID="-1">
+				<File Name="" Hash="829315754" Timestamp="1536246719"/>
+			</Language>
+		</XMLInfo>
+	</Platform>
+	<Platform GUID="{1ECB8ED5-F41A-4117-B1D0-1D54609A0CE0}">
+		<Banks>
+			<Language ID="393239870">
+				<File Name="Ambience" Hash="2827993874" Timestamp="1536246691"/>
+				<File Name="Init" Hash="2741769534" Timestamp="1536245050"/>
+				<File Name="Music" Hash="3786111602" Timestamp="1536244558"/>
+				<File Name="Test" Hash="2111629074" Timestamp="1536236136"/>
+				<File Name="Virk_nu" Hash="3798876410" Timestamp="1536237048"/>
+			</Language>
+		</Banks>
+		<XMLInfo>
+			<Language ID="-1">
+				<File Name="" Hash="4086281896" Timestamp="1536246731"/>
+			</Language>
+		</XMLInfo>
+	</Platform>
+	<Platform GUID="{ACD8F89B-3C70-47F4-80E5-24AF2636AA25}">
+		<Banks>
+			<Language ID="393239870">
+				<File Name="Ambience" Hash="2827993874" Timestamp="1536246719"/>
+				<File Name="Init" Hash="455616976" Timestamp="1536245794"/>
+				<File Name="Music" Hash="3786111602" Timestamp="1536244512"/>
+				<File Name="Test" Hash="2111629074" Timestamp="1536236136"/>
+				<File Name="Virk_nu" Hash="3798876410" Timestamp="1536237050"/>
+			</Language>
+		</Banks>
+		<XMLInfo>
+			<Language ID="-1">
+				<File Name="" Hash="3365321808" Timestamp="1536246719"/>
+			</Language>
+		</XMLInfo>
+	</Platform>
+</IncrementalBankBuild>
