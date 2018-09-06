@@ -13,6 +13,15 @@ namespace UnityEditor
 
         public static void BuildAndroid()
         {
+            if (Application.identifier.ToString().Contains("dev"))
+            {
+                PlayerSettings.productName = "testing_" + Application.version.ToString();
+            }
+            else
+            {
+                PlayerSettings.productName = "master_" + Application.version.ToString();
+            }
+
             var result = BuildPipeline.BuildPlayer(new BuildPlayerOptions
             {
                 
