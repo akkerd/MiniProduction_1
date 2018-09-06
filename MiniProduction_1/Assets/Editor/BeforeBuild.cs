@@ -8,9 +8,9 @@ class BeforeBuild : IPreprocessBuildWithReport
     public int callbackOrder { get { return 0; } }
     public void OnPreprocessBuild(BuildReport report)
     {
-        if (PlayerSettings.applicationIdentifier.ToString().Contains("dev"))
+        if (Application.identifier.ToString().Contains("dev"))
         {
-            PlayerSettings.productName = "testing_" + Application.version.ToString();            
+            PlayerSettings.productName = "testing_" + Application.version.ToString();
         }
         else
         {
