@@ -7,7 +7,7 @@ using UnityEngine;
 
 namespace UnityEditor
 {
-    public class Pipeline 
+    public class Pipeline
     {
         [MenuItem("Pipeline/Build: Android")]
 
@@ -24,7 +24,7 @@ namespace UnityEditor
 
             var result = BuildPipeline.BuildPlayer(new BuildPlayerOptions
             {
-                
+
                 locationPathName = Path.Combine(pathname, filename),
                 scenes = EditorBuildSettings.scenes.Where(n => n.enabled).Select(n => n.path).ToArray(),
                 target = BuildTarget.Android
@@ -34,6 +34,8 @@ namespace UnityEditor
 
         public static string pathname
         {
+
+
             get
             {
                 return "C:\\Users\\dadiu\\Dropbox\\DADIU_Team4\\Minigame1\\090_pipeline\\Apks\\";
