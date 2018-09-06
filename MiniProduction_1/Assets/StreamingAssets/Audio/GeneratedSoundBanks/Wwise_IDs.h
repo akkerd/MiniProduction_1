@@ -14,7 +14,6 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID PLAY_CLANKS = 752289768U;
-        static const AkUniqueID PLAY_FUCKBOISZ = 3701179968U;
         static const AkUniqueID PLAY_VENTILATION = 2644260023U;
     } // namespace EVENTS
 
@@ -22,8 +21,6 @@ namespace AK
     {
         static const AkUniqueID INIT = 1355168291U;
         static const AkUniqueID AMBIENCE = 85412153U;
-        static const AkUniqueID TEST = 3157003241U;
-        static const AkUniqueID VIRK_NU = 2760163333U;
     } // namespace BANKS
 
     namespace BUSSES

@@ -3,7 +3,7 @@
 	<Platform GUID="{8AB45666-05BD-40FF-9DAE-B76E62679749}">
 		<Banks>
 			<Language ID="393239870">
-				<File Name="Ambience" Hash="960883934" Timestamp="1536235514"/>
+				<File Name="Ambience" Hash="1105292346" Timestamp="1536238563"/>
 				<File Name="Init" Hash="3121226777" Timestamp="1536235514"/>
 				<File Name="Test" Hash="2111629074" Timestamp="1536236137"/>
 				<File Name="Virk_nu" Hash="3798876410" Timestamp="1536237051"/>
@@ -11,14 +11,14 @@
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="3732932620" Timestamp="1536237323"/>
+				<File Name="" Hash="2502040434" Timestamp="1536238563"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
 	<Platform GUID="{1ECB8ED5-F41A-4117-B1D0-1D54609A0CE0}">
 		<Banks>
 			<Language ID="393239870">
-				<File Name="Ambience" Hash="960883934" Timestamp="1536235981"/>
+				<File Name="Ambience" Hash="114838082" Timestamp="1536239301"/>
 				<File Name="Init" Hash="1491728417" Timestamp="1536235981"/>
 				<File Name="Test" Hash="2111629074" Timestamp="1536236136"/>
 				<File Name="Virk_nu" Hash="3798876410" Timestamp="1536237048"/>
@@ -26,14 +26,14 @@
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="4005974878" Timestamp="1536237322"/>
+				<File Name="" Hash="2412751252" Timestamp="1536239301"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
 	<Platform GUID="{ACD8F89B-3C70-47F4-80E5-24AF2636AA25}">
 		<Banks>
 			<Language ID="393239870">
-				<File Name="Ambience" Hash="960883934" Timestamp="1536235514"/>
+				<File Name="Ambience" Hash="1105292346" Timestamp="1536238562"/>
 				<File Name="Init" Hash="872944895" Timestamp="1536235514"/>
 				<File Name="Test" Hash="2111629074" Timestamp="1536236136"/>
 				<File Name="Virk_nu" Hash="3798876410" Timestamp="1536237050"/>
@@ -41,7 +41,7 @@
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="2995775482" Timestamp="1536237322"/>
+				<File Name="" Hash="4065249072" Timestamp="1536238562"/>
 			</Language>
 		</XMLInfo>
 	</Platform>

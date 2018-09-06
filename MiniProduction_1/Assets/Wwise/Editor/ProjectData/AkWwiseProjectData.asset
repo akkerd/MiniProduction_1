@@ -31,48 +31,30 @@ MonoBehaviour:
     List: []
   BankWwu:
   - Guid: '{E59B891F-490B-4A83-AB3A-4129862F75EC}'
-    m_lastTimePart2: -1999236107
-    m_lastTimePsrt1: 872580864
+    m_lastTimePart2: -1999236105
+    m_lastTimePsrt1: -212321024
     ParentPhysicalPath: 
     PhysicalPath: SoundBanks/Default Work Unit.wwu
+    List: []
+  - Guid: '{CC5CF97E-E9A0-40ED-9B93-01FC29F58407}'
+    m_lastTimePart2: -1999236105
+    m_lastTimePsrt1: -212321024
+    ParentPhysicalPath: 
+    PhysicalPath: SoundBanks/Main.wwu
     List:
     - Guid: 1609a241276534478fbb0b8aaa2c0e76
       ID: 85412153
       Name: Ambience
-      Path: Default Work Unit/Ambience
+      Path: Main/Ambience
       PathAndIcons:
-      - ElementName: Default Work Unit
+      - ElementName: Main
         ObjectType: 12
       - ElementName: Ambience
         ObjectType: 7
-    - Guid: ae4bcc94ab495f4ba2f3cf276c22a445
-      ID: -1137964055
-      Name: Test
-      Path: Default Work Unit/Test
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Test
-        ObjectType: 7
-  - Guid: '{B3CF39C5-6B35-4270-B86D-DB3FA30B4BDB}'
-    m_lastTimePart2: -1999236107
-    m_lastTimePsrt1: 872580864
-    ParentPhysicalPath: 
-    PhysicalPath: SoundBanks/Tester.wwu
-    List:
-    - Guid: c2fdfa366327074491ac91cb7fb9e99e
-      ID: -1534803963
-      Name: Virk_nu
-      Path: Tester/Virk_nu
-      PathAndIcons:
-      - ElementName: Tester
-        ObjectType: 12
-      - ElementName: Virk_nu
-        ObjectType: 7
   EventWwu:
   - Guid: '{E7FA6859-C268-4205-B746-E4153D6A95AE}'
-    m_lastTimePart2: -1999236107
-    m_lastTimePsrt1: 872580864
+    m_lastTimePart2: -1999236105
+    m_lastTimePsrt1: -892321024
     ParentPhysicalPath: 
     PhysicalPath: Events/Default Work Unit.wwu
     List:
@@ -84,18 +66,6 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
       - ElementName: Play_Clanks
-        ObjectType: 3
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
-    - Guid: f28685ac44244b4da911ac4da33a6c7f
-      ID: -593787328
-      Name: Play_Fuckboisz
-      Path: Default Work Unit/Play_Fuckboisz
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Play_Fuckboisz
         ObjectType: 3
       maxAttenuation: 0
       maxDuration: 0
@@ -116,9 +86,6 @@ MonoBehaviour:
   - /MiniProduction_1_WwiseProject
   - /MiniProduction_1_WwiseProject/Events
   - /MiniProduction_1_WwiseProject/Events/Default Work Unit
-  - /MiniProduction_1_WwiseProject/SoundBanks
-  - /MiniProduction_1_WwiseProject/SoundBanks/Default Work Unit
-  - /MiniProduction_1_WwiseProject/SoundBanks/Tester
   RtpcWwu:
   - Guid: '{CD646BC5-A30F-4FDF-B8CC-2F9CC05343BA}'
     m_lastTimePart2: -1999236110

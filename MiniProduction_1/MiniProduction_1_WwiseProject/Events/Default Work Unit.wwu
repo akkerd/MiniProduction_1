@@ -31,20 +31,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_Fuckboisz" ID="{AC8586F2-2444-4D4B-A911-AC4DA33A6C7F}">
-					<ChildrenList>
-						<Action Name="" ID="{079819F0-AE0D-4A62-B78E-C31816AEAE8C}" ShortID="96329857">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Fuckboisz" ID="{A66CDB60-5992-45A9-8DC2-918DA8F61BB5}" WorkUnitID="{0F2BF584-7CF0-4B44-82F1-EFB46C633262}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

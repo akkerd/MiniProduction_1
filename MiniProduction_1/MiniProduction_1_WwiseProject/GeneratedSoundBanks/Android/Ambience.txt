@@ -1,7 +1,9 @@
 Event	ID	Name			Wwise Object Path	Notes
 	752289768	Play_Clanks			\Default Work Unit\Play_Clanks	
+	2644260023	Play_Ventilation			\Default Work Unit\Play_Ventilation	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	218862165	Ventilation	Y:\Documents\GitHub\MiniProduction_1\MiniProduction_1\MiniProduction_1_WwiseProject\.cache\Android\SFX\Ventilation_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ventilation		16129136
 	338037755	Clatter_7	Y:\Documents\GitHub\MiniProduction_1\MiniProduction_1\MiniProduction_1_WwiseProject\.cache\Android\SFX\Clatter_7_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clanks\Clatter_7		400496
 	408553109	Clatter_4	Y:\Documents\GitHub\MiniProduction_1\MiniProduction_1\MiniProduction_1_WwiseProject\.cache\Android\SFX\Clatter_4_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clanks\Clatter_4		531568
 	661226524	Clatter_1	Y:\Documents\GitHub\MiniProduction_1\MiniProduction_1\MiniProduction_1_WwiseProject\.cache\Android\SFX\Clatter_1_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clanks\Clatter_1		400496

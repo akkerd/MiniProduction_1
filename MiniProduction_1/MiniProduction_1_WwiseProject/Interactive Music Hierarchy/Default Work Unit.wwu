@@ -1,68 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{0F2BF584-7CF0-4B44-82F1-EFB46C633262}" SchemaVersion="89">
 	<InteractiveMusic>
-		<WorkUnit Name="Default Work Unit" ID="{0F2BF584-7CF0-4B44-82F1-EFB46C633262}" PersistMode="Standalone">
-			<ChildrenList>
-				<MusicSegment Name="Fuckboisz" ID="{A66CDB60-5992-45A9-8DC2-918DA8F61BB5}" ShortID="971080344">
-					<PropertyList>
-						<Property Name="EndPosition" Type="Real64" Value="222720"/>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<MusicTrack Name="Fuckboisz" ID="{C729D8AB-8F65-4280-B4BD-FB58DC4C555E}" ShortID="178223056">
-							<ReferenceList>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Fuckboisz" ID="{B0D7FA5D-5A32-47A9-8D2E-6A6097DD0CF6}" ShortID="558116044">
-									<Language>SFX</Language>
-									<AudioFile>Fuckboisz.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<TransitionList>
-								<MusicTransition Name="Root" ID="{CF09FF44-2BB5-43ED-ABE5-7BD79BE09EC5}">
-									<PropertyList>
-										<Property Name="IsFolder" Type="bool" Value="True"/>
-									</PropertyList>
-									<TransitionInfo/>
-								</MusicTransition>
-							</TransitionList>
-							<SequenceList>
-								<MusicTrackSequence Name="" ID="{6A1D9314-E0CE-4832-97B8-EF11C5B392B4}">
-									<ClipList>
-										<MusicClip Name="Fuckboisz" ID="{CB62FF4F-1B68-4ECE-B36D-EF2910F25EF1}">
-											<PropertyList>
-												<Property Name="EndTrimOffset" Type="Real64" Value="222720"/>
-												<Property Name="FadeInMode" Type="int16" Value="0"/>
-												<Property Name="FadeOutMode" Type="int16" Value="0"/>
-											</PropertyList>
-											<AudioSourceRef Name="Fuckboisz" ID="{B0D7FA5D-5A32-47A9-8D2E-6A6097DD0CF6}"/>
-										</MusicClip>
-									</ClipList>
-								</MusicTrackSequence>
-							</SequenceList>
-						</MusicTrack>
-					</ChildrenList>
-					<CueList>
-						<MusicCue Name="Entry Cue" ID="{B5F1ADD5-CA8B-4DFD-9FAD-4DEDA28DC5E1}"/>
-						<MusicCue Name="Exit Cue" ID="{FFF9DCC8-CCCF-4582-9E06-F1D4360B7B51}">
-							<PropertyList>
-								<Property Name="CueType" Type="int16" Value="1"/>
-								<Property Name="TimeMs" Type="Real64" Value="222720"/>
-							</PropertyList>
-						</MusicCue>
-					</CueList>
-				</MusicSegment>
-			</ChildrenList>
-		</WorkUnit>
+		<WorkUnit Name="Default Work Unit" ID="{0F2BF584-7CF0-4B44-82F1-EFB46C633262}" PersistMode="Standalone"/>
 	</InteractiveMusic>
 </WwiseDocument>

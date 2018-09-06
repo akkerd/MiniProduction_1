@@ -26,10 +26,11 @@
 				<Property Name="General\LatestPlatform" Type="string" Value="Mac"/>
 				<Property Name="General\SourceControlPluginID" Type="string" Value="{C403A906-0C19-4ED5-808E-748707065301}"/>
 				<Property Name="GenerateSoundBanks\x64_SelectedLanguages" Type="string" Value="BvDMKA=="/>
-				<Property Name="GenerateSoundBanks\x64_SelectedPlatforms" Type="string" Value="1Y7LHhr0F0Gx0B1UYJoM4Jv42KxwPPRHgOUkryY2qiVmVrSKvQX/QJ2ut25iZ5dJ"/>
-				<Property Name="GenerateSoundBanks\x64_SelectedSoundBanks" Type="string" Value="FgmiQSdlNEePuwuKqiwOdq5LzJSrSV9LovPPJ2wipEXC/fo2YycHRJGskct/ueme"/>
+				<Property Name="GenerateSoundBanks\x64_SelectedPlatforms" Type="string" Value="1Y7LHhr0F0Gx0B1UYJoM4A=="/>
+				<Property Name="GenerateSoundBanks\x64_SelectedSoundBanks" Type="string" Value="FgmiQSdlNEePuwuKqiwOdg=="/>
 				<Property Name="HardwareController\CurrentSession" Type="string" Value="{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}"/>
 				<Property Name="HardwareController\{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}\x64_ActiveGroups" Type="string" Value="bQqrhGeCwEeYgLY6QDz76wH/////////sg0ndoPg7UqEle0zr+HCPgH/////////"/>
+				<Property Name="Interactive Music\x64_{A66CDB60-5992-45A9-8DC2-918DA8F61BB5} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwP6uqqqqqygNAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
 				<Property Name="MeterView\LastObject1" Type="string" Value="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>
 				<Property Name="MeterView\MeterMode1" Type="int32" Value="1"/>
 				<Property Name="Mixing Desk\LastSession" Type="string" Value="{00000000-0000-0000-0000-000000000000}"/>

@@ -4,6 +4,45 @@
 		<WorkUnit Name="Default Work Unit" ID="{B5DF0418-4528-4A68-9A2E-5248978A2EBB}" PersistMode="Standalone">
 			<ChildrenList>
 				<RandomSequenceContainer Name="Clanks" ID="{AC224A11-339F-4F08-9353-B1B00E0F00DC}" ShortID="386616287">
+					<PropertyList>
+						<Property Name="3DPosition" Type="int16" Value="2"/>
+						<Property Name="InitialDelay" Type="Real64">
+							<ValueList>
+								<Value>10</Value>
+							</ValueList>
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{914ED8BD-7D76-43C6-A819-5AD24BE35043}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="120"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{BFB4812E-9F3E-4A97-8C29-2999B2FF8C70}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="152"/>
+											<Property Name="Min" Type="Real64" Value="-278"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-13</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
@@ -147,8 +186,18 @@
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
+					<PositioningInfo>
+						<Position Name="" ID="{7F3B2FE9-56AC-4536-9D4F-07B77EF5C0BB}"/>
+					</PositioningInfo>
 				</RandomSequenceContainer>
 				<Sound Name="Ventilation" ID="{B22DF292-F35E-4D65-B211-0A0E783EA51A}" ShortID="1020101710">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-20</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
