@@ -14,6 +14,10 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID PLAY_CLANKS = 752289768U;
+        static const AkUniqueID PLAY_CLICKS = 2790046261U;
+        static const AkUniqueID PLAY_ELECTRIC_ANOMALIES = 614939413U;
+        static const AkUniqueID PLAY_PLACEHOLDER_MUSIC = 3200335893U;
+        static const AkUniqueID PLAY_SCREAMS = 2700195184U;
         static const AkUniqueID PLAY_VENTILATION = 2644260023U;
     } // namespace EVENTS
 
@@ -21,6 +25,7 @@ namespace AK
     {
         static const AkUniqueID INIT = 1355168291U;
         static const AkUniqueID AMBIENCE = 85412153U;
+        static const AkUniqueID MUSIC = 3991942870U;
     } // namespace BANKS
 
     namespace BUSSES
