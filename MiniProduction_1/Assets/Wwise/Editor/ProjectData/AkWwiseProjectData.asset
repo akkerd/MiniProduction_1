@@ -1,0 +1,149 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f00bb13fa0374ce196ccb41112dbe28, type: 3}
+  m_Name: AkWwiseProjectData
+  m_EditorClassIdentifier: 
+  autoPopulateEnabled: 1
+  CurrentPluginConfig: 
+  m_lastPopulateTimePart2: 0
+  m_lastPopulateTimePsrt1: 0
+  AcousticTextureWwu:
+  - Guid: '{662CEF36-C5AE-4818-8BBB-C088AF88DD7C}'
+    m_lastTimePart2: -1999236110
+    m_lastTimePsrt1: 207482752
+    ParentPhysicalPath: 
+    PhysicalPath: Virtual Acoustics/Default Work Unit.wwu
+    List: []
+  AuxBusWwu:
+  - Guid: '{B1726A29-26A1-41A7-A548-3B244B3BF392}'
+    m_lastTimePart2: -1999236110
+    m_lastTimePsrt1: 207482752
+    ParentPhysicalPath: 
+    PhysicalPath: Master-Mixer Hierarchy/Default Work Unit.wwu
+    List: []
+  BankWwu:
+  - Guid: '{E59B891F-490B-4A83-AB3A-4129862F75EC}'
+    m_lastTimePart2: -1999236107
+    m_lastTimePsrt1: 872580864
+    ParentPhysicalPath: 
+    PhysicalPath: SoundBanks/Default Work Unit.wwu
+    List:
+    - Guid: 1609a241276534478fbb0b8aaa2c0e76
+      ID: 85412153
+      Name: Ambience
+      Path: Default Work Unit/Ambience
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Ambience
+        ObjectType: 7
+    - Guid: ae4bcc94ab495f4ba2f3cf276c22a445
+      ID: -1137964055
+      Name: Test
+      Path: Default Work Unit/Test
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Test
+        ObjectType: 7
+  - Guid: '{B3CF39C5-6B35-4270-B86D-DB3FA30B4BDB}'
+    m_lastTimePart2: -1999236107
+    m_lastTimePsrt1: 872580864
+    ParentPhysicalPath: 
+    PhysicalPath: SoundBanks/Tester.wwu
+    List:
+    - Guid: c2fdfa366327074491ac91cb7fb9e99e
+      ID: -1534803963
+      Name: Virk_nu
+      Path: Tester/Virk_nu
+      PathAndIcons:
+      - ElementName: Tester
+        ObjectType: 12
+      - ElementName: Virk_nu
+        ObjectType: 7
+  EventWwu:
+  - Guid: '{E7FA6859-C268-4205-B746-E4153D6A95AE}'
+    m_lastTimePart2: -1999236107
+    m_lastTimePsrt1: 872580864
+    ParentPhysicalPath: 
+    PhysicalPath: Events/Default Work Unit.wwu
+    List:
+    - Guid: 524142a4e1a8ad4fba515e0572a04ccc
+      ID: 752289768
+      Name: Play_Clanks
+      Path: Default Work Unit/Play_Clanks
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Clanks
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: f28685ac44244b4da911ac4da33a6c7f
+      ID: -593787328
+      Name: Play_Fuckboisz
+      Path: Default Work Unit/Play_Fuckboisz
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Fuckboisz
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: dc47628f5a7db24e986c8e41e01b704e
+      ID: -1650707273
+      Name: Play_Ventilation
+      Path: Default Work Unit/Play_Ventilation
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Ventilation
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+  ExpandedItems:
+  - /MiniProduction_1_WwiseProject
+  - /MiniProduction_1_WwiseProject/Events
+  - /MiniProduction_1_WwiseProject/Events/Default Work Unit
+  - /MiniProduction_1_WwiseProject/SoundBanks
+  - /MiniProduction_1_WwiseProject/SoundBanks/Default Work Unit
+  - /MiniProduction_1_WwiseProject/SoundBanks/Tester
+  RtpcWwu:
+  - Guid: '{CD646BC5-A30F-4FDF-B8CC-2F9CC05343BA}'
+    m_lastTimePart2: -1999236110
+    m_lastTimePsrt1: 207482752
+    ParentPhysicalPath: 
+    PhysicalPath: Game Parameters/Default Work Unit.wwu
+    List: []
+  StateWwu:
+  - Guid: '{5A538265-7479-4881-81DD-2C742AA357BA}'
+    m_lastTimePart2: -1999236110
+    m_lastTimePsrt1: 207482752
+    ParentPhysicalPath: 
+    PhysicalPath: States/Default Work Unit.wwu
+    List: []
+  SwitchWwu:
+  - Guid: '{968C03B5-411C-421D-80CF-A832C2E2E7FB}'
+    m_lastTimePart2: -1999236110
+    m_lastTimePsrt1: 207482752
+    ParentPhysicalPath: 
+    PhysicalPath: Switches/Default Work Unit.wwu
+    List: []
+  TriggerWwu:
+  - Guid: '{1984195D-62B0-4906-B701-D294FCB1A7B9}'
+    m_lastTimePart2: -1999236110
+    m_lastTimePsrt1: 207482752
+    ParentPhysicalPath: 
+    PhysicalPath: Triggers/Default Work Unit.wwu
+    List: []

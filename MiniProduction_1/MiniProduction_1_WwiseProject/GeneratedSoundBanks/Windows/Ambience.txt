@@ -1,0 +1,12 @@
+Event	ID	Name			Wwise Object Path	Notes
+	752289768	Play_Clanks			\Default Work Unit\Play_Clanks	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	338037755	Clatter_7	Y:\Documents\GitHub\MiniProduction_1\MiniProduction_1\MiniProduction_1_WwiseProject\.cache\Windows\SFX\Clatter_7_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clanks\Clatter_7		400496
+	408553109	Clatter_4	Y:\Documents\GitHub\MiniProduction_1\MiniProduction_1\MiniProduction_1_WwiseProject\.cache\Windows\SFX\Clatter_4_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clanks\Clatter_4		531568
+	661226524	Clatter_1	Y:\Documents\GitHub\MiniProduction_1\MiniProduction_1\MiniProduction_1_WwiseProject\.cache\Windows\SFX\Clatter_1_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clanks\Clatter_1		400496
+	725981982	Clatter_3	Y:\Documents\GitHub\MiniProduction_1\MiniProduction_1\MiniProduction_1_WwiseProject\.cache\Windows\SFX\Clatter_3_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clanks\Clatter_3		531568
+	872318344	Clatter_2	Y:\Documents\GitHub\MiniProduction_1\MiniProduction_1\MiniProduction_1_WwiseProject\.cache\Windows\SFX\Clatter_2_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clanks\Clatter_2		662640
+	949389118	Clatter_5	Y:\Documents\GitHub\MiniProduction_1\MiniProduction_1\MiniProduction_1_WwiseProject\.cache\Windows\SFX\Clatter_5_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clanks\Clatter_5		400496
+	963002560	Clatter_6	Y:\Documents\GitHub\MiniProduction_1\MiniProduction_1\MiniProduction_1_WwiseProject\.cache\Windows\SFX\Clatter_6_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clanks\Clatter_6		531568
+

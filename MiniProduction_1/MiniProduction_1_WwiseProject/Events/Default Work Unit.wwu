@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{E7FA6859-C268-4205-B746-E4153D6A95AE}" SchemaVersion="89">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{E7FA6859-C268-4205-B746-E4153D6A95AE}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_Clanks" ID="{A4424152-A8E1-4FAD-BA51-5E0572A04CCC}">
+					<ChildrenList>
+						<Action Name="" ID="{EF05C475-9B45-4E64-AE11-27F40181DD35}" ShortID="19072399">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Clanks" ID="{AC224A11-339F-4F08-9353-B1B00E0F00DC}" WorkUnitID="{B5DF0418-4528-4A68-9A2E-5248978A2EBB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Ventilation" ID="{8F6247DC-7D5A-4EB2-986C-8E41E01B704E}">
+					<ChildrenList>
+						<Action Name="" ID="{D7C5E51D-050A-4624-AFD9-7C32E0350C53}" ShortID="807453034">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ventilation" ID="{B22DF292-F35E-4D65-B211-0A0E783EA51A}" WorkUnitID="{B5DF0418-4528-4A68-9A2E-5248978A2EBB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Fuckboisz" ID="{AC8586F2-2444-4D4B-A911-AC4DA33A6C7F}">
+					<ChildrenList>
+						<Action Name="" ID="{079819F0-AE0D-4A62-B78E-C31816AEAE8C}" ShortID="96329857">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Fuckboisz" ID="{A66CDB60-5992-45A9-8DC2-918DA8F61BB5}" WorkUnitID="{0F2BF584-7CF0-4B44-82F1-EFB46C633262}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

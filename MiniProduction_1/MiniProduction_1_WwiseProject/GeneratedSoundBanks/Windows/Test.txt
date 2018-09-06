@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2644260023	Play_Ventilation			\Default Work Unit\Play_Ventilation	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	218862165	Ventilation	Y:\Documents\GitHub\MiniProduction_1\MiniProduction_1\MiniProduction_1_WwiseProject\.cache\Windows\SFX\Ventilation_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ventilation		16129136
+

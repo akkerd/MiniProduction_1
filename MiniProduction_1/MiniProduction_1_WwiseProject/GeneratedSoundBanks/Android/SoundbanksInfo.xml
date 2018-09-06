@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Android" BasePlatform="Android" SchemaVersion="11" SoundbankVersion="132">
+	<RootPaths>
+		<ProjectRoot>/Users/Makvaerk/Library/Application Support/Wwise2018/Bottles/wwise/dosdevices/y:/Documents/GitHub/MiniProduction_1/MiniProduction_1/MiniProduction_1_WwiseProject/</ProjectRoot>
+		<SourceFilesRoot>/Users/Makvaerk/Library/Application Support/Wwise2018/Bottles/wwise/dosdevices/y:/Documents/GitHub/MiniProduction_1/MiniProduction_1/MiniProduction_1_WwiseProject/.cache/Android/</SourceFilesRoot>
+		<SoundBanksRoot>/Users/Makvaerk/Library/Application Support/Wwise2018/Bottles/wwise/dosdevices/y:/Documents/GitHub/MiniProduction_1/MiniProduction_1/MiniProduction_1_WwiseProject/GeneratedSoundBanks/Android/</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>/Users/Makvaerk/Library/Application Support/Wwise2018/Bottles/wwise/dosdevices/y:/Documents/GitHub/MiniProduction_1/MiniProduction_1/MiniProduction_1_WwiseProject/GeneratedSoundBanks/Android</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="85412153" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Ambience</ObjectPath>
+			<ShortName>Ambience</ShortName>
+			<Path>Ambience.bnk</Path>
+			<IncludedEvents>
+				<Event Id="752289768" Name="Play_Clanks" ObjectPath="\Events\Default Work Unit\Play_Clanks"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="338037755" Language="SFX">
+					<ShortName>Clatter_7.wav</ShortName>
+					<Path>SFX/Clatter_7_56D34C19.wem</Path>
+				</File>
+				<File Id="408553109" Language="SFX">
+					<ShortName>Clatter_4.wav</ShortName>
+					<Path>SFX/Clatter_4_56D34C19.wem</Path>
+				</File>
+				<File Id="661226524" Language="SFX">
+					<ShortName>Clatter_1.wav</ShortName>
+					<Path>SFX/Clatter_1_56D34C19.wem</Path>
+				</File>
+				<File Id="725981982" Language="SFX">
+					<ShortName>Clatter_3.wav</ShortName>
+					<Path>SFX/Clatter_3_56D34C19.wem</Path>
+				</File>
+				<File Id="872318344" Language="SFX">
+					<ShortName>Clatter_2.wav</ShortName>
+					<Path>SFX/Clatter_2_56D34C19.wem</Path>
+				</File>
+				<File Id="949389118" Language="SFX">
+					<ShortName>Clatter_5.wav</ShortName>
+					<Path>SFX/Clatter_5_56D34C19.wem</Path>
+				</File>
+				<File Id="963002560" Language="SFX">
+					<ShortName>Clatter_6.wav</ShortName>
+					<Path>SFX/Clatter_6_56D34C19.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="2760163333" Language="SFX">
+			<ObjectPath>\SoundBanks\Tester\Virk_nu</ObjectPath>
+			<ShortName>Virk_nu</ShortName>
+			<Path>Virk_nu.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3701179968" Name="Play_Fuckboisz" ObjectPath="\Events\Default Work Unit\Play_Fuckboisz"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="558116044" Language="SFX">
+					<ShortName>Fuckboisz.wav</ShortName>
+					<Path>SFX/Fuckboisz_8956FC97.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="3157003241" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Test</ObjectPath>
+			<ShortName>Test</ShortName>
+			<Path>Test.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2644260023" Name="Play_Ventilation" ObjectPath="\Events\Default Work Unit\Play_Ventilation"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="218862165" Language="SFX">
+					<ShortName>Ventilation.wav</ShortName>
+					<Path>SFX/Ventilation_56D34C19.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

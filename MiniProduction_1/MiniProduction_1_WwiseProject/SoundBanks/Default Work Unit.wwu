@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{E59B891F-490B-4A83-AB3A-4129862F75EC}" SchemaVersion="89">
+	<SoundBanks>
+		<WorkUnit Name="Default Work Unit" ID="{E59B891F-490B-4A83-AB3A-4129862F75EC}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Ambience" ID="{41A20916-6527-4734-8FBB-0B8AAA2C0E76}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Clanks" ID="{AC224A11-339F-4F08-9353-B1B00E0F00DC}" WorkUnitID="{B5DF0418-4528-4A68-9A2E-5248978A2EBB}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Test" ID="{94CC4BAE-49AB-4B5F-A2F3-CF276C22A445}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_Ventilation" ID="{8F6247DC-7D5A-4EB2-986C-8E41E01B704E}" WorkUnitID="{E7FA6859-C268-4205-B746-E4153D6A95AE}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

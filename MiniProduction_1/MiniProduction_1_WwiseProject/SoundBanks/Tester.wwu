@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{B3CF39C5-6B35-4270-B86D-DB3FA30B4BDB}" SchemaVersion="89">
+	<SoundBanks>
+		<WorkUnit Name="Tester" ID="{B3CF39C5-6B35-4270-B86D-DB3FA30B4BDB}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Virk_nu" ID="{36FAFDC2-2763-4407-91AC-91CB7FB9E99E}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_Fuckboisz" ID="{AC8586F2-2444-4D4B-A911-AC4DA33A6C7F}" WorkUnitID="{E7FA6859-C268-4205-B746-E4153D6A95AE}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>
