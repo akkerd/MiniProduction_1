@@ -7,15 +7,24 @@ using UnityEngine;
 
 namespace UnityEditor
 {
-    public class Pipeline 
+    public class Pipeline
     {
         [MenuItem("Pipeline/Build: Android")]
 
         public static void BuildAndroid()
         {
+            if (Application.identifier.ToString().Contains("dev"))
+            {
+                PlayerSettings.productName = "testing_" + Application.version.ToString();
+            }
+            else
+            {
+                PlayerSettings.productName = "master_" + Application.version.ToString();
+            }
+
             var result = BuildPipeline.BuildPlayer(new BuildPlayerOptions
             {
-                
+
                 locationPathName = Path.Combine(pathname, filename),
                 scenes = EditorBuildSettings.scenes.Where(n => n.enabled).Select(n => n.path).ToArray(),
                 target = BuildTarget.Android
@@ -25,11 +34,9 @@ namespace UnityEditor
 
         public static string pathname
         {
-            
-
             get
             {
-                return (Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "builds"));
+                return "C:\\Users\\dadiu\\Dropbox\\DADIU_Team4\\Minigame1\\090_pipeline\\Apks\\";
             }
         }
 
@@ -38,7 +45,15 @@ namespace UnityEditor
 
             get
             {
-                return ("Build" + ".apk");
+                Debug.Log("here");
+                if (Application.identifier.ToString().Contains("dev"))
+                {
+                    return ("testing_build" + ".apk");
+                }
+                else
+                {
+                    return ("master_build" + ".apk");
+                }
             }
         }
 
