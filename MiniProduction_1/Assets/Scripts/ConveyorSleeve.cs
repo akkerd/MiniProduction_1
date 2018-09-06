@@ -5,11 +5,25 @@ using UnityEngine;
 public class ConveyorSleeve : MonoBehaviour {
     //Sleeve LevelSleeves. ConveyorSleeves
 
+    public int positionInArray;
 
-
-    public void AddSleeve(Sleeve sleeve)
+    public int PositionInArray
     {
-        Debug.Log(sleeve.ColorOfSleeve);
+        get
+        {
+            return positionInArray;
+        }
+
+        set
+        {
+            positionInArray = value;
+        }
+    }
+
+    public void AddSleeve(Sleeve sleeve,int position)
+    {
+        PositionInArray = position;
+        //Debug.Log(sleeve.ColorOfSleeve);
         transform.Find("Sleeve").GetComponent<Renderer>().material.color = sleeve.ColorOfSleeve;
     }
 }

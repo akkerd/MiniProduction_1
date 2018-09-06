@@ -9,13 +9,13 @@ public class LevelSleeves : Manager<LevelSleeves> {
     protected override void onAwake()
     {
         base.onAwake();
-        int value = 0;
+        float value = 0;
         sleevesInLevel = new Sleeve[12];
         for (int i = 0; i < sleevesInLevel.Length;i++)
         {
             sleevesInLevel[i] = new Sleeve();
             sleevesInLevel[i].ColorOfSleeve = new Color(value,value,value,255) ;
-            value +=20;
+            value +=0.05f;
         }
         /*
         sleevesInLevel[0].ColorOfSleeve = new Color(10,10,10);

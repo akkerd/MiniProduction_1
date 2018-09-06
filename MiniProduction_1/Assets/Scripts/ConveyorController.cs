@@ -50,7 +50,7 @@ public class ConveyorController : Manager<ConveyorController> {
         //Setup sleeves in conveyor
         for (int i = 0; i < Mathf.Min(conveyorSleves.Length, sleevesInLevel.Length); i++)
         {
-            conveyorSleves[i].AddSleeve(sleevesInLevel[i]);
+            conveyorSleves[i].AddSleeve(sleevesInLevel[i],i);
         }
 
         //Setup nessesary variables for teleportation of sleeves;
@@ -109,6 +109,35 @@ public class ConveyorController : Manager<ConveyorController> {
             
         }
     }
+
+    void AddSleeveToShell(int signDirection, ConveyorSleeve previousSleeve)
+    {
+        if (previousSleeve.PositionInArray == 8)
+        {
+            Vector3 something = Vector3.left;
+        }
+        int newSleeveNumber;
+        //We are below zero
+        if (signDirection < 0)
+        {
+            newSleeveNumber = previousSleeve.PositionInArray +9;
+        } else {
+            newSleeveNumber = previousSleeve.PositionInArray - 9;
+        }
+
+        int numberToCheck = newSleeveNumber;
+        if (numberToCheck < 0)
+        {
+            newSleeveNumber = sleevesInLevel.Length + numberToCheck;
+        } else if (numberToCheck >= sleevesInLevel.Length)
+        {
+            newSleeveNumber = numberToCheck - sleevesInLevel.Length;
+        }
+        Debug.Log("newSleeveNumber: " + newSleeveNumber + " previous position: " + previousSleeve.PositionInArray);
+        previousSleeve.AddSleeve(sleevesInLevel[newSleeveNumber], newSleeveNumber);
+    }
+
+    /*
     void AddSleeveToShell(int signDirection,ConveyorSleeve sleeveToChange)
     {
         int sleeveToAdd = FindCorrectLevelSleeve((int)Mathf.Sign(signDirection));
@@ -133,7 +162,20 @@ public class ConveyorController : Manager<ConveyorController> {
         return numberToReturn;
     }
 
+    void CheckIfLevelCenterIsBelowOrAbove()
+    {
+        int min = 0;
+        int max = conveyorSleves.Length - 1;
+        if (currentCenterOfLevelSleeves < min)
+        {
+            currentCenterOfLevelSleeves = max;
+        } else if (currentCenterOfLevelSleeves > max)
+        {
+            currentCenterOfLevelSleeves = min;
 
+        }
+    }
+ */
     //Checks if currentcenter is among the conveyorSleeves
     void CheckIfCenterIsBelowOrAbove()
     {
@@ -145,19 +187,6 @@ public class ConveyorController : Manager<ConveyorController> {
         } else if (currentCenterOfConveyor > max)
         {
             currentCenterOfConveyor = min;
-
-        }
-    }
-    void CheckIfLevelCenterIsBelowOrAbove()
-    {
-        int min = 0;
-        int max = conveyorSleves.Length - 1;
-        if (currentCenterOfLevelSleeves < min)
-        {
-            currentCenterOfLevelSleeves = max;
-        } else if (currentCenterOfLevelSleeves > max)
-        {
-            currentCenterOfLevelSleeves = min;
 
         }
     }
@@ -176,7 +205,7 @@ public class ConveyorController : Manager<ConveyorController> {
             numberToReturn = numberToCheck - (conveyorSleves.Length - 1) -1;
             
         }
-        Debug.Log("I'll return number: " + numberToReturn + "with center being: " + currentCenterOfConveyor);
+        //Debug.Log("I'll return number: " + numberToReturn + "with center being: " + currentCenterOfConveyor);
         return numberToReturn;
         
     }
