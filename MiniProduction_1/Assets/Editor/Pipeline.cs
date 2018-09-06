@@ -28,8 +28,8 @@ namespace UnityEditor
             
 
             get
-            {
-                return (Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "builds"));
+            {                
+                return "C:\\Users\\dadiu\\Dropbox\\DADIU_Team4\\Minigame1\\090_pipeline\\Apks\\";
             }
         }
 
@@ -38,7 +38,14 @@ namespace UnityEditor
 
             get
             {
-                return ("Build" + ".apk");
+                if (Application.productName.ToString().Contains("dev"))
+                {
+                    return ("testing_build" + ".apk");
+                }
+                else
+                {
+                    return ("master_build" + ".apk");
+                }
             }
         }
 
