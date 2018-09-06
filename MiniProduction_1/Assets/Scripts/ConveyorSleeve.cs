@@ -9,6 +9,7 @@ public class ConveyorSleeve : MonoBehaviour {
 
     public void AddSleeve(Sleeve sleeve)
     {
+        Debug.Log(sleeve.ColorOfSleeve);
         transform.Find("Sleeve").GetComponent<Renderer>().material.color = sleeve.ColorOfSleeve;
     }
 }

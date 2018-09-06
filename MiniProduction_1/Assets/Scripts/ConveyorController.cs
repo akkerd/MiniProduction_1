@@ -14,6 +14,7 @@ public class ConveyorController : Manager<ConveyorController> {
     //Used to get the correct sleeve in to the teleported body
     public int currentCenterOfConveyor;
     public int conveyorSleevesOnEachSide;
+    public int currentCenterOfLevelSleeves;
 
     //Used as a meassure for when to teleport
     public float movedFromCenter = 0;
@@ -31,6 +32,8 @@ public class ConveyorController : Manager<ConveyorController> {
         }
         currentCenterOfConveyor = Mathf.CeilToInt(conveyorSleves.Length /2);
         conveyorSleevesOnEachSide = currentCenterOfConveyor;
+        currentCenterOfLevelSleeves = currentCenterOfConveyor;
+
 
         //Setup position of Conveyor
         float xPosition = 0;
@@ -77,16 +80,16 @@ public class ConveyorController : Manager<ConveyorController> {
     //Check for distance in both direction, reset movedfromcenter with offset from movedfromcentermax added. Teleport a sleeve with the same offset relevant to the end or start position
     void CheckForTeleportation()
     {
+        
         bool hasChanged = false;
         if (movedFromCenter > movedFromCenterMax)
         {
-            if(FindCorrectSleeve(conveyorSleevesOnEachSide) == 3)
-            {
-                Debug.Log("");
-            }
+            
             int sleeveToTransport = FindCorrectSleeve(conveyorSleevesOnEachSide);
             TeleportConveyorSleeve(startPositionOfConveyor, conveyorSleves[sleeveToTransport]);
             currentCenterOfConveyor--;
+            AddSleeveToShell(1,conveyorSleves[sleeveToTransport]);
+
             hasChanged = true;
 
         }
@@ -95,6 +98,7 @@ public class ConveyorController : Manager<ConveyorController> {
             int sleeveToTransport = FindCorrectSleeve(-conveyorSleevesOnEachSide);
             TeleportConveyorSleeve(endPositionOfConveyor, conveyorSleves[sleeveToTransport]);
             currentCenterOfConveyor++;
+            AddSleeveToShell(-1,conveyorSleves[sleeveToTransport]);
             hasChanged = true;
         }
 
@@ -102,8 +106,33 @@ public class ConveyorController : Manager<ConveyorController> {
         {
             ResetMovedFromCenter();
             CheckIfCenterIsBelowOrAbove();
+            
         }
     }
+    void AddSleeveToShell(int signDirection,ConveyorSleeve sleeveToChange)
+    {
+        int sleeveToAdd = FindCorrectLevelSleeve((int)Mathf.Sign(signDirection));
+        sleeveToChange.AddSleeve(sleevesInLevel[sleeveToAdd]);
+        currentCenterOfLevelSleeves  += (int)Mathf.Sign(signDirection);
+        CheckIfLevelCenterIsBelowOrAbove();
+    }
+
+    int FindCorrectLevelSleeve(int sign)
+    {
+        int numberToCheck = currentCenterOfLevelSleeves + (conveyorSleevesOnEachSide *sign);
+        int numberToReturn = numberToCheck;
+        if (numberToCheck < 0)
+        {
+            numberToReturn = sleevesInLevel.Length + numberToCheck;
+        } else if (numberToCheck > (sleevesInLevel.Length -1))
+        {
+            numberToReturn = numberToCheck - (sleevesInLevel.Length - 1) -1;
+            
+        }
+        Debug.Log("Adding sleeve number" + numberToReturn + "with center being: " + currentCenterOfLevelSleeves);
+        return numberToReturn;
+    }
+
 
     //Checks if currentcenter is among the conveyorSleeves
     void CheckIfCenterIsBelowOrAbove()
@@ -119,6 +148,19 @@ public class ConveyorController : Manager<ConveyorController> {
 
         }
     }
+    void CheckIfLevelCenterIsBelowOrAbove()
+    {
+        int min = 0;
+        int max = conveyorSleves.Length - 1;
+        if (currentCenterOfLevelSleeves < min)
+        {
+            currentCenterOfLevelSleeves = max;
+        } else if (currentCenterOfLevelSleeves > max)
+        {
+            currentCenterOfLevelSleeves = min;
+
+        }
+    }
 
     //Check to see if the desired sleeve goes outside of the number of conveyorsleeves in the scene. And returns the correct sleeve in the other end if it does.
     //Also updates the current center of the sleeves
@@ -131,10 +173,10 @@ public class ConveyorController : Manager<ConveyorController> {
             numberToReturn = conveyorSleves.Length + numberToCheck;
         } else if (numberToCheck > (conveyorSleves.Length -1))
         {
-            numberToReturn = (numberToCheck - 1) - currentCenterOfConveyor;
+            numberToReturn = numberToCheck - (conveyorSleves.Length - 1) -1;
             
         }
-        //Debug.Log("I'll return number: " + numberToReturn);
+        Debug.Log("I'll return number: " + numberToReturn + "with center being: " + currentCenterOfConveyor);
         return numberToReturn;
         
     }
