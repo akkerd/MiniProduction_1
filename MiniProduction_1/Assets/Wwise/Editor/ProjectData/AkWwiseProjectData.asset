@@ -37,8 +37,8 @@ MonoBehaviour:
     PhysicalPath: SoundBanks/Default Work Unit.wwu
     List: []
   - Guid: '{CC5CF97E-E9A0-40ED-9B93-01FC29F58407}'
-    m_lastTimePart2: -1999236085
-    m_lastTimePsrt1: 323300352
+    m_lastTimePart2: -1999235941
+    m_lastTimePsrt1: -1616957568
     ParentPhysicalPath: 
     PhysicalPath: SoundBanks/Main.wwu
     List:
@@ -68,8 +68,8 @@ MonoBehaviour:
         ObjectType: 7
   EventWwu:
   - Guid: '{3ADFA3ED-74F6-456B-BA2C-59641A1C28BB}'
-    m_lastTimePart2: -1999236085
-    m_lastTimePsrt1: 583300352
+    m_lastTimePart2: -1999235941
+    m_lastTimePsrt1: -1616957568
     ParentPhysicalPath: Events/Default Work Unit.wwu
     PhysicalPath: Events/Ambience.wwu
     List:
@@ -171,9 +171,8 @@ MonoBehaviour:
       minDuration: 0
   ExpandedItems:
   - /MiniProduction_1_WwiseProject
-  - /MiniProduction_1_WwiseProject/Events
-  - /MiniProduction_1_WwiseProject/Events/Default Work Unit
-  - /MiniProduction_1_WwiseProject/Events/Default Work Unit/Ambience
+  - /MiniProduction_1_WwiseProject/Banks
+  - /MiniProduction_1_WwiseProject/Banks/Main
   RtpcWwu:
   - Guid: '{CD646BC5-A30F-4FDF-B8CC-2F9CC05343BA}'
     m_lastTimePart2: -1999236110

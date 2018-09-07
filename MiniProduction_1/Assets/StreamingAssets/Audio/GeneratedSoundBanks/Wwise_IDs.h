@@ -13,7 +13,6 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID PLAY_CLANKS = 752289768U;
         static const AkUniqueID PLAY_CLICKS = 2790046261U;
         static const AkUniqueID PLAY_ELECTRIC_ANOMALIES = 614939413U;
         static const AkUniqueID PLAY_PLACEHOLDER_MUSIC = 3200335893U;

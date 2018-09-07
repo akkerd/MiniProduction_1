@@ -382,9 +382,9 @@ GameObject:
   - component: {fileID: 1707410439}
   - component: {fileID: 1707410438}
   - component: {fileID: 1707410436}
-  - component: {fileID: 1707410435}
   - component: {fileID: 1707410433}
   - component: {fileID: 1707410440}
+  - component: {fileID: 1707410435}
   m_Layer: 0
   m_Name: Ambience
   m_TagString: Untagged
