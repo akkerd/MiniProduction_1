@@ -6,6 +6,9 @@ public class TouchInputController : MonoBehaviour {
 
 	//The transform the distance of the cube to the center will move
 	public Transform lineController;
+
+	//For audio
+	public float currentSpeed = 0;
 	Touch prevTouch;
 	Vector3 startPosition;
 	//Controls the acceleration of the drag of the conveyor belt
@@ -113,6 +116,7 @@ public class TouchInputController : MonoBehaviour {
 			directionSign = -1;
 		}
 		float distance = Vector3.Distance(transform.position,startPosition);
+		currentSpeed = distance;
 		Vector3 newPositionOfLine = lineController.position;
 		newPositionOfLine.x += distance * directionSign * Time.deltaTime;
 		Vector3 lerpPosition = Vector3.Lerp(lineController.position,newPositionOfLine,Time.deltaTime);
