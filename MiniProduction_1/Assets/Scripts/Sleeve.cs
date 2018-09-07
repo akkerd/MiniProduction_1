@@ -5,7 +5,12 @@ using UnityEngine;
 public class Sleeve {
 
     Color colorOfSleeve;
+    public bool isEmpty;
 
+    public Sleeve()
+    {
+        isEmpty = true;
+    }
     public Color ColorOfSleeve
     {
         get

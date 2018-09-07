@@ -19,6 +19,7 @@ public class KeyboardInput : MonoBehaviour {
         {
             TransformMovement();
         }
+        DragMovement();
     }
     void RigidbodyForceMovement()
     {
@@ -46,6 +47,22 @@ public class KeyboardInput : MonoBehaviour {
         {
             transform.position += Vector3.right * 5 * Time.deltaTime;
             ConveyorController.Instance.MoveConveyorBelt(1 * 5 * Time.deltaTime);
+
+        }
+    }
+    void DragMovement()
+    {
+        if (Input.touchCount != 0)
+        {
+            if (Input.touchCount == 2)
+            {
+                transform.position += Vector3.left * 5 * Time.deltaTime;
+                ConveyorController.Instance.MoveConveyorBelt(-1 * 5 * Time.deltaTime);
+            } else if (Input.touchCount == 1)
+            {
+                transform.position += Vector3.right * 5 * Time.deltaTime;
+                ConveyorController.Instance.MoveConveyorBelt(1 * 5 * Time.deltaTime);
+            }
 
         }
     }

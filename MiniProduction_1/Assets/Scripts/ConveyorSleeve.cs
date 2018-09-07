@@ -20,10 +20,20 @@ public class ConveyorSleeve : MonoBehaviour {
         }
     }
 
-    public void AddSleeve(Sleeve sleeve,int position)
+    public void AddSleeve(Sleeve sleeve,int positionInLevelArray)
     {
-        PositionInArray = position;
+        if (sleeve.isEmpty)
+        {
+            SleeveIsEmpty();
+            return;
+        }
+        PositionInArray = positionInLevelArray;
         //Debug.Log(sleeve.ColorOfSleeve);
         transform.Find("Sleeve").GetComponent<Renderer>().material.color = sleeve.ColorOfSleeve;
+    }
+    void SleeveIsEmpty()
+    {
+        //Implement the removal of the body in the shell
+
     }
 }
