@@ -3,11 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class SlimeControl : MonoBehaviour {
+    public float ZipperVal =20;
+    public SlimeSpawn SlimeSpawnScript;
+
+    private void Start()
+    {
+        
+    }
 
     private void Update()
     {
-        SlimeSpawn.SliderVal = transform.position.y;
-        Debug.Log(SlimeSpawn.SliderVal);
+        ZipperVal = transform.position.y;
+       
 
     }
 }
