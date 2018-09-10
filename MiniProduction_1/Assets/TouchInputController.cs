@@ -45,6 +45,8 @@ public class TouchInputController : MonoBehaviour {
 		{
 			MoveLineBasedOnCube();
 		}
+
+        AkSoundEngine.SetRTPCValue("conveyor_acc", currentSpeed);
 	}
 
 	//Slowly accelerates the cube towards its center position

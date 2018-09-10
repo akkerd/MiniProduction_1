@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{646B4865-EB83-4B93-8929-E132DFF06BA8}" SchemaVersion="89">
+	<Modulators>
+		<WorkUnit Name="Default Work Unit" ID="{646B4865-EB83-4B93-8929-E132DFF06BA8}" PersistMode="Standalone">
+			<ChildrenList>
+				<ModulatorEnvelope Name="Rack_movement_loop" ID="{1A3CCE9A-030A-4979-932A-C8425449F124}" ShortID="515787851"/>
+			</ChildrenList>
+		</WorkUnit>
+	</Modulators>
+</WwiseDocument>
