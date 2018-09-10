@@ -146,9 +146,47 @@
 							<ChildrenList>
 								<BlendContainer Name="Rack_loop" ID="{2E47E489-E246-496F-BC83-A8E3D4FF0057}" ShortID="514180379">
 									<PropertyList>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>32</Value>
+											</ValueList>
+										</Property>
+										<Property Name="MakeUpGain" Type="Real64">
+											<RTPCList>
+												<RTPC Name="" ID="{47C7D6B6-4C16-437F-B233-00EE1838F788}" ShortID="139921523">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="conveyor_acc" ID="{AF0A8315-67B1-4805-AAC3-34E276496461}" WorkUnitID="{8D3B36C2-FED2-4113-9B03-F6C42922C628}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{8BC37CBB-729F-4A51-9ECD-F984857AF295}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-96</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>0.30343</XPos>
+																<YPos>-0.12084</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>10</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-9</Value>
+												<Value>-29</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -164,44 +202,6 @@
 										<Sound Name="Rack_movement_loop" ID="{E6CBFAFA-99ED-4E52-BA00-56C4E0C14A37}" ShortID="153188372">
 											<PropertyList>
 												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-												<Property Name="MakeUpGain" Type="Real64">
-													<RTPCList>
-														<RTPC Name="" ID="{07A5F452-34B7-4E69-94F9-EBBB77C67EBB}" ShortID="823250888">
-															<ReferenceList>
-																<Reference Name="ControlInput">
-																	<ObjectRef Name="conveyor_acc" ID="{AF0A8315-67B1-4805-AAC3-34E276496461}" WorkUnitID="{8D3B36C2-FED2-4113-9B03-F6C42922C628}"/>
-																</Reference>
-															</ReferenceList>
-															<Curve Name="" ID="{5A2E0A37-640C-46C4-870F-8AE19EA821FF}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="3"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>-96</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>0.917</XPos>
-																		<YPos>0.15374</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>1.99181</XPos>
-																		<YPos>-0.00175</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>10</XPos>
-																		<YPos>0</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</RTPC>
-													</RTPCList>
-												</Property>
 												<Property Name="Pitch" Type="int32">
 													<RTPCList>
 														<RTPC Name="" ID="{89EE76C7-D30B-4A2E-8494-9E7043A18193}" ShortID="160442536">
@@ -252,39 +252,6 @@
 										<Sound Name="Rack_movement_noise" ID="{BD5D029F-75BC-4655-80DE-CA1EBCAE7360}" ShortID="383124662">
 											<PropertyList>
 												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-												<Property Name="MakeUpGain" Type="Real64">
-													<RTPCList>
-														<RTPC Name="" ID="{F2A97B77-E852-4AF8-9AB6-932C3B143C40}" ShortID="562155697">
-															<ReferenceList>
-																<Reference Name="ControlInput">
-																	<ObjectRef Name="conveyor_acc" ID="{AF0A8315-67B1-4805-AAC3-34E276496461}" WorkUnitID="{8D3B36C2-FED2-4113-9B03-F6C42922C628}"/>
-																</Reference>
-															</ReferenceList>
-															<Curve Name="" ID="{7C49C690-F6A4-4992-A71B-76B115B16CAD}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="3"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>-96</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>0.77837</XPos>
-																		<YPos>0.11392</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>10</XPos>
-																		<YPos>0</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</RTPC>
-													</RTPCList>
-												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -310,39 +277,6 @@
 													<ValueList>
 														<Value>41</Value>
 													</ValueList>
-												</Property>
-												<Property Name="MakeUpGain" Type="Real64">
-													<RTPCList>
-														<RTPC Name="" ID="{0134028F-C290-49AA-A4B7-8D66E49BC827}" ShortID="319356058">
-															<ReferenceList>
-																<Reference Name="ControlInput">
-																	<ObjectRef Name="conveyor_acc" ID="{AF0A8315-67B1-4805-AAC3-34E276496461}" WorkUnitID="{8D3B36C2-FED2-4113-9B03-F6C42922C628}"/>
-																</Reference>
-															</ReferenceList>
-															<Curve Name="" ID="{77A39C9E-601F-4824-82E9-73B649094790}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="3"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>-96</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>0.5409</XPos>
-																		<YPos>-0.26347</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>10</XPos>
-																		<YPos>0</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</RTPC>
-													</RTPCList>
 												</Property>
 												<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>

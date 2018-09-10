@@ -874,11 +874,14 @@ GameObject:
   - component: {fileID: 2119479060}
   - component: {fileID: 2119479059}
   - component: {fileID: 2119479058}
+  - component: {fileID: 2119479068}
+  - component: {fileID: 2119479067}
   - component: {fileID: 2119479057}
   - component: {fileID: 2119479065}
   - component: {fileID: 2119479064}
   - component: {fileID: 2119479063}
   - component: {fileID: 2119479062}
+  - component: {fileID: 2119479066}
   m_Layer: 0
   m_Name: WwiseGlobal
   m_TagString: Untagged
@@ -1119,6 +1122,69 @@ MonoBehaviour:
   multiPositionArray: []
   MultiPositionType: 1
   multiPositionTypeLabel: 0
+--- !u!114 &2119479066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2119479054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbdf7c3e91887443d9d26c7a1de0383e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  actionOnEventType: 0
+  curveInterpolation: 4
+  enableActionOnEvent: 0
+  eventID: -1094631403
+  m_callbackData: {fileID: 0}
+  playingId: 0
+  soundEmitterObject: {fileID: 0}
+  transitionDuration: 0
+  valueGuid: f9658367bcc8ed4787a6eb2979b4f431
+  multiPositionArray: []
+  MultiPositionType: 1
+  multiPositionTypeLabel: 0
+--- !u!114 &2119479067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2119479054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03755a6fda09e4b31af9824c124f0347, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  bankName: Ambience
+  decodeBank: 0
+  loadAsynchronous: 0
+  saveDecodedBank: 0
+  unloadTriggerList: 958ca0ea
+  valueGuid: 1609a241276534478fbb0b8aaa2c0e76
+--- !u!114 &2119479068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2119479054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03755a6fda09e4b31af9824c124f0347, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  bankName: Music
+  decodeBank: 0
+  loadAsynchronous: 0
+  saveDecodedBank: 0
+  unloadTriggerList: 958ca0ea
+  valueGuid: b9d030bfdf4da641ad26f39b682568cc
 --- !u!4 &2139108374 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4881057740797630, guid: 978ed5a2caab3a649b7d4f7585476913,
