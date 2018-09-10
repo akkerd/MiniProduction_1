@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="132">
+	<RootPaths>
+		<ProjectRoot>/Users/Makvaerk/Library/Application Support/Wwise2018/Bottles/wwise/dosdevices/y:/Documents/GitHub/MiniProduction_1/MiniProduction_1/MiniProduction_1_WwiseProject/</ProjectRoot>
+		<SourceFilesRoot>/Users/Makvaerk/Library/Application Support/Wwise2018/Bottles/wwise/dosdevices/y:/Documents/GitHub/MiniProduction_1/MiniProduction_1/MiniProduction_1_WwiseProject/.cache/Windows/</SourceFilesRoot>
+		<SoundBanksRoot>/Users/Makvaerk/Library/Application Support/Wwise2018/Bottles/wwise/dosdevices/y:/Documents/GitHub/MiniProduction_1/MiniProduction_1/MiniProduction_1_WwiseProject/GeneratedSoundBanks/Windows/</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>/Users/Makvaerk/Library/Application Support/Wwise2018/Bottles/wwise/dosdevices/y:/Documents/GitHub/MiniProduction_1/MiniProduction_1/MiniProduction_1_WwiseProject/GeneratedSoundBanks/Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="85412153" Language="SFX">
+			<ObjectPath>\SoundBanks\Main\Ambience</ObjectPath>
+			<ShortName>Ambience</ShortName>
+			<Path>Ambience.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2790046261" Name="Play_Clicks" ObjectPath="\Events\Default Work Unit\Ambience\Play_Clicks"/>
+				<Event Id="614939413" Name="Play_Electric_anomalies" ObjectPath="\Events\Default Work Unit\Ambience\Play_Electric_anomalies"/>
+				<Event Id="2700195184" Name="Play_Screams" ObjectPath="\Events\Default Work Unit\Ambience\Play_Screams"/>
+				<Event Id="2644260023" Name="Play_Ventilation" ObjectPath="\Events\Default Work Unit\Ambience\Play_Ventilation"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="3356241" Language="SFX">
+					<ShortName>Clicking_5.wav</ShortName>
+					<Path>SFX/Clicking_5_56D34C19.wem</Path>
+				</File>
+				<File Id="47870021" Language="SFX">
+					<ShortName>Clicking_3.wav</ShortName>
+					<Path>SFX/Clicking_3_56D34C19.wem</Path>
+				</File>
+				<File Id="100574540" Language="SFX">
+					<ShortName>Clatter_3.wav</ShortName>
+					<Path>SFX/Clatter_3_56D34C19.wem</Path>
+				</File>
+				<File Id="185010069" Language="SFX">
+					<ShortName>Clatter_2.wav</ShortName>
+					<Path>SFX/Clatter_2_56D34C19.wem</Path>
+				</File>
+				<File Id="185016637" Language="SFX">
+					<ShortName>Clatter_4.wav</ShortName>
+					<Path>SFX/Clatter_4_56D34C19.wem</Path>
+				</File>
+				<File Id="195017894" Language="SFX">
+					<ShortName>Electricity_3.wav</ShortName>
+					<Path>SFX/Electricity_3_56D34C19.wem</Path>
+				</File>
+				<File Id="218862165" Language="SFX">
+					<ShortName>Ventilation.wav</ShortName>
+					<Path>SFX/Ventilation_56D34C19.wem</Path>
+				</File>
+				<File Id="243342678" Language="SFX">
+					<ShortName>Clicking_1.wav</ShortName>
+					<Path>SFX/Clicking_1_56D34C19.wem</Path>
+				</File>
+				<File Id="258840346" Language="SFX">
+					<ShortName>Electricity.wav</ShortName>
+					<Path>SFX/Electricity_56D34C19.wem</Path>
+				</File>
+				<File Id="344055996" Language="SFX">
+					<ShortName>Clatter_7.wav</ShortName>
+					<Path>SFX/Clatter_7_56D34C19.wem</Path>
+				</File>
+				<File Id="365494530" Language="SFX">
+					<ShortName>HELL#03.3.wav</ShortName>
+					<Path>SFX/HELL#03.3_56D34C19.wem</Path>
+				</File>
+				<File Id="502733211" Language="SFX">
+					<ShortName>Clatter_5.wav</ShortName>
+					<Path>SFX/Clatter_5_56D34C19.wem</Path>
+				</File>
+				<File Id="507788029" Language="SFX">
+					<ShortName>Clatter_1.wav</ShortName>
+					<Path>SFX/Clatter_1_56D34C19.wem</Path>
+				</File>
+				<File Id="546680426" Language="SFX">
+					<ShortName>HELL#03.37.wav</ShortName>
+					<Path>SFX/HELL#03.37_56D34C19.wem</Path>
+				</File>
+				<File Id="565217426" Language="SFX">
+					<ShortName>Electricity_2.wav</ShortName>
+					<Path>SFX/Electricity_2_56D34C19.wem</Path>
+				</File>
+				<File Id="570026683" Language="SFX">
+					<ShortName>HELL#03.45.wav</ShortName>
+					<Path>SFX/HELL#03.45_56D34C19.wem</Path>
+				</File>
+				<File Id="585178607" Language="SFX">
+					<ShortName>Electricity_1.wav</ShortName>
+					<Path>SFX/Electricity_1_56D34C19.wem</Path>
+				</File>
+				<File Id="633863509" Language="SFX">
+					<ShortName>Electricity_4.wav</ShortName>
+					<Path>SFX/Electricity_4_56D34C19.wem</Path>
+				</File>
+				<File Id="641567372" Language="SFX">
+					<ShortName>Clicking_9.wav</ShortName>
+					<Path>SFX/Clicking_9_56D34C19.wem</Path>
+				</File>
+				<File Id="686040776" Language="SFX">
+					<ShortName>Clicking_8.wav</ShortName>
+					<Path>SFX/Clicking_8_56D34C19.wem</Path>
+				</File>
+				<File Id="695594794" Language="SFX">
+					<ShortName>Clicking_7.wav</ShortName>
+					<Path>SFX/Clicking_7_56D34C19.wem</Path>
+				</File>
+				<File Id="753669294" Language="SFX">
+					<ShortName>Clicking_2.wav</ShortName>
+					<Path>SFX/Clicking_2_56D34C19.wem</Path>
+				</File>
+				<File Id="816716594" Language="SFX">
+					<ShortName>HELL#03.9.wav</ShortName>
+					<Path>SFX/HELL#03.9_56D34C19.wem</Path>
+				</File>
+				<File Id="818452511" Language="SFX">
+					<ShortName>Clicking_4.wav</ShortName>
+					<Path>SFX/Clicking_4_56D34C19.wem</Path>
+				</File>
+				<File Id="901665005" Language="SFX">
+					<ShortName>HELL#03.33.wav</ShortName>
+					<Path>SFX/HELL#03.33_56D34C19.wem</Path>
+				</File>
+				<File Id="926541452" Language="SFX">
+					<ShortName>Clicking_6.wav</ShortName>
+					<Path>SFX/Clicking_6_56D34C19.wem</Path>
+				</File>
+				<File Id="998011696" Language="SFX">
+					<ShortName>Clicking.wav</ShortName>
+					<Path>SFX/Clicking_56D34C19.wem</Path>
+				</File>
+				<File Id="1002460909" Language="SFX">
+					<ShortName>Clatter_6.wav</ShortName>
+					<Path>SFX/Clatter_6_56D34C19.wem</Path>
+				</File>
+				<File Id="1040144216" Language="SFX">
+					<ShortName>HELL#03.49.wav</ShortName>
+					<Path>SFX/HELL#03.49_56D34C19.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3991942870" Language="SFX">
+			<ObjectPath>\SoundBanks\Music\Music</ObjectPath>
+			<ShortName>Music</ShortName>
+			<Path>Music.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3200335893" Name="Play_Placeholder_music" ObjectPath="\Events\Default Work Unit\Music\Play_Placeholder_music"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="178426947" Language="SFX">
+					<ShortName>Create Jam Spring 2018 soundtrack.wav</ShortName>
+					<Path>SFX/Create Jam Spring 2018 soundtrack_8956FC97.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>
