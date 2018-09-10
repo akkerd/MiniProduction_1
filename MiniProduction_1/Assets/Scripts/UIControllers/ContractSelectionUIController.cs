@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 
 public class ContractSelectionUIController : Manager<ContractSelectionUIController> {
@@ -109,6 +110,7 @@ public class ContractSelectionUIController : Manager<ContractSelectionUIControll
 	{
 		ContractController.Instance.AcceptContract(currentViewedContract);
 		CloseContractInfoScreen();
+		SceneManager.LoadScene(2);
 	}
 	public void CloseContractScreen()
 	{

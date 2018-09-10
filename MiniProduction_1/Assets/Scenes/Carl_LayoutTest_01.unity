@@ -998,7 +998,7 @@ Light:
   m_Type: 2
   m_Color: {r: 0.7971698, g: 0.903443, b: 1, a: 1}
   m_Intensity: 1
-  m_Range: 7
+  m_Range: 20
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
@@ -1284,7 +1284,7 @@ Light:
   m_Type: 2
   m_Color: {r: 0.7971698, g: 0.903443, b: 1, a: 1}
   m_Intensity: 1
-  m_Range: 7
+  m_Range: 20
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
@@ -1622,7 +1622,7 @@ Light:
   m_Type: 2
   m_Color: {r: 0.7971698, g: 0.903443, b: 1, a: 1}
   m_Intensity: 1
-  m_Range: 7
+  m_Range: 20
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
@@ -1758,6 +1758,7 @@ GameObject:
   - component: {fileID: 1453549264}
   - component: {fileID: 1453549266}
   - component: {fileID: 1453549263}
+  - component: {fileID: 1453549267}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1852,6 +1853,21 @@ MonoBehaviour:
     positionOffset: {x: 0, y: 0, z: 0}
   m_posOffsetData: {fileID: 0}
   listenerMask: 1
+--- !u!114 &1453549267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1453549262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27ec7fb924c8cdd43a1dc5d298101c39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxRotationLeft: 0.2
+  maxRotationRight: 0.2
+  maxRotationUp: 0.2
+  maxRotationDown: 0.2
 --- !u!1 &1501102411
 GameObject:
   m_ObjectHideFlags: 0
@@ -2345,7 +2361,7 @@ Light:
   m_Type: 2
   m_Color: {r: 0.7971698, g: 0.903443, b: 1, a: 1}
   m_Intensity: 1
-  m_Range: 7
+  m_Range: 20
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
@@ -2584,7 +2600,7 @@ Light:
   m_Type: 2
   m_Color: {r: 0.7971698, g: 0.903443, b: 1, a: 1}
   m_Intensity: 1
-  m_Range: 7
+  m_Range: 20
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
