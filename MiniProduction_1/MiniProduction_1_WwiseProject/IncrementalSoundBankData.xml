@@ -19,16 +19,16 @@
 	<Platform GUID="{1ECB8ED5-F41A-4117-B1D0-1D54609A0CE0}">
 		<Banks>
 			<Language ID="393239870">
-				<File Name="Ambience" Hash="3730449256" Timestamp="1536310131"/>
-				<File Name="Init" Hash="2741769534" Timestamp="1536245050"/>
-				<File Name="Music" Hash="1526894694" Timestamp="1536305487"/>
+				<File Name="Ambience" Hash="2420777803" Timestamp="1536567385"/>
+				<File Name="Init" Hash="2741769534" Timestamp="1536567385"/>
+				<File Name="Music" Hash="39338879" Timestamp="1536567385"/>
 				<File Name="Test" Hash="2111629074" Timestamp="1536236136"/>
 				<File Name="Virk_nu" Hash="3798876410" Timestamp="1536237048"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="4166589896" Timestamp="1536310131"/>
+				<File Name="" Hash="4166589896" Timestamp="1536567385"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
