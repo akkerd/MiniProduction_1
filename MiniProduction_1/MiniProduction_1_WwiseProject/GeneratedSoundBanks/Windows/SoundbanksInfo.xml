@@ -145,6 +145,20 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
+		<SoundBank Id="1584507803" Language="SFX">
+			<ObjectPath>\SoundBanks\Main\Click</ObjectPath>
+			<ShortName>Click</ShortName>
+			<Path>Click.bnk</Path>
+			<IncludedEvents>
+				<Event Id="311910498" Name="Play_click" ObjectPath="\Events\Default Work Unit\Play_click"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="275948153" Language="SFX">
+					<ShortName>click_5.wav</ShortName>
+					<Path>SFX/click_5_56D34C19.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
 		<SoundBank Id="3991942870" Language="SFX">
 			<ObjectPath>\SoundBanks\Music\Music</ObjectPath>
 			<ShortName>Music</ShortName>

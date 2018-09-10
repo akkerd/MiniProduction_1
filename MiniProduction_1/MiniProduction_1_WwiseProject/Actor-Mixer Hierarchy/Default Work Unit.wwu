@@ -4,6 +4,7 @@
 		<WorkUnit Name="Default Work Unit" ID="{B5DF0418-4528-4A68-9A2E-5248978A2EBB}" PersistMode="Standalone">
 			<ChildrenList>
 				<WorkUnit Name="Ambience" ID="{5099C182-2621-47B5-9ED2-55ED74B8F20A}" PersistMode="Reference"/>
+				<WorkUnit Name="Menu click" ID="{3683C0D3-8A29-4E60-B125-96431C2F01A8}" PersistMode="Reference"/>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
