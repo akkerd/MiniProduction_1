@@ -7,6 +7,8 @@ public class MenuScene : MonoBehaviour {
 
     public SettingsMenu settingsMenu;
     public GameObject credits;
+    public GameObject mainButtons;
+    public GameObject backButton;
 
 	public void OnPlayClick()
     {
@@ -23,9 +25,17 @@ public class MenuScene : MonoBehaviour {
     public void OnSettingsClick()
     {
         settingsMenu.ChangeSettingsMenu();
+        mainButtons.SetActive(false);
+        backButton.SetActive(true);
     }
     public void OnCreditsClick()
     {
         credits.SetActive(true);
+    }
+    public void OnBackClick()
+    {
+        settingsMenu.ChangeSettingsMenu();
+        backButton.SetActive(false);
+        mainButtons.SetActive(true);
     }
 }
