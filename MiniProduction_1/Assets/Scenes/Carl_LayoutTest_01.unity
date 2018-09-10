@@ -1864,10 +1864,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27ec7fb924c8cdd43a1dc5d298101c39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxRotationLeft: 0.2
-  maxRotationRight: 0.2
-  maxRotationUp: 0.2
-  maxRotationDown: 0.2
+  maxRotationLeft: 0.02
+  maxRotationRight: 0.02
+  maxRotationUp: 0.02
+  maxRotationDown: 0.02
 --- !u!1 &1501102411
 GameObject:
   m_ObjectHideFlags: 0
