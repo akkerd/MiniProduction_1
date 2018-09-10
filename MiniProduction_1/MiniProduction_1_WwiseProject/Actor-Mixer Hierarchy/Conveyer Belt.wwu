@@ -1,0 +1,683 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{351F09E1-5B72-4773-955D-01FA6CCC06AF}" SchemaVersion="89" RootDocumentID="{B5DF0418-4528-4A68-9A2E-5248978A2EBB}">
+	<AudioObjects>
+		<WorkUnit Name="Conveyer Belt" ID="{351F09E1-5B72-4773-955D-01FA6CCC06AF}" OwnerID="{0747E0B9-589A-43E8-9ABA-EFA480D5099A}" PersistMode="Nested">
+			<ChildrenList>
+				<Folder Name="Body Rack" ID="{5F6FD771-C76D-49CF-A1C1-CAB9D4A7071A}" ShortID="815190208">
+					<ChildrenList>
+						<Folder Name="FLUID LEAK" ID="{56746A96-B453-4692-8FD5-75AAAC4AB419}" ShortID="254884446">
+							<ChildrenList>
+								<Sound Name="Fluid_leak_1" ID="{6485B21E-1962-4313-B0C2-7E3AEF6AD38F}" ShortID="549094800">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Fluid_leak_1" ID="{E4CFA71B-E2BB-4C9C-A0B8-F9B99AEC5538}" ShortID="958079064">
+											<Language>SFX</Language>
+											<AudioFile>Body Rack\FLUID LEAK\Fluid_leak_1.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Fluid_leak_1" ID="{E4CFA71B-E2BB-4C9C-A0B8-F9B99AEC5538}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Fluid_leak_2" ID="{F6E10240-2EB8-4B1C-8B18-BED5D00E3262}" ShortID="251180868">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Fluid_leak_2" ID="{83EDCBB0-2F77-4B5B-986F-BAC23CC7A643}" ShortID="808448461">
+											<Language>SFX</Language>
+											<AudioFile>Body Rack\FLUID LEAK\Fluid_leak_2.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Fluid_leak_2" ID="{83EDCBB0-2F77-4B5B-986F-BAC23CC7A643}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Fluid_leak_3" ID="{B7ECC1BE-5A6C-48BF-9269-2001626CD3F3}" ShortID="585839070">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Fluid_leak_3" ID="{36A6A4EC-4A59-4AD0-A822-7353AD5B1312}" ShortID="671538647">
+											<Language>SFX</Language>
+											<AudioFile>Body Rack\FLUID LEAK\Fluid_leak_3.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Fluid_leak_3" ID="{36A6A4EC-4A59-4AD0-A822-7353AD5B1312}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Fluid_leak_4" ID="{4005FDCF-2EF0-4208-92B9-7B6C07F611A2}" ShortID="853784777">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Fluid_leak_4" ID="{201C7A59-CAED-4825-ACB0-3530B2EA1972}" ShortID="817772857">
+											<Language>SFX</Language>
+											<AudioFile>Body Rack\FLUID LEAK\Fluid_leak_4.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Fluid_leak_4" ID="{201C7A59-CAED-4825-ACB0-3530B2EA1972}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Fluid_leak_5" ID="{6FEF7E88-7E3A-41CA-A4B9-D03E01875BB9}" ShortID="198902961">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Fluid_leak_5" ID="{F346B40A-F41C-47F0-B88D-FD4CDDF16DEB}" ShortID="219703875">
+											<Language>SFX</Language>
+											<AudioFile>Body Rack\FLUID LEAK\Fluid_leak_5.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Fluid_leak_5" ID="{F346B40A-F41C-47F0-B88D-FD4CDDF16DEB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Fluid_leak_6" ID="{9BA792A9-C9CC-4920-AE6C-4D1B97B91380}" ShortID="1015142021">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Fluid_leak_6" ID="{B29F37CB-8A5F-446C-BAAC-7478BC833727}" ShortID="691863543">
+											<Language>SFX</Language>
+											<AudioFile>Body Rack\FLUID LEAK\Fluid_leak_6.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Fluid_leak_6" ID="{B29F37CB-8A5F-446C-BAAC-7478BC833727}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Fluid_leak_7" ID="{02C0796F-EF17-49C3-84EE-B64793E36EE2}" ShortID="777100593">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Fluid_leak_7" ID="{82ECAA71-CECF-4F29-A8D6-0075115E3F7A}" ShortID="897451746">
+											<Language>SFX</Language>
+											<AudioFile>Body Rack\FLUID LEAK\Fluid_leak_7.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Fluid_leak_7" ID="{82ECAA71-CECF-4F29-A8D6-0075115E3F7A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Rack" ID="{CA1C85C7-91A6-4560-A508-2CD160948AD9}" ShortID="813648936">
+							<ChildrenList>
+								<BlendContainer Name="Rack_loop" ID="{2E47E489-E246-496F-BC83-A8E3D4FF0057}" ShortID="514180379">
+									<PropertyList>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>32</Value>
+											</ValueList>
+										</Property>
+										<Property Name="MakeUpGain" Type="Real64">
+											<RTPCList>
+												<RTPC Name="" ID="{47C7D6B6-4C16-437F-B233-00EE1838F788}" ShortID="139921523">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="conveyor_acc" ID="{AF0A8315-67B1-4805-AAC3-34E276496461}" WorkUnitID="{8D3B36C2-FED2-4113-9B03-F6C42922C628}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{8BC37CBB-729F-4A51-9ECD-F984857AF295}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-96</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>0.30343</XPos>
+																<YPos>-0.12084</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>10</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-29</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Rack_movement_loop" ID="{E6CBFAFA-99ED-4E52-BA00-56C4E0C14A37}" ShortID="153188372">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="Pitch" Type="int32">
+													<RTPCList>
+														<RTPC Name="" ID="{89EE76C7-D30B-4A2E-8494-9E7043A18193}" ShortID="160442536">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="conveyor_acc" ID="{AF0A8315-67B1-4805-AAC3-34E276496461}" WorkUnitID="{8D3B36C2-FED2-4113-9B03-F6C42922C628}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{AA266F3D-7AE2-428F-BD5B-CA294CA1F37A}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-84</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>10</XPos>
+																		<YPos>168</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Rack_movement_loop" ID="{182261CE-B2C0-4183-B1F5-8AA4F78DBC34}" ShortID="834698638">
+													<Language>SFX</Language>
+													<AudioFile>Body Rack\Rack\Rack_movement_loop.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Rack_movement_loop" ID="{182261CE-B2C0-4183-B1F5-8AA4F78DBC34}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Rack_movement_noise" ID="{BD5D029F-75BC-4655-80DE-CA1EBCAE7360}" ShortID="383124662">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Rack_movement_noise" ID="{CDA67BE7-7845-4A8A-B549-83236CF21304}" ShortID="171930867">
+													<Language>SFX</Language>
+													<AudioFile>Body Rack\Rack\Rack_movement_noise.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Rack_movement_noise" ID="{CDA67BE7-7845-4A8A-B549-83236CF21304}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<RandomSequenceContainer Name="Rack_metal_grind" ID="{0D3AB4D7-D40D-4FEC-993C-73B70891ED46}" ShortID="131170821">
+											<PropertyList>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>41</Value>
+													</ValueList>
+												</Property>
+												<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Rack_metal_grind" ID="{446A29B2-1780-4343-84D0-0A892303715F}" ShortID="524796056">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Rack_metal_grind" ID="{9F7FB830-07C2-4E98-BC56-68356EFFF876}" ShortID="223227653">
+															<Language>SFX</Language>
+															<AudioFile>Body Rack\Rack\Rack_metal_grind.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Rack_metal_grind" ID="{9F7FB830-07C2-4E98-BC56-68356EFFF876}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Rack_metal_grind_1" ID="{FD04BAE1-22A3-4A60-BF9F-8665D62414EF}" ShortID="972039933">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Rack_metal_grind_1" ID="{36A79041-59FE-4CBF-8ED8-442E62217E31}" ShortID="702573688">
+															<Language>SFX</Language>
+															<AudioFile>Body Rack\Rack\Rack_metal_grind_1.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Rack_metal_grind_1" ID="{36A79041-59FE-4CBF-8ED8-442E62217E31}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Rack_metal_grind_2" ID="{9047B89D-4CE0-48B9-9CE0-02AC6C5922E7}" ShortID="32447261">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Rack_metal_grind_2" ID="{C73781FB-EDD5-43EF-8FF3-A670821B0637}" ShortID="765779571">
+															<Language>SFX</Language>
+															<AudioFile>Body Rack\Rack\Rack_metal_grind_2.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Rack_metal_grind_2" ID="{C73781FB-EDD5-43EF-8FF3-A670821B0637}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Rack_metal_grind_3" ID="{ACDB66F6-8566-40CA-8094-A40DFA4BFFAE}" ShortID="1061637871">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Rack_metal_grind_3" ID="{98F900F8-8E77-494F-A9AE-C22FF25BE043}" ShortID="678451578">
+															<Language>SFX</Language>
+															<AudioFile>Body Rack\Rack\Rack_metal_grind_3.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Rack_metal_grind_3" ID="{98F900F8-8E77-494F-A9AE-C22FF25BE043}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Rack_metal_grind_4" ID="{0DCD997D-E943-44DE-8EC2-1E2530F7E2A1}" ShortID="668942068">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Rack_metal_grind_4" ID="{FF598527-3DB8-499B-9571-90C8BE4262BC}" ShortID="756737007">
+															<Language>SFX</Language>
+															<AudioFile>Body Rack\Rack\Rack_metal_grind_4.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Rack_metal_grind_4" ID="{FF598527-3DB8-499B-9571-90C8BE4262BC}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Rack_metal_grind_5" ID="{831CF4E0-B778-4EDF-9516-7F1B3AC67EDD}" ShortID="443568969">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Rack_metal_grind_5" ID="{40388DFE-7A63-45F3-8950-F5754A1B8FB1}" ShortID="446108493">
+															<Language>SFX</Language>
+															<AudioFile>Body Rack\Rack\Rack_metal_grind_5.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Rack_metal_grind_5" ID="{40388DFE-7A63-45F3-8950-F5754A1B8FB1}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+									</ChildrenList>
+								</BlendContainer>
+								<RandomSequenceContainer Name="Rack_stop" ID="{1AC4C1F7-7E40-41DF-800D-9E471287B706}" ShortID="775844107">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-19</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Rack_stop" ID="{2BF480A2-64BF-4F10-B143-1457027EE3D6}" ShortID="812061106">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Rack_stop" ID="{C03D6380-247F-4EE9-B8E3-56C83D70EC1A}" ShortID="401383032">
+													<Language>SFX</Language>
+													<AudioFile>Body Rack\Rack\Rack_stop.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Rack_stop" ID="{C03D6380-247F-4EE9-B8E3-56C83D70EC1A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Rack_stop_2" ID="{31D3B236-B21B-41DB-9437-D0518A4DE117}" ShortID="41096409">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Rack_stop_2" ID="{E9B0EF8C-9899-486D-9189-2E4ECBD4A216}" ShortID="368126437">
+													<Language>SFX</Language>
+													<AudioFile>Body Rack\Rack\Rack_stop_2.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Rack_stop_2" ID="{E9B0EF8C-9899-486D-9189-2E4ECBD4A216}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Rack_stop_3" ID="{F39B9A3F-CABB-41D3-BBC7-77D6EA21F4E4}" ShortID="810715791">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Rack_stop_3" ID="{1FE4FAB9-894E-4C6F-80D5-37F95ED7A15D}" ShortID="35606696">
+													<Language>SFX</Language>
+													<AudioFile>Body Rack\Rack\Rack_stop_3.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Rack_stop_3" ID="{1FE4FAB9-894E-4C6F-80D5-37F95ED7A15D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="SLIMY IMPACT" ID="{07E9156B-B4E4-4966-B728-4D55FB8EF7DA}" ShortID="568113696">
+							<ChildrenList>
+								<RandomSequenceContainer Name="Slimy_impact" ID="{4FFCAD1F-C808-4157-BEEB-5724D12DD555}" ShortID="582980810">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="slimy_impact_1" ID="{87A55715-7508-42CE-906E-BC32E4585719}" ShortID="68545753">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="slimy_impact_1" ID="{0660B8C5-18AF-4DF3-BB17-1E2E307EDF32}" ShortID="341785487">
+													<Language>SFX</Language>
+													<AudioFile>Body Rack\SLIMY IMPACT\slimy_impact_1.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="slimy_impact_1" ID="{0660B8C5-18AF-4DF3-BB17-1E2E307EDF32}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="slimy_impact_2" ID="{C9281D2F-F6C6-49E3-8991-49A1EEC20ADD}" ShortID="193412868">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="slimy_impact_2" ID="{00081230-ABBB-4DC4-B61E-3982EB240717}" ShortID="389009306">
+													<Language>SFX</Language>
+													<AudioFile>Body Rack\SLIMY IMPACT\slimy_impact_2.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="slimy_impact_2" ID="{00081230-ABBB-4DC4-B61E-3982EB240717}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="slimy_impact_3" ID="{23031B83-DEB1-4880-A479-40124CCCD1F7}" ShortID="385294185">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="slimy_impact_3" ID="{62130FDF-E3EB-4E2B-B38D-0E1DEF892C81}" ShortID="630991026">
+													<Language>SFX</Language>
+													<AudioFile>Body Rack\SLIMY IMPACT\slimy_impact_3.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="slimy_impact_3" ID="{62130FDF-E3EB-4E2B-B38D-0E1DEF892C81}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="slimy_impact_4" ID="{285B4154-B88C-4CAE-8D0D-1E95B049B3E3}" ShortID="253595465">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="slimy_impact_4" ID="{EC8F2876-31D9-4F79-8276-4161F01A280B}" ShortID="694950063">
+													<Language>SFX</Language>
+													<AudioFile>Body Rack\SLIMY IMPACT\slimy_impact_4.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="slimy_impact_4" ID="{EC8F2876-31D9-4F79-8276-4161F01A280B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="slimy_impact_5" ID="{3E4D72EF-AEA1-4626-8F57-A6E211261A57}" ShortID="393106241">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="slimy_impact_5" ID="{E88B0FA5-CB68-4E9C-BC70-1288E48AF892}" ShortID="815897848">
+													<Language>SFX</Language>
+													<AudioFile>Body Rack\SLIMY IMPACT\slimy_impact_5.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="slimy_impact_5" ID="{E88B0FA5-CB68-4E9C-BC70-1288E48AF892}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="slimy_impact_6" ID="{24E3B9F1-7CE1-45EC-A4B8-285BA0DD3D19}" ShortID="567623489">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="slimy_impact_6" ID="{3AED9131-9201-4602-977C-0E06E619F061}" ShortID="99295612">
+													<Language>SFX</Language>
+													<AudioFile>Body Rack\SLIMY IMPACT\slimy_impact_6.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="slimy_impact_6" ID="{3AED9131-9201-4602-977C-0E06E619F061}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="slimy_impact_7" ID="{2D766691-2459-40F3-A315-193DAF957A89}" ShortID="858606981">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="slimy_impact_7" ID="{E9948557-1D8B-458C-B2BB-8861100C18B5}" ShortID="288838799">
+													<Language>SFX</Language>
+													<AudioFile>Body Rack\SLIMY IMPACT\slimy_impact_7.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="slimy_impact_7" ID="{E9948557-1D8B-458C-B2BB-8861100C18B5}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</Folder>
+						<ActorMixer Name="Zipper_loop" ID="{3236BED6-E8D4-46ED-954C-EA561DF9425A}" ShortID="41622144">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Zipper_loop" ID="{06DB53EC-E629-4A1D-98C7-566FE3702725}" ShortID="546049078">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-7</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Zipper_loop" ID="{D8CA59DE-79FC-49AB-8F26-C5DD5D5E43F7}" ShortID="684107379">
+											<Language>SFX</Language>
+											<AudioFile>Body Rack\Zipper_loop.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Zipper_loop" ID="{D8CA59DE-79FC-49AB-8F26-C5DD5D5E43F7}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</ActorMixer>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{0747E0B9-589A-43E8-9ABA-EFA480D5099A}" SchemaVersion="89" RootDocumentID="{B5DF0418-4528-4A68-9A2E-5248978A2EBB}">
+	<AudioObjects>
+		<WorkUnit Name="SFX" ID="{0747E0B9-589A-43E8-9ABA-EFA480D5099A}" OwnerID="{B5DF0418-4528-4A68-9A2E-5248978A2EBB}" PersistMode="Nested">
+			<ChildrenList>
+				<WorkUnit Name="Ambience" ID="{5099C182-2621-47B5-9ED2-55ED74B8F20A}" PersistMode="Reference"/>
+				<WorkUnit Name="Conveyer Belt" ID="{351F09E1-5B72-4773-955D-01FA6CCC06AF}" PersistMode="Reference"/>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

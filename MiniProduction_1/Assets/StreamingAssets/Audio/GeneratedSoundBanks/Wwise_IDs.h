@@ -17,9 +17,21 @@ namespace AK
         static const AkUniqueID PLAY_CLICKS = 2790046261U;
         static const AkUniqueID PLAY_ELECTRIC_ANOMALIES = 614939413U;
         static const AkUniqueID PLAY_PLACEHOLDER_MUSIC = 3200335893U;
+        static const AkUniqueID PLAY_RACK_LOOP = 1411311180U;
+        static const AkUniqueID PLAY_RACK_STOP = 851825170U;
         static const AkUniqueID PLAY_SCREAMS = 2700195184U;
         static const AkUniqueID PLAY_VENTILATION = 2644260023U;
     } // namespace EVENTS
+
+    namespace GAME_PARAMETERS
+    {
+        static const AkUniqueID CONVEYOR_ACC = 4152903956U;
+    } // namespace GAME_PARAMETERS
+
+    namespace TRIGGERS
+    {
+        static const AkUniqueID RACK_STOP = 4223545111U;
+    } // namespace TRIGGERS
 
     namespace BANKS
     {
@@ -27,6 +39,7 @@ namespace AK
         static const AkUniqueID AMBIENCE = 85412153U;
         static const AkUniqueID CLICK = 1584507803U;
         static const AkUniqueID MUSIC = 3991942870U;
+        static const AkUniqueID RACK = 1875627672U;
     } // namespace BANKS
 
     namespace BUSSES

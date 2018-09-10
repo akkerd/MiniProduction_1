@@ -4,13 +4,10 @@
 [Bb]uild/
 [Bb]uilds/
 Assets/AssetStoreTools*
-*Assets/Private/*
-Assets/Private/*
-Assets/Private/
-Assets/Private.meta
-MiniProduction_1/MiniProduction_1_WwiseProject/.cache/
-MiniProduction_1/Assets/Private/
-MiniProduction_1/Assets/Private.meta
+MiniProduction_1/MiniProduction_1_WwiseProject/*.cache
+MiniProduction_1/MiniProduction_1_WwiseProject/.cache
+MiniProduction_1/Assets/Wwise/Deployment/Plugins/Windows/*
+MiniProduction_1/Assets/Wwise/Deployment/Plugins/Windows.meta
 
 # Visual Studio cache directory
 .vs/
@@ -30,7 +27,6 @@ ExportedObj/
 *.svd
 *.pdb
 *.opendb
-*.DS_Store
 
 # Unity3D generated meta files
 *.pidb.meta
