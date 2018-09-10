@@ -2,216 +2,11 @@
 <WwiseDocument Type="WorkUnit" ID="{5099C182-2621-47B5-9ED2-55ED74B8F20A}" SchemaVersion="89" RootDocumentID="{B5DF0418-4528-4A68-9A2E-5248978A2EBB}">
 	<AudioObjects>
 		<WorkUnit Name="Ambience" ID="{5099C182-2621-47B5-9ED2-55ED74B8F20A}" OwnerID="{B5DF0418-4528-4A68-9A2E-5248978A2EBB}" PersistMode="Nested">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="1"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
 			<ChildrenList>
-				<RandomSequenceContainer Name="Clanks" ID="{AC224A11-339F-4F08-9353-B1B00E0F00DC}" ShortID="386616287">
-					<PropertyList>
-						<Property Name="3DPosition" Type="int16" Value="2"/>
-						<Property Name="InitialDelay" Type="Real64">
-							<ModifierList>
-								<ModifierInfo>
-									<Modifier Name="" ID="{914ED8BD-7D76-43C6-A819-5AD24BE35043}">
-										<PropertyList>
-											<Property Name="Enabled" Type="bool" Value="True"/>
-											<Property Name="Max" Type="Real64" Value="20"/>
-											<Property Name="Min" Type="Real64" Value="-10"/>
-										</PropertyList>
-									</Modifier>
-								</ModifierInfo>
-							</ModifierList>
-						</Property>
-						<Property Name="Lowpass" Type="int16">
-							<ValueList>
-								<Value>55</Value>
-							</ValueList>
-						</Property>
-						<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
-						<Property Name="Pitch" Type="int32">
-							<ModifierList>
-								<ModifierInfo>
-									<Modifier Name="" ID="{BFB4812E-9F3E-4A97-8C29-2999B2FF8C70}">
-										<PropertyList>
-											<Property Name="Enabled" Type="bool" Value="True"/>
-											<Property Name="Max" Type="Real64" Value="152"/>
-											<Property Name="Min" Type="Real64" Value="-278"/>
-										</PropertyList>
-									</Modifier>
-								</ModifierInfo>
-							</ModifierList>
-						</Property>
-						<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
-						<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
-						<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64">
-							<ModifierList>
-								<ModifierInfo>
-									<Modifier Name="" ID="{F1239BCC-0803-4FA6-A492-681C48AB7DB1}">
-										<PropertyList>
-											<Property Name="Enabled" Type="bool" Value="True"/>
-											<Property Name="Max" Type="Real64" Value="60"/>
-											<Property Name="Min" Type="Real64" Value="-10"/>
-										</PropertyList>
-									</Modifier>
-								</ModifierInfo>
-							</ModifierList>
-						</Property>
-						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-						<Property Name="Volume" Type="Real64">
-							<ValueList>
-								<Value>-32</Value>
-							</ValueList>
-							<ModifierList>
-								<ModifierInfo>
-									<Modifier Name="" ID="{DFAEEE78-C9BC-42F7-A142-E73A78DA70B7}"/>
-								</ModifierInfo>
-							</ModifierList>
-						</Property>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<Sound Name="Clatter_1" ID="{D6A9F098-6D87-4052-BCD9-E268D2508520}" ShortID="977779307">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Clatter_1" ID="{85F0AD7C-014C-4CC5-9B7B-01077F3E6F77}" ShortID="661226524">
-									<Language>SFX</Language>
-									<AudioFile>Clatter_1.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Clatter_1" ID="{85F0AD7C-014C-4CC5-9B7B-01077F3E6F77}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Clatter_2" ID="{B1A64497-2DA5-47F5-A41E-8FF252EAD935}" ShortID="530976360">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Clatter_2" ID="{A810D40B-5E66-4884-A29A-86A758C2C252}" ShortID="872318344">
-									<Language>SFX</Language>
-									<AudioFile>Clatter_2.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Clatter_2" ID="{A810D40B-5E66-4884-A29A-86A758C2C252}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Clatter_3" ID="{00B34BFD-CB35-4726-9A9E-0753D1792DC5}" ShortID="625389553">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Clatter_3" ID="{516E071D-CF0E-44D6-85A5-0D3871335955}" ShortID="725981982">
-									<Language>SFX</Language>
-									<AudioFile>Clatter_3.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Clatter_3" ID="{516E071D-CF0E-44D6-85A5-0D3871335955}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Clatter_4" ID="{3B613F0D-1CEA-4D44-B24A-02F7744DE08C}" ShortID="364076426">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Clatter_4" ID="{F962DFCD-CBDA-4ADF-B7A8-29903A392F2B}" ShortID="408553109">
-									<Language>SFX</Language>
-									<AudioFile>Clatter_4.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Clatter_4" ID="{F962DFCD-CBDA-4ADF-B7A8-29903A392F2B}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Clatter_5" ID="{6E9B06C6-C037-41C7-9A13-55BD68CAAE80}" ShortID="661298239">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Clatter_5" ID="{A957B26C-3808-4A72-BF26-A5CB268CBA74}" ShortID="949389118">
-									<Language>SFX</Language>
-									<AudioFile>Clatter_5.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Clatter_5" ID="{A957B26C-3808-4A72-BF26-A5CB268CBA74}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Clatter_6" ID="{E0747D7F-DBEC-4626-8D66-124AB3184A57}" ShortID="899103187">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Clatter_6" ID="{1BC0C7AA-581C-4B6B-96A4-1B396DB26649}" ShortID="963002560">
-									<Language>SFX</Language>
-									<AudioFile>Clatter_6.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Clatter_6" ID="{1BC0C7AA-581C-4B6B-96A4-1B396DB26649}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Clatter_7" ID="{D12EDEA0-387C-4422-912E-850248FC2F85}" ShortID="881295087">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Clatter_7" ID="{D359BCCC-34E2-481C-9867-E6AD56180565}" ShortID="338037755">
-									<Language>SFX</Language>
-									<AudioFile>Clatter_7.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Clatter_7" ID="{D359BCCC-34E2-481C-9867-E6AD56180565}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-					</ChildrenList>
-					<PositioningInfo>
-						<Position Name="" ID="{7F3B2FE9-56AC-4536-9D4F-07B77EF5C0BB}"/>
-					</PositioningInfo>
-				</RandomSequenceContainer>
 				<Sound Name="Ventilation" ID="{B22DF292-F35E-4D65-B211-0A0E783EA51A}" ShortID="1020101710">
 					<PropertyList>
 						<Property Name="InitialDelay" Type="Real64">
@@ -223,7 +18,7 @@
 						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-28</Value>
+								<Value>-35</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -257,6 +52,7 @@
 								<ModifierInfo>
 									<Modifier Name="" ID="{E42555C4-DEE5-4A4A-BF9E-1E579E33B993}">
 										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
 											<Property Name="Max" Type="Real64" Value="40"/>
 											<Property Name="Min" Type="Real64" Value="-10"/>
 										</PropertyList>
@@ -303,7 +99,7 @@
 						<Property Name="SpeakerPanning" Type="int16" Value="1"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-5</Value>
+								<Value>-19</Value>
 							</ValueList>
 							<ModifierList>
 								<ModifierInfo>
@@ -588,16 +384,27 @@
 						</Sound>
 					</ChildrenList>
 					<PositioningInfo>
-						<Panner Name="" ID="{D9828FDE-14CA-4105-9956-9CC04F5CE30E}"/>
+						<Panner Name="" ID="{D9828FDE-14CA-4105-9956-9CC04F5CE30E}">
+							<PropertyList>
+								<Property Name="PanX" Type="Real64" Value="-78.8008565310492"/>
+								<Property Name="PanY" Type="Real64" Value="18.2232346241458"/>
+							</PropertyList>
+						</Panner>
 					</PositioningInfo>
 				</RandomSequenceContainer>
 				<RandomSequenceContainer Name="Electric_anomalies" ID="{58FD1FF1-8B5D-40FD-8438-50FEE8A504B2}" ShortID="65045149">
 					<PropertyList>
+						<Property Name="CenterPercentage" Type="int32">
+							<ValueList>
+								<Value>100</Value>
+							</ValueList>
+						</Property>
 						<Property Name="InitialDelay" Type="Real64">
 							<ModifierList>
 								<ModifierInfo>
 									<Modifier Name="" ID="{7CF7B58B-FEEF-4EFC-98BB-B95733DC39D1}">
 										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
 											<Property Name="Max" Type="Real64" Value="60"/>
 											<Property Name="Min" Type="Real64" Value="-10"/>
 										</PropertyList>
@@ -633,9 +440,10 @@
 							</ModifierList>
 						</Property>
 						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+						<Property Name="SpeakerPanning" Type="int16" Value="1"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-6</Value>
+								<Value>-32</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -782,12 +590,33 @@
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
+					<PositioningInfo>
+						<Panner Name="" ID="{5431645F-4F0F-47A8-A546-AB28BEB9C107}">
+							<PropertyList>
+								<Property Name="PanX" Type="Real64" Value="70.2355460385439"/>
+								<Property Name="PanY" Type="Real64" Value="25.9681093394078"/>
+							</PropertyList>
+						</Panner>
+					</PositioningInfo>
 				</RandomSequenceContainer>
 				<RandomSequenceContainer Name="Screams" ID="{E4191FD6-49DE-46A3-B5BD-E32F7B32A238}" ShortID="1028422223">
 					<PropertyList>
 						<Property Name="InitialDelay" Type="Real64">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{1DC14E7D-945F-45F7-B254-C934DA48F353}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="114"/>
+											<Property Name="Min" Type="Real64" Value="-57"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="Lowpass" Type="int16">
 							<ValueList>
-								<Value>40</Value>
+								<Value>54</Value>
 							</ValueList>
 						</Property>
 						<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
@@ -797,8 +626,8 @@
 									<Modifier Name="" ID="{4BF7C1E7-A014-4064-BDD4-7F48112CCE53}">
 										<PropertyList>
 											<Property Name="Enabled" Type="bool" Value="True"/>
-											<Property Name="Max" Type="Real64" Value="985"/>
-											<Property Name="Min" Type="Real64" Value="-480"/>
+											<Property Name="Max" Type="Real64" Value="51"/>
+											<Property Name="Min" Type="Real64" Value="-101"/>
 										</PropertyList>
 									</Modifier>
 								</ModifierInfo>
@@ -820,9 +649,10 @@
 							</ModifierList>
 						</Property>
 						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+						<Property Name="SpeakerPanning" Type="int16" Value="1"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-9</Value>
+								<Value>-29</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -831,7 +661,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
 						</Reference>
 						<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
-							<ObjectRef Name="Aluminium_Tank" ID="{0D20C91A-F750-47E0-AE32-00E5F2AA1272}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+							<ObjectRef Name="Plate_Sizzle" ID="{D4A5BBF1-6A59-47A7-BB97-E7695900B72F}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
@@ -953,6 +783,336 @@
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
+					<PositioningInfo>
+						<Panner Name="" ID="{42E09CDA-4D76-4EEB-9A5E-A4E4D1A5A0E2}">
+							<PropertyList>
+								<Property Name="PanX" Type="Real64" Value="-72.3768736616702"/>
+								<Property Name="PanY" Type="Real64" Value="-79.2710706150342"/>
+							</PropertyList>
+						</Panner>
+					</PositioningInfo>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Clanks" ID="{C4AF67C8-12F2-4EC6-B327-72B1149A9205}" ShortID="834457123">
+					<PropertyList>
+						<Property Name="3DPosition" Type="int16" Value="2"/>
+						<Property Name="InitialDelay" Type="Real64">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{3EF12C43-CC2D-4C3D-BF0A-70E7711576B5}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="57"/>
+											<Property Name="Min" Type="Real64" Value="-19"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="Lowpass" Type="int16">
+							<ValueList>
+								<Value>40</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{B67393D2-9B75-45CF-B7E9-7CC09C0A6D3A}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="51"/>
+											<Property Name="Min" Type="Real64" Value="-76"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+						<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+						<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{20435FA3-9AB4-4C8E-8114-E278FA554370}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="57"/>
+											<Property Name="Min" Type="Real64" Value="-57"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+						<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-39</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Clatter_1" ID="{3FDA072A-600E-41C0-BACB-6281C9A85E47}" ShortID="508172529">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Clatter_1" ID="{17FCDE57-8F14-4A76-88E7-D0A0E412945E}" ShortID="507788029">
+									<Language>SFX</Language>
+									<AudioFile>Clatter_1.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Clatter_1" ID="{17FCDE57-8F14-4A76-88E7-D0A0E412945E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Clatter_2" ID="{86932ABC-A5E4-40F2-A371-0AA11CA6596A}" ShortID="296265771">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Clatter_2" ID="{EFCE055D-7DEE-4A14-9FC3-1FCDD0E24C29}" ShortID="185010069">
+									<Language>SFX</Language>
+									<AudioFile>Clatter_2.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Clatter_2" ID="{EFCE055D-7DEE-4A14-9FC3-1FCDD0E24C29}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Clatter_3" ID="{6B09F26A-9E26-4D66-B1E7-9C899A8681F2}" ShortID="10167811">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Clatter_3" ID="{24C9FA95-3951-45CC-AB23-C2FC98DEFBD6}" ShortID="100574540">
+									<Language>SFX</Language>
+									<AudioFile>Clatter_3.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Clatter_3" ID="{24C9FA95-3951-45CC-AB23-C2FC98DEFBD6}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Clatter_4" ID="{17585A4F-0054-45FB-8280-2B1F200555DB}" ShortID="739273653">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Clatter_4" ID="{E5423FA5-11C8-421D-817D-B14D6BAC0B56}" ShortID="185016637">
+									<Language>SFX</Language>
+									<AudioFile>Clatter_4.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Clatter_4" ID="{E5423FA5-11C8-421D-817D-B14D6BAC0B56}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Clatter_5" ID="{09CDDE9F-DB12-437B-AFFF-5AF3C21074ED}" ShortID="943017824">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Clatter_5" ID="{08AE96AD-A3C9-4CFF-8F62-2DB98C5E76BC}" ShortID="502733211">
+									<Language>SFX</Language>
+									<AudioFile>Clatter_5.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Clatter_5" ID="{08AE96AD-A3C9-4CFF-8F62-2DB98C5E76BC}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Clatter_6" ID="{D6D50F50-9F77-41D0-82A4-FEA8C046C6AD}" ShortID="1031569754">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Clatter_6" ID="{7F6059F7-5319-42B9-9902-AACCB1003260}" ShortID="1002460909">
+									<Language>SFX</Language>
+									<AudioFile>Clatter_6.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Clatter_6" ID="{7F6059F7-5319-42B9-9902-AACCB1003260}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Clatter_7" ID="{F66EB05C-4C13-4CD3-AD79-2E002369AC12}" ShortID="520786802">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Clatter_7" ID="{7FA94399-C391-4BFB-ABFE-72E6B57DF946}" ShortID="344055996">
+									<Language>SFX</Language>
+									<AudioFile>Clatter_7.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Clatter_7" ID="{7FA94399-C391-4BFB-ABFE-72E6B57DF946}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<PositioningInfo>
+						<Panner Name="" ID="{8280BE75-4759-4FB9-AF17-41E79F964E76}">
+							<PropertyList>
+								<Property Name="PanX" Type="Real64" Value="-1.2847965738758"/>
+								<Property Name="PanY" Type="Real64" Value="5.0113895216401"/>
+							</PropertyList>
+						</Panner>
+						<Position Name="" ID="{999BBCFA-1C9E-45EC-916E-1AD9265396A8}">
+							<PropertyList>
+								<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+							</PropertyList>
+							<ChildrenList>
+								<Path2D Name="Clanks_Path" ID="{110D4452-45FE-4ED5-91EF-88D73A2EA676}">
+									<PointList>
+										<Point>
+											<XPos>66.4557</XPos>
+											<YPos>-35.35032</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+								<Path2D Name="Clanks_Path_01" ID="{8FAB71D3-E88C-4BAF-89F3-9E439B594856}">
+									<PointList>
+										<Point>
+											<XPos>-74.05063</XPos>
+											<YPos>69.10828</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+								<Path2D Name="Clanks_Path_02" ID="{E6DECE88-52A9-4B52-8BAF-10706391D861}">
+									<PointList>
+										<Point>
+											<XPos>-67.72152</XPos>
+											<YPos>-39.17197</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+								<Path2D Name="Clanks_Path_03" ID="{C4FA2845-EE9C-42FA-A7D3-19375469258D}">
+									<PointList>
+										<Point>
+											<XPos>0</XPos>
+											<YPos>50</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+								<Path2D Name="Clanks_Path_04" ID="{24AF75C0-43AF-473F-97B0-BCFA3ADDAFF8}">
+									<PointList>
+										<Point>
+											<XPos>31.64557</XPos>
+											<YPos>73.84076</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+								<Path2D Name="Clanks_Path_05" ID="{8535773F-B752-41B7-BC83-3235944A3518}">
+									<PointList>
+										<Point>
+											<XPos>27.21519</XPos>
+											<YPos>39.17197</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+								<Path2D Name="Clanks_Path_06" ID="{C4BA4811-B8AF-4FD8-8280-97277DEE8D1F}">
+									<PointList>
+										<Point>
+											<XPos>-88.60759</XPos>
+											<YPos>-22.61146</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+								<Path2D Name="Clanks_Path_07" ID="{82638E5A-0BB8-4086-9406-F3531C6DCF3D}">
+									<PointList>
+										<Point>
+											<XPos>-58.86076</XPos>
+											<YPos>73.56688</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+								<Path2D Name="Clanks_Path_08" ID="{E19EA091-B16C-497B-8DF2-37EF79705B54}">
+									<PointList>
+										<Point>
+											<XPos>-70.25316</XPos>
+											<YPos>53.82166</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+								<Path2D Name="Clanks_Path_09" ID="{C56A9ED8-B127-49C2-B06B-D4E739E3E937}">
+									<PropertyList>
+										<Property Name="RandomX" Type="Real64" Value="49"/>
+										<Property Name="RandomY" Type="Real64" Value="51"/>
+									</PropertyList>
+									<PointList>
+										<Point>
+											<XPos>47.46835</XPos>
+											<YPos>70.38217</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+							</ChildrenList>
+						</Position>
+					</PositioningInfo>
 				</RandomSequenceContainer>
 			</ChildrenList>
 		</WorkUnit>
