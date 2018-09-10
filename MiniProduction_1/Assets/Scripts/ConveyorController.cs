@@ -21,10 +21,10 @@ public class ConveyorController : Manager<ConveyorController> {
     float movedFromCenterMax = 0.7f;
 
     // Use this for initialization
-    void Start()
+    public void SetupConveyor(Sleeve[] sleevesAvaliable)
     {
         //Setup
-        sleevesInLevel = LevelSleeves.Instance.GetLevelSleeves();
+        sleevesInLevel = sleevesAvaliable;
         conveyorSleves = new ConveyorSleeve[transform.childCount];
         if (sleevesInLevel.Length < conveyorSleves.Length)
         {
@@ -56,8 +56,6 @@ public class ConveyorController : Manager<ConveyorController> {
         //Setup nessesary variables for teleportation of sleeves;
         startPositionOfConveyor = conveyorSleves[0].transform.position;
         endPositionOfConveyor = conveyorSleves[conveyorSleves.Length-1].transform.position;
-
-
     }
 
     void AddEmptySleeves()

@@ -10,4 +10,8 @@ public class Contract {
 	{
 		stacks = new Stack[numberOfStacks];
 	}
+	public int GetNumberOfStacks()
+	{
+		return stacks.Length;
+	}
 }
