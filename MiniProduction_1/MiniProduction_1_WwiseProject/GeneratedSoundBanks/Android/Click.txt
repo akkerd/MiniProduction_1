@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	311910498	Play_click			\Default Work Unit\Play_click	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	275948153	click_5	Y:\Documents\GitHub\MiniProduction_1\MiniProduction_1\MiniProduction_1_WwiseProject\.cache\Android\SFX\click_5_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Menu click\click_5		683696
+

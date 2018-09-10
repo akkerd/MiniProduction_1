@@ -145,58 +145,17 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="1875627672" Language="SFX">
-			<ObjectPath>\SoundBanks\Main\Rack</ObjectPath>
-			<ShortName>Rack</ShortName>
-			<Path>Rack.bnk</Path>
+		<SoundBank Id="1584507803" Language="SFX">
+			<ObjectPath>\SoundBanks\Main\Click</ObjectPath>
+			<ShortName>Click</ShortName>
+			<Path>Click.bnk</Path>
 			<IncludedEvents>
-				<Event Id="1411311180" Name="Play_Rack_loop" ObjectPath="\Events\Default Work Unit\Play_Rack_loop"/>
-				<Event Id="851825170" Name="Play_Rack_stop" ObjectPath="\Events\Default Work Unit\Play_Rack_stop"/>
+				<Event Id="311910498" Name="Play_click" ObjectPath="\Events\Default Work Unit\Play_click"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
-				<File Id="35606696" Language="SFX">
-					<ShortName>Body Rack\Rack\Rack_stop_3.wav</ShortName>
-					<Path>SFX/Body Rack/Rack/Rack_stop_3_56D34C19.wem</Path>
-				</File>
-				<File Id="171930867" Language="SFX">
-					<ShortName>Body Rack\Rack\Rack_movement_noise.wav</ShortName>
-					<Path>SFX/Body Rack/Rack/Rack_movement_noise_8956FC97.wem</Path>
-				</File>
-				<File Id="223227653" Language="SFX">
-					<ShortName>Body Rack\Rack\Rack_metal_grind.wav</ShortName>
-					<Path>SFX/Body Rack/Rack/Rack_metal_grind_56D34C19.wem</Path>
-				</File>
-				<File Id="368126437" Language="SFX">
-					<ShortName>Body Rack\Rack\Rack_stop_2.wav</ShortName>
-					<Path>SFX/Body Rack/Rack/Rack_stop_2_56D34C19.wem</Path>
-				</File>
-				<File Id="401383032" Language="SFX">
-					<ShortName>Body Rack\Rack\Rack_stop.wav</ShortName>
-					<Path>SFX/Body Rack/Rack/Rack_stop_56D34C19.wem</Path>
-				</File>
-				<File Id="446108493" Language="SFX">
-					<ShortName>Body Rack\Rack\Rack_metal_grind_5.wav</ShortName>
-					<Path>SFX/Body Rack/Rack/Rack_metal_grind_5_56D34C19.wem</Path>
-				</File>
-				<File Id="678451578" Language="SFX">
-					<ShortName>Body Rack\Rack\Rack_metal_grind_3.wav</ShortName>
-					<Path>SFX/Body Rack/Rack/Rack_metal_grind_3_56D34C19.wem</Path>
-				</File>
-				<File Id="702573688" Language="SFX">
-					<ShortName>Body Rack\Rack\Rack_metal_grind_1.wav</ShortName>
-					<Path>SFX/Body Rack/Rack/Rack_metal_grind_1_56D34C19.wem</Path>
-				</File>
-				<File Id="756737007" Language="SFX">
-					<ShortName>Body Rack\Rack\Rack_metal_grind_4.wav</ShortName>
-					<Path>SFX/Body Rack/Rack/Rack_metal_grind_4_56D34C19.wem</Path>
-				</File>
-				<File Id="765779571" Language="SFX">
-					<ShortName>Body Rack\Rack\Rack_metal_grind_2.wav</ShortName>
-					<Path>SFX/Body Rack/Rack/Rack_metal_grind_2_56D34C19.wem</Path>
-				</File>
-				<File Id="834698638" Language="SFX">
-					<ShortName>Body Rack\Rack\Rack_movement_loop.wav</ShortName>
-					<Path>SFX/Body Rack/Rack/Rack_movement_loop_8956FC97.wem</Path>
+				<File Id="275948153" Language="SFX">
+					<ShortName>click_5.wav</ShortName>
+					<Path>SFX/click_5_56D34C19.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

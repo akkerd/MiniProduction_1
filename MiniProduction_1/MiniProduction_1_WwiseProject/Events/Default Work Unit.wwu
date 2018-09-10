@@ -5,29 +5,15 @@
 			<ChildrenList>
 				<WorkUnit Name="Ambience" ID="{3ADFA3ED-74F6-456B-BA2C-59641A1C28BB}" PersistMode="Reference"/>
 				<WorkUnit Name="Music" ID="{A141F3EB-B504-435C-82CE-03AFB1A09F76}" PersistMode="Reference"/>
-				<Event Name="Play_Rack_loop" ID="{51592C6B-7013-4768-ADD7-AB38549A05C3}">
+				<Event Name="Play_click" ID="{2D241C4E-DB8A-4E7F-8AA7-37BB0A088759}">
 					<ChildrenList>
-						<Action Name="" ID="{421E21B6-B775-4E54-AAD7-B564E2C08F0C}" ShortID="401034967">
+						<Action Name="" ID="{70A767AB-F677-40A7-B340-8F9CAD5FAE24}" ShortID="655305695">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Rack_loop" ID="{2E47E489-E246-496F-BC83-A8E3D4FF0057}" WorkUnitID="{351F09E1-5B72-4773-955D-01FA6CCC06AF}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_Rack_stop" ID="{6FB0D5E9-43AA-47AD-B35B-43DFD9686284}">
-					<ChildrenList>
-						<Action Name="" ID="{AAEB55F4-DE87-48F7-8997-ADAD780768C5}" ShortID="500665529">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Rack_stop" ID="{1AC4C1F7-7E40-41DF-800D-9E471287B706}" WorkUnitID="{351F09E1-5B72-4773-955D-01FA6CCC06AF}"/>
+									<ObjectRef Name="click_5" ID="{2EAD8776-8DC3-49B0-A737-E4CE1CE63001}" WorkUnitID="{3683C0D3-8A29-4E60-B125-96431C2F01A8}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

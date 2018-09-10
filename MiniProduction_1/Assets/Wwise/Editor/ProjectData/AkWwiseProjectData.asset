@@ -15,12 +15,228 @@ MonoBehaviour:
   CurrentPluginConfig: 
   m_lastPopulateTimePart2: 0
   m_lastPopulateTimePsrt1: 0
-  AcousticTextureWwu: []
-  AuxBusWwu: []
-  BankWwu: []
-  EventWwu: []
-  ExpandedItems: []
-  RtpcWwu: []
-  StateWwu: []
-  SwitchWwu: []
-  TriggerWwu: []
+  AcousticTextureWwu:
+  - Guid: '{662CEF36-C5AE-4818-8BBB-C088AF88DD7C}'
+    m_lastTimePart2: -1999235339
+    m_lastTimePsrt1: 1397697536
+    ParentPhysicalPath: 
+    PhysicalPath: Virtual Acoustics/Default Work Unit.wwu
+    List: []
+  AuxBusWwu:
+  - Guid: '{B1726A29-26A1-41A7-A548-3B244B3BF392}'
+    m_lastTimePart2: -1999235289
+    m_lastTimePsrt1: 1199332736
+    ParentPhysicalPath: 
+    PhysicalPath: Master-Mixer Hierarchy/Default Work Unit.wwu
+    List: []
+  BankWwu:
+  - Guid: '{E59B891F-490B-4A83-AB3A-4129862F75EC}'
+    m_lastTimePart2: -1999235339
+    m_lastTimePsrt1: 1397697536
+    ParentPhysicalPath: 
+    PhysicalPath: SoundBanks/Default Work Unit.wwu
+    List: []
+  - Guid: '{CC5CF97E-E9A0-40ED-9B93-01FC29F58407}'
+    m_lastTimePart2: -1999235292
+    m_lastTimePsrt1: 1224234624
+    ParentPhysicalPath: 
+    PhysicalPath: SoundBanks/Main.wwu
+    List:
+    - Guid: 1609a241276534478fbb0b8aaa2c0e76
+      ID: 85412153
+      Name: Ambience
+      Path: Main/Ambience
+      PathAndIcons:
+      - ElementName: Main
+        ObjectType: 12
+      - ElementName: Ambience
+        ObjectType: 7
+    - Guid: 039427098250b643aeac3b8b5ac9b1e5
+      ID: 1584507803
+      Name: Click
+      Path: Main/Click
+      PathAndIcons:
+      - ElementName: Main
+        ObjectType: 12
+      - ElementName: Click
+        ObjectType: 7
+  - Guid: '{7FB9ACC7-7BF5-4431-8EE2-ED9D6D61F0EE}'
+    m_lastTimePart2: -1999235339
+    m_lastTimePsrt1: 1397697536
+    ParentPhysicalPath: 
+    PhysicalPath: SoundBanks/Music.wwu
+    List:
+    - Guid: b9d030bfdf4da641ad26f39b682568cc
+      ID: -303024426
+      Name: Music
+      Path: Music/Music
+      PathAndIcons:
+      - ElementName: Music
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 7
+  EventWwu:
+  - Guid: '{3ADFA3ED-74F6-456B-BA2C-59641A1C28BB}'
+    m_lastTimePart2: -1999235321
+    m_lastTimePsrt1: 1458286208
+    ParentPhysicalPath: Events/Default Work Unit.wwu
+    PhysicalPath: Events/Ambience.wwu
+    List:
+    - Guid: 524142a4e1a8ad4fba515e0572a04ccc
+      ID: 752289768
+      Name: Play_Clanks
+      Path: Default Work Unit/Ambience/Play_Clanks
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Ambience
+        ObjectType: 12
+      - ElementName: Play_Clanks
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: d4f5900667e63b4c8c7f12baf9b3c88d
+      ID: -1504921035
+      Name: Play_Clicks
+      Path: Default Work Unit/Ambience/Play_Clicks
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Ambience
+        ObjectType: 12
+      - ElementName: Play_Clicks
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: d350a152d41398478447a5e94b3b93f8
+      ID: 614939413
+      Name: Play_Electric_anomalies
+      Path: Default Work Unit/Ambience/Play_Electric_anomalies
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Ambience
+        ObjectType: 12
+      - ElementName: Play_Electric_anomalies
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: 0fc953b862c793408cd435e152dd343e
+      ID: -1594772112
+      Name: Play_Screams
+      Path: Default Work Unit/Ambience/Play_Screams
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Ambience
+        ObjectType: 12
+      - ElementName: Play_Screams
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: dc47628f5a7db24e986c8e41e01b704e
+      ID: -1650707273
+      Name: Play_Ventilation
+      Path: Default Work Unit/Ambience/Play_Ventilation
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Ambience
+        ObjectType: 12
+      - ElementName: Play_Ventilation
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+  - Guid: '{E7FA6859-C268-4205-B746-E4153D6A95AE}'
+    m_lastTimePart2: -1999235292
+    m_lastTimePsrt1: 1224234624
+    ParentPhysicalPath: 
+    PhysicalPath: Events/Default Work Unit.wwu
+    List:
+    - Guid: 4e1c242d8adb7f4e8aa737bb0a088759
+      ID: 311910498
+      Name: Play_click
+      Path: Default Work Unit/Play_click
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_click
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+  - Guid: '{A141F3EB-B504-435C-82CE-03AFB1A09F76}'
+    m_lastTimePart2: -1999235339
+    m_lastTimePsrt1: 1317697536
+    ParentPhysicalPath: Events/Default Work Unit.wwu
+    PhysicalPath: Events/Music.wwu
+    List:
+    - Guid: f9658367bcc8ed4787a6eb2979b4f431
+      ID: -1094631403
+      Name: Play_Placeholder_music
+      Path: Default Work Unit/Music/Play_Placeholder_music
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 12
+      - ElementName: Play_Placeholder_music
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+  ExpandedItems:
+  - /MiniProduction_1_WwiseProject
+  - /MiniProduction_1_WwiseProject/Events
+  - /MiniProduction_1_WwiseProject/Events/Default Work Unit
+  RtpcWwu:
+  - Guid: '{CD646BC5-A30F-4FDF-B8CC-2F9CC05343BA}'
+    m_lastTimePart2: -1999235289
+    m_lastTimePsrt1: 1199332736
+    ParentPhysicalPath: 
+    PhysicalPath: Game Parameters/Default Work Unit.wwu
+    List:
+    - Guid: 1533b2811ab1b64f9f693dfc23879721
+      ID: -1411940883
+      Name: music_mix
+      Path: Default Work Unit/music_mix
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: music_mix
+        ObjectType: 13
+    - Guid: 5fff173851e373419e40ec20e52e9f71
+      ID: 681424821
+      Name: sfx_mix
+      Path: Default Work Unit/sfx_mix
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: sfx_mix
+        ObjectType: 13
+  StateWwu:
+  - Guid: '{5A538265-7479-4881-81DD-2C742AA357BA}'
+    m_lastTimePart2: -1999235339
+    m_lastTimePsrt1: 1397697536
+    ParentPhysicalPath: 
+    PhysicalPath: States/Default Work Unit.wwu
+    List: []
+  SwitchWwu:
+  - Guid: '{968C03B5-411C-421D-80CF-A832C2E2E7FB}'
+    m_lastTimePart2: -1999235339
+    m_lastTimePsrt1: 1397697536
+    ParentPhysicalPath: 
+    PhysicalPath: Switches/Default Work Unit.wwu
+    List: []
+  TriggerWwu:
+  - Guid: '{1984195D-62B0-4906-B701-D294FCB1A7B9}'
+    m_lastTimePart2: -1999235293
+    m_lastTimePsrt1: 2009201920
+    ParentPhysicalPath: 
+    PhysicalPath: Triggers/Default Work Unit.wwu
+    List: []

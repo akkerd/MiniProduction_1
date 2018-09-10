@@ -3,7 +3,8 @@
 	<GameParameters>
 		<WorkUnit Name="Default Work Unit" ID="{CD646BC5-A30F-4FDF-B8CC-2F9CC05343BA}" PersistMode="Standalone">
 			<ChildrenList>
-				<WorkUnit Name="Conveyor" ID="{8D3B36C2-FED2-4113-9B03-F6C42922C628}" PersistMode="Reference"/>
+				<GameParameter Name="sfx_mix" ID="{3817FF5F-E351-4173-9E40-EC20E52E9F71}"/>
+				<GameParameter Name="music_mix" ID="{81B23315-B11A-4FB6-9F69-3DFC23879721}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

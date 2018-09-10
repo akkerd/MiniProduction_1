@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{30AB3CA8-EC2C-4914-9ABA-3F3196FA0293}" SchemaVersion="89">
 	<MixingSessions>
-		<WorkUnit Name="Default Work Unit" ID="{30AB3CA8-EC2C-4914-9ABA-3F3196FA0293}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{30AB3CA8-EC2C-4914-9ABA-3F3196FA0293}" PersistMode="Standalone">
+			<ChildrenList>
+				<MixingSession Name="SFX" ID="{4D612544-51D6-47D8-A490-5A3562BAE5E3}">
+					<ObjectList>
+						<ObjectRef Name="Clanks" ID="{C4AF67C8-12F2-4EC6-B327-72B1149A9205}" WorkUnitID="{5099C182-2621-47B5-9ED2-55ED74B8F20A}"/>
+						<ObjectRef Name="Clicks" ID="{17A68D4A-BEBC-4B70-BD98-9B1F7432F14B}" WorkUnitID="{5099C182-2621-47B5-9ED2-55ED74B8F20A}"/>
+						<ObjectRef Name="Electric_anomalies" ID="{58FD1FF1-8B5D-40FD-8438-50FEE8A504B2}" WorkUnitID="{5099C182-2621-47B5-9ED2-55ED74B8F20A}"/>
+						<ObjectRef Name="Screams" ID="{E4191FD6-49DE-46A3-B5BD-E32F7B32A238}" WorkUnitID="{5099C182-2621-47B5-9ED2-55ED74B8F20A}"/>
+						<ObjectRef Name="Ventilation" ID="{B22DF292-F35E-4D65-B211-0A0E783EA51A}" WorkUnitID="{5099C182-2621-47B5-9ED2-55ED74B8F20A}"/>
+						<ObjectRef Name="click_5" ID="{2EAD8776-8DC3-49B0-A737-E4CE1CE63001}" WorkUnitID="{3683C0D3-8A29-4E60-B125-96431C2F01A8}"/>
+					</ObjectList>
+				</MixingSession>
+			</ChildrenList>
+		</WorkUnit>
 	</MixingSessions>
 </WwiseDocument>
