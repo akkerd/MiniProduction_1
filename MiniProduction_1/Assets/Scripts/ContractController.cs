@@ -53,6 +53,10 @@ public class ContractController : Manager<ContractController> {
 		}
 		return contracts[currectAcceptedContract];
 	}
+	public int GetNumberOfCurrentActiveContract()
+	{
+		return currectAcceptedContract;
+	}
 	public Contract[] GetActiveContracts()
 	{
 		return contracts;

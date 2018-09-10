@@ -21,7 +21,14 @@ public class ContractSelectionUIController : Manager<ContractSelectionUIControll
 	GameObject contractInfoScreen;
 	
 	[SerializeField]
+	Text totalNumberOfSleeves;
+	[SerializeField]
 	Text[] sleeves;
+
+	[SerializeField]
+	Button acceptButton;
+
+	int currentViewedContract = 0;
 
 	void Start()
 	{
@@ -39,6 +46,7 @@ public class ContractSelectionUIController : Manager<ContractSelectionUIControll
 
 	public void InteractionWithContract(int positionOfContract)
 	{
+		currentViewedContract = positionOfContract;
 		contractInfoScreen.SetActive(true);
 		Contract contractToShow = ContractController.Instance.GetActiveContracts()[positionOfContract];
 		ShowContract(contractToShow);
@@ -62,7 +70,7 @@ public class ContractSelectionUIController : Manager<ContractSelectionUIControll
 				} else {
 					exclamationMarks[i].SetActive(true);
 				}
-				if (i == ContractController.Instance.GetNumberOfActiveContracts())
+				if (i == ContractController.Instance.GetNumberOfCurrentActiveContract())
 				{
 					activeContractMarker.position = contracts[i].transform.position;
 					activeContractMarker.gameObject.SetActive(true);
@@ -77,6 +85,7 @@ public class ContractSelectionUIController : Manager<ContractSelectionUIControll
 	public void ShowContract(Contract contractToShow)
 	{
 		Stack[] tempStacks = contractToShow.GetStacks();
+		totalNumberOfSleeves.text = tempStacks.Length.ToString();
 		for (int i = 0; i < sleeves.Length; i++)
 		{
 			if (i < contractToShow.GetNumberOfStacks())
@@ -87,8 +96,20 @@ public class ContractSelectionUIController : Manager<ContractSelectionUIControll
 				sleeves[i].gameObject.SetActive(false);
 			}
 		}
+		if (ContractController.Instance.GetCurrentContract() == null)
+		{
+			acceptButton.interactable = true;
+		} else {
+			acceptButton.interactable = false;
+		}
+		contractToShow.haveBeenShown = true;
 	}
 
+	public void AcceptContract()
+	{
+		ContractController.Instance.AcceptContract(currentViewedContract);
+		CloseContractInfoScreen();
+	}
 	public void CloseContractScreen()
 	{
 		contractScreen.SetActive(false);
