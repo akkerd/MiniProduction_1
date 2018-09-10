@@ -556,23 +556,6 @@ MonoBehaviour:
   conveyorSleevesOnEachSide: 0
   currentCenterOfLevelSleeves: 0
   movedFromCenter: 0
---- !u!1 &801530651 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1268213096196016, guid: 978ed5a2caab3a649b7d4f7585476913,
-    type: 2}
-  m_PrefabInternal: {fileID: 632231431}
---- !u!65 &801530652
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 801530651}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 2.3460891, z: 0.3493231}
-  m_Center: {x: 0, y: -1.5712441, z: 0.0024602711}
 --- !u!4 &811452221 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4881057740797630, guid: 978ed5a2caab3a649b7d4f7585476913,
