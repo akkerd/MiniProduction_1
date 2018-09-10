@@ -14,6 +14,14 @@
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>
+				<SoundBank Name="Rack" ID="{2093A462-63CA-4D06-9B0A-443A7A3FF61A}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_Rack_loop" ID="{51592C6B-7013-4768-ADD7-AB38549A05C3}" WorkUnitID="{E7FA6859-C268-4205-B746-E4153D6A95AE}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Rack_stop" ID="{6FB0D5E9-43AA-47AD-B35B-43DFD9686284}" WorkUnitID="{E7FA6859-C268-4205-B746-E4153D6A95AE}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
 			</ChildrenList>
 		</WorkUnit>
 	</SoundBanks>

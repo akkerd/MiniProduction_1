@@ -1,0 +1,20 @@
+Event	ID	Name			Wwise Object Path	Notes
+	851825170	Play_Rack_stop			\Default Work Unit\Play_Rack_stop	
+	1411311180	Play_Rack_loop			\Default Work Unit\Play_Rack_loop	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	4152903956	conveyor_acc			\Default Work Unit\Conveyor\conveyor_acc	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	35606696	Rack_stop_3	Y:\Documents\GitHub\MiniProduction_1\MiniProduction_1\MiniProduction_1_WwiseProject\.cache\Windows\SFX\Body Rack\Rack\Rack_stop_3_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Conveyer Belt\Body Rack\Rack\Rack_stop\Rack_stop_3		1234944
+	171930867	Rack_movement_noise	Y:\Documents\GitHub\MiniProduction_1\MiniProduction_1\MiniProduction_1_WwiseProject\.cache\Windows\SFX\Body Rack\Rack\Rack_movement_noise_8956FC97.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Conveyer Belt\Body Rack\Rack\Rack_loop\Rack_movement_noise		4333704
+	223227653	Rack_metal_grind	Y:\Documents\GitHub\MiniProduction_1\MiniProduction_1\MiniProduction_1_WwiseProject\.cache\Windows\SFX\Body Rack\Rack\Rack_metal_grind_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Conveyer Belt\Body Rack\Rack\Rack_loop\Rack_metal_grind\Rack_metal_grind		1764144
+	368126437	Rack_stop_2	Y:\Documents\GitHub\MiniProduction_1\MiniProduction_1\MiniProduction_1_WwiseProject\.cache\Windows\SFX\Body Rack\Rack\Rack_stop_2_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Conveyer Belt\Body Rack\Rack\Rack_stop\Rack_stop_2		1234944
+	401383032	Rack_stop	Y:\Documents\GitHub\MiniProduction_1\MiniProduction_1\MiniProduction_1_WwiseProject\.cache\Windows\SFX\Body Rack\Rack\Rack_stop_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Conveyer Belt\Body Rack\Rack\Rack_stop\Rack_stop		1234944
+	446108493	Rack_metal_grind_5	Y:\Documents\GitHub\MiniProduction_1\MiniProduction_1\MiniProduction_1_WwiseProject\.cache\Windows\SFX\Body Rack\Rack\Rack_metal_grind_5_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Conveyer Belt\Body Rack\Rack\Rack_loop\Rack_metal_grind\Rack_metal_grind_5		529344
+	678451578	Rack_metal_grind_3	Y:\Documents\GitHub\MiniProduction_1\MiniProduction_1\MiniProduction_1_WwiseProject\.cache\Windows\SFX\Body Rack\Rack\Rack_metal_grind_3_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Conveyer Belt\Body Rack\Rack\Rack_loop\Rack_metal_grind\Rack_metal_grind_3		793944
+	702573688	Rack_metal_grind_1	Y:\Documents\GitHub\MiniProduction_1\MiniProduction_1\MiniProduction_1_WwiseProject\.cache\Windows\SFX\Body Rack\Rack\Rack_metal_grind_1_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Conveyer Belt\Body Rack\Rack\Rack_loop\Rack_metal_grind\Rack_metal_grind_1		705744
+	756737007	Rack_metal_grind_4	Y:\Documents\GitHub\MiniProduction_1\MiniProduction_1\MiniProduction_1_WwiseProject\.cache\Windows\SFX\Body Rack\Rack\Rack_metal_grind_4_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Conveyer Belt\Body Rack\Rack\Rack_loop\Rack_metal_grind\Rack_metal_grind_4		970344
+	765779571	Rack_metal_grind_2	Y:\Documents\GitHub\MiniProduction_1\MiniProduction_1\MiniProduction_1_WwiseProject\.cache\Windows\SFX\Body Rack\Rack\Rack_metal_grind_2_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Conveyer Belt\Body Rack\Rack\Rack_loop\Rack_metal_grind\Rack_metal_grind_2		882144
+	834698638	Rack_movement_loop	Y:\Documents\GitHub\MiniProduction_1\MiniProduction_1\MiniProduction_1_WwiseProject\.cache\Windows\SFX\Body Rack\Rack\Rack_movement_loop_8956FC97.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Conveyer Belt\Body Rack\Rack\Rack_loop\Rack_movement_loop		3969144
+
