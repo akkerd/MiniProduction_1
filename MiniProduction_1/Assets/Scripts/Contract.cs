@@ -5,13 +5,22 @@ using UnityEngine;
 public class Contract {
 
 	Stack[] stacks;
-
-	Contract(int numberOfStacks)
+	public bool isCompleted = false;
+	public bool haveBeenShown = false;
+	public Contract(int numberOfStacks)
 	{
 		stacks = new Stack[numberOfStacks];
+		for (int i = 0; i < numberOfStacks; i++)
+		{
+			stacks[i] = new Stack(i.ToString());
+		}
 	}
 	public int GetNumberOfStacks()
 	{
 		return stacks.Length;
+	}
+	public Stack[] GetStacks()
+	{
+		return stacks;
 	}
 }

@@ -1,18 +1,102 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class ContractSelectionUIController : MonoBehaviour {
 
-	[SerializeField]
-	GameObject contract1;
-	GameObject exclamationMark1;
-	[SerializeField]
-	GameObject contract2;
-	GameObject exclamationMark2;
+public class ContractSelectionUIController : Manager<ContractSelectionUIController> {
 
 	[SerializeField]
-	GameObject contract3;
-	GameObject exclamationMark3;
+	GameObject contractScreen;
+	[SerializeField]
+	GameObject[] contracts;
+	[SerializeField]
+	
+	GameObject[] exclamationMarks;
 
+	[SerializeField]
+	RectTransform activeContractMarker;
+	[Header("ContractInfoPopup")]
+	[SerializeField]
+	GameObject contractInfoScreen;
+	
+	[SerializeField]
+	Text[] sleeves;
+
+	void Start()
+	{
+		//Setup Listeners on contract Images
+		for (int i = 0; i < contracts.Length; i++)
+		{
+			contracts[i].GetComponent<OnClickTester>().numberToRespond = i;
+		}
+	}
+	public void OpenContractScreen()
+	{
+		contractScreen.SetActive(true);
+		UpdateContracts();
+	}
+
+	public void InteractionWithContract(int positionOfContract)
+	{
+		contractInfoScreen.SetActive(true);
+		Contract contractToShow = ContractController.Instance.GetActiveContracts()[positionOfContract];
+		ShowContract(contractToShow);
+	}
+
+	
+	public void UpdateContracts()
+	{
+			
+		Contract[] tempContracts = ContractController.Instance.GetActiveContracts();
+		activeContractMarker.gameObject.SetActive(false);
+
+		for (int i = 0; i < contracts.Length; i++)
+		{
+			if (tempContracts[i] != null)
+			{
+				contracts[i].gameObject.SetActive(true);
+				if (tempContracts[i].haveBeenShown)
+				{
+					exclamationMarks[i].SetActive(false);
+				} else {
+					exclamationMarks[i].SetActive(true);
+				}
+				if (i == ContractController.Instance.GetNumberOfActiveContracts())
+				{
+					activeContractMarker.position = contracts[i].transform.position;
+					activeContractMarker.gameObject.SetActive(true);
+				}				
+			} else {
+				contracts[i].SetActive(false);
+				exclamationMarks[i].SetActive(false);
+			}
+		}
+	}
+
+	public void ShowContract(Contract contractToShow)
+	{
+		Stack[] tempStacks = contractToShow.GetStacks();
+		for (int i = 0; i < sleeves.Length; i++)
+		{
+			if (i < contractToShow.GetNumberOfStacks())
+			{
+				sleeves[i].gameObject.SetActive(true);
+				sleeves[i].text = tempStacks[i].stackName;
+			} else {
+				sleeves[i].gameObject.SetActive(false);
+			}
+		}
+	}
+
+	public void CloseContractScreen()
+	{
+		contractScreen.SetActive(false);
+		contractInfoScreen.SetActive(false);
+	}
+	public void CloseContractInfoScreen()
+	{
+		contractInfoScreen.SetActive(false);
+		UpdateContracts();
+	}
 }
