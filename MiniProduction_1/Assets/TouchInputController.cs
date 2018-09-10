@@ -36,6 +36,7 @@ public class TouchInputController : MonoBehaviour {
 		if (Input.touchCount != 0)
 		{
 			Touch currentTouch = Input.GetTouch(0);
+			//Debug.Log("Position:"+currentTouch.position);
 			FirstTouch(currentTouch);
 		} else {
 			ReturnCubeTowardsCenter();
@@ -88,7 +89,7 @@ public class TouchInputController : MonoBehaviour {
 			//Debug.Log(direction);
 
 			Vector3 newPositionOfCube = Vector3.Lerp(transform.position, transform.position +(direction * forceAddedToCube),force * Time.deltaTime);
-			Debug.Log("New position of cube: " +newPositionOfCube);
+			//Debug.Log("New position of cube: " +newPositionOfCube);
 			if (newPositionOfCube.x < -maxDistanceFromCenter +startPosition.x)
 			{
 				newPositionOfCube.x = -maxDistanceFromCenter +startPosition.x;

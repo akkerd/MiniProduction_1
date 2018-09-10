@@ -4,6 +4,10 @@
 [Bb]uild/
 [Bb]uilds/
 Assets/AssetStoreTools*
+MiniProduction_1_WwiseProject/*.cache
+MiniProduction_1_WwiseProject/.cache
+MiniProduction_1/Assets/Wwise/Deployment/Plugins/Windows/*
+MiniProduction_1/Assets/Wwise/Deployment/Plugins/Windows.meta
 
 # Visual Studio cache directory
 .vs/
