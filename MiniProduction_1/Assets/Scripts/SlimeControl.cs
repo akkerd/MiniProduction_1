@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class SlimeControl : MonoBehaviour {
-    public float ZipperVal =20;
-    public SlimeSpawn SlimeSpawnScript;
+    public float ZipperValX =20;
+    public float ZipperValY = 20;
+ 
 
     private void Start()
     {
@@ -13,8 +14,9 @@ public class SlimeControl : MonoBehaviour {
 
     private void Update()
     {
-        ZipperVal = transform.position.y;
-       
+        ZipperValX = transform.position.x;
+        ZipperValY = transform.position.y;
+
 
     }
 }
