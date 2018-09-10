@@ -3,13 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class TouchUnsleeve : MonoBehaviour {
+   
     public Camera camerar;
     public GameObject Zipper;
 
     public LayerMask touchInputMask;
-	
-	// Update is called once per frame
-	void Update () {
+
+    private void Start()
+    {
+        camerar= GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
+    }
+
+    // Update is called once per frame
+    void Update () {
         
 
 #if UNITY_EDITOR
