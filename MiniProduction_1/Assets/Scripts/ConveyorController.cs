@@ -188,10 +188,21 @@ public class ConveyorController : Manager<ConveyorController> {
         Vector3 newPosition = originalPosition;
         newPosition.x += offset;
         conveyorSleeveToTeleport.transform.position = newPosition;
+        conveyorSleeveToTeleport.gameObject.SetActive(true);
+
     }
     void ResetMovedFromCenter()
     {
         movedFromCenter = movedFromCenter + (-Mathf.Sign(movedFromCenter) * movedFromCenterMax * 2);   
+    }
+    public void HideCenter()
+    {
+        conveyorSleves[currentCenterOfConveyor].gameObject.SetActive(false);
+    }
+    public void ShowCenter()
+    {
+        conveyorSleves[currentCenterOfConveyor].gameObject.SetActive(true);
+
     }
 
 }
