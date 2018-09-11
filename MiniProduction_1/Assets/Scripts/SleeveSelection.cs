@@ -50,7 +50,7 @@ public class SleeveSelection : MonoBehaviour, IPointerClickHandler
 		//Add the real center to the bodybag
 		bodyBag.AddSleeve( SleeveController.Instance.GetActiveSleeves()[ConveyorController.Instance.currentCenterOfLevelSleeves],-1);
 
-		moveSleeveForward.MoveSleeveForward(TestWhenDoneMovingForward);
+		moveSleeveForward.MoveSleeveForward(UnsleeveManager.Instance.CreateBodybag);
 	}
 	void TestWhenDoneMovingForward()
 	{

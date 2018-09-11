@@ -7,7 +7,7 @@ public class TableScript : MonoBehaviour {
     public bool Moving;
     public Transform EndPosition;
     public Transform StartPosition;
-    float PTravelled =0;
+    public float PTravelled =0;
 
 	// Use this for initialization
 	void Start () {
@@ -20,9 +20,17 @@ public class TableScript : MonoBehaviour {
 
         if (Moving == true)
         {
-            PTravelled += 0.05f;
+            PTravelled += 0.5f* Time.deltaTime;
             transform.position = Vector3.Lerp(StartPosition.position, EndPosition.position, PTravelled);
 
         }
+        if (PTravelled >= 1)
+        {
+            Moving = false;
+            transform.parent =null ;
+            UnsleeveManager.Instance.DestroyPrefab();
+        }
+                
+                
 	}
 }

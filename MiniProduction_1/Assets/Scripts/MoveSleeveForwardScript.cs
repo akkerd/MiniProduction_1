@@ -48,6 +48,7 @@ public class MoveSleeveForwardScript : MonoBehaviour {
 		{
 			isMoving = false;
 			callbackAction();
+            gameObject.SetActive(false);
 			return;
 		}
 		Vector3 newPosition = Vector3.MoveTowards(transform.position,currentDestination,movementSpeed * Time.deltaTime);
