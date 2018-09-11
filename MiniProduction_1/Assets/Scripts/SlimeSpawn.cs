@@ -11,6 +11,7 @@ public class SlimeSpawn : MonoBehaviour {
     public bool FallsFromSide;
     SkinnedMeshRenderer SMRendereder;
     public GameObject Zipper;
+    public bool FallsFromLeft = false;
   SlimeControl ZipperScript;
 
 
@@ -73,9 +74,17 @@ public class SlimeSpawn : MonoBehaviour {
 
             if (ZipperScript.ZipperValY < transform.position.y && FallsFromSide)
             {
-                RigidBod.isKinematic = false;
+                //RigidBod.isKinematic = false;
+                FallsFromLeft = true;
             } else if (ZipperScript.ZipperValY < transform.position.y && !FallsFromSide && ZipperScript.ZipperValX < transform.position.x)
             {
+                //RigidBod.isKinematic = false;
+                FallsFromLeft = true;
+            }
+
+            if(ZipperScript.ZipperValY > transform.position.y && ZipperScript.ZipperValX < transform.position.x && FallsFromLeft)
+            {
+
                 RigidBod.isKinematic = false;
             }
 
