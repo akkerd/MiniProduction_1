@@ -163,6 +163,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1312020165387746
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4435311338755444}
+  - component: {fileID: 33843649061012296}
+  - component: {fileID: 23901790675762498}
+  - component: {fileID: 114772662000007742}
+  - component: {fileID: 65661513388939056}
+  m_Layer: 9
+  m_Name: Cube
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1405851633414946
 GameObject:
   m_ObjectHideFlags: 0
@@ -211,7 +230,7 @@ GameObject:
   - component: {fileID: 114542530446985816}
   - component: {fileID: 65083027618332262}
   m_Layer: 9
-  m_Name: Cube
+  m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -361,8 +380,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4371366168306598}
   - component: {fileID: 54910585300057428}
-  - component: {fileID: 114239664714285360}
   - component: {fileID: 137728133943022426}
+  - component: {fileID: 114239664714285360}
   - component: {fileID: 136499386494736716}
   - component: {fileID: 114050088986207340}
   m_Layer: 0
@@ -458,8 +477,9 @@ Transform:
   - {fileID: 4867036208730208}
   - {fileID: 4827404271359554}
   - {fileID: 4179257579039770}
-  - {fileID: 4670340267181734}
+  - {fileID: 4435311338755444}
   - {fileID: 4327847967623754}
+  - {fileID: 4670340267181734}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -502,6 +522,19 @@ Transform:
   m_Father: {fileID: 4267386369407968}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 90.00001, z: -100.748}
+--- !u!4 &4435311338755444
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1312020165387746}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4.8745737, y: 1.5219378, z: -5.105672}
+  m_LocalScale: {x: 2, y: 8, z: 0.1}
+  m_Children: []
+  m_Father: {fileID: 4267386369407968}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4450588708747812
 Transform:
   m_ObjectHideFlags: 1
@@ -574,11 +607,11 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1422385474804902}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.8745737, y: 1.5219378, z: -5.105672}
-  m_LocalScale: {x: 2, y: 8, z: 0.1}
+  m_LocalPosition: {x: 0.33, y: 1.5219378, z: -5.105672}
+  m_LocalScale: {x: 2, y: 8, z: 0.099999994}
   m_Children: []
   m_Father: {fileID: 4267386369407968}
-  m_RootOrder: 17
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4739200029603096
 Transform:
@@ -811,6 +844,41 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!23 &23901790675762498
+MeshRenderer:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1312020165387746}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 2100000, guid: 0cb89fbbff117b44daab91463ab93e21, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
 --- !u!23 &23917719324231278
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -1008,6 +1076,13 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1040292017394320}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!33 &33843649061012296
+MeshFilter:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1312020165387746}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!33 &33877083815743116
 MeshFilter:
   m_ObjectHideFlags: 1
@@ -1111,6 +1186,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &65661513388939056
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1312020165387746}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!65 &65787971527546678
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -1138,6 +1225,7 @@ MonoBehaviour:
   SliderValY: 20
   FallsFromSide: 0
   Zipper: {fileID: 1026837570904222}
+  FallsFromLeft: 0
 --- !u!114 &114050088986207340
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1192,6 +1280,7 @@ MonoBehaviour:
   SliderValY: 20
   FallsFromSide: 0
   Zipper: {fileID: 1026837570904222}
+  FallsFromLeft: 0
 --- !u!114 &114365996134247736
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1218,6 +1307,7 @@ MonoBehaviour:
   SliderValY: 20
   FallsFromSide: 1
   Zipper: {fileID: 1026837570904222}
+  FallsFromLeft: 0
 --- !u!114 &114394656603108954
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1233,6 +1323,7 @@ MonoBehaviour:
   SliderValY: 20
   FallsFromSide: 1
   Zipper: {fileID: 1026837570904222}
+  FallsFromLeft: 0
 --- !u!114 &114485110321852906
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1248,6 +1339,7 @@ MonoBehaviour:
   SliderValY: 20
   FallsFromSide: 1
   Zipper: {fileID: 1026837570904222}
+  FallsFromLeft: 0
 --- !u!114 &114542530446985816
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1274,6 +1366,7 @@ MonoBehaviour:
   SliderValY: 20
   FallsFromSide: 0
   Zipper: {fileID: 1026837570904222}
+  FallsFromLeft: 0
 --- !u!114 &114684674078668222
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1289,6 +1382,7 @@ MonoBehaviour:
   SliderValY: 20
   FallsFromSide: 0
   Zipper: {fileID: 1026837570904222}
+  FallsFromLeft: 0
 --- !u!114 &114771412632081458
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1304,6 +1398,18 @@ MonoBehaviour:
   SliderValY: 20
   FallsFromSide: 1
   Zipper: {fileID: 1026837570904222}
+  FallsFromLeft: 0
+--- !u!114 &114772662000007742
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1312020165387746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc145563d0ae0f545a81c70c43ad2752, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114777958577884746
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1319,6 +1425,7 @@ MonoBehaviour:
   SliderValY: 20
   FallsFromSide: 0
   Zipper: {fileID: 1026837570904222}
+  FallsFromLeft: 0
 --- !u!114 &114826114908967488
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1350,6 +1457,7 @@ MonoBehaviour:
   SliderValY: 20
   FallsFromSide: 1
   Zipper: {fileID: 1026837570904222}
+  FallsFromLeft: 0
 --- !u!114 &114942055945531454
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1365,6 +1473,7 @@ MonoBehaviour:
   SliderValY: 20
   FallsFromSide: 0
   Zipper: {fileID: 1026837570904222}
+  FallsFromLeft: 0
 --- !u!135 &135015231937392068
 SphereCollider:
   m_ObjectHideFlags: 1
