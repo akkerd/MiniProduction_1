@@ -10,6 +10,7 @@ public class UnsleeveManager : Manager<UnsleeveManager> {
     Transform[] EndPosistions = new Transform[5];
 
     GameObject Unsleeving;
+    GameObject Stacks;
 
     // Use this for initialization
     void Start () {
@@ -33,6 +34,11 @@ public class UnsleeveManager : Manager<UnsleeveManager> {
     public void DestroyPrefab()
     {
         Destroy(Unsleeving);
+
+        if (UnsleeveManager.Instance.count == ContractController.Instance.GetCurrentContract().GetNumberOfStacks())
+        {
+            StackDeliveryController.Instance.ShowStacks();   
+        }
     }
     
 }

@@ -72,7 +72,6 @@ public class StackObject : MonoBehaviour {
             }
             else if (Input.GetMouseButtonUp(0))
             {
-                Debug.Log("Keyrði");
                 Ray mouseRay = GenerateMouseRay();
                 RaycastHit hit;
                 Debug.DrawRay(mouseRay.origin, mouseRay.direction);
