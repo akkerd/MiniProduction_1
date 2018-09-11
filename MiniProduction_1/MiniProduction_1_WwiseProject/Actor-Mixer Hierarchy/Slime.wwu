@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{02D89404-9444-4CE9-8D09-00DF634A7CF3}" SchemaVersion="89" RootDocumentID="{B5DF0418-4528-4A68-9A2E-5248978A2EBB}">
 	<AudioObjects>
-		<WorkUnit Name="Slime" ID="{02D89404-9444-4CE9-8D09-00DF634A7CF3}" OwnerID="{3433864E-26DA-483F-A914-52334BC9BB07}" PersistMode="Nested">
+		<WorkUnit Name="Slime" ID="{02D89404-9444-4CE9-8D09-00DF634A7CF3}" OwnerID="{4758ED26-90AB-4098-A44F-3CFA49BE46F1}" PersistMode="Nested">
 			<ChildrenList>
 				<RandomSequenceContainer Name="fluid_leak" ID="{4B7441F0-F34D-4B03-A9DE-6ADC6E0B3DD7}" ShortID="401204416">
 					<PropertyList>

@@ -30,6 +30,7 @@ namespace AK
     namespace GAME_PARAMETERS
     {
         static const AkUniqueID MUSIC_MIX = 2883026413U;
+        static const AkUniqueID RACK_ACC = 1235540206U;
         static const AkUniqueID SFX_MIX = 681424821U;
     } // namespace GAME_PARAMETERS
 
