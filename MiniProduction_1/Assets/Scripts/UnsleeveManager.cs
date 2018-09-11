@@ -7,7 +7,7 @@ public class UnsleeveManager : Manager<UnsleeveManager> {
     GameObject brick;
     int count=0;
     [SerializeField]
-    Transform[] EndPosistions = new Transform[4];
+    Transform[] EndPosistions = new Transform[5];
 
     GameObject Unsleeving;
 

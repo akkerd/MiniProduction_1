@@ -29,6 +29,7 @@ public class TableScript : MonoBehaviour {
             
             transform.parent =null ;
             UnsleeveManager.Instance.DestroyPrefab();
+            enabled = false;
         }
                 
                 
