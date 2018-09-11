@@ -33,6 +33,34 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_menu_start__select" ID="{CE8960E1-89CB-4C2F-A429-280A5EF867A3}">
+					<ChildrenList>
+						<Action Name="" ID="{D1E5AC80-5B6B-4AC2-8D20-15D44B1ECA64}" ShortID="638690894">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="menu_start__select" ID="{B9CD7390-48CA-496D-9C9A-E6425815A2AA}" WorkUnitID="{3683C0D3-8A29-4E60-B125-96431C2F01A8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_menu_exit_select" ID="{848BED38-1315-4324-B76A-A061F67366FE}">
+					<ChildrenList>
+						<Action Name="" ID="{9DE1E2C8-1840-4655-A24C-38503FA2BD35}" ShortID="283077482">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="menu_exit_select" ID="{EB998B58-B218-4927-88D3-14383A880665}" WorkUnitID="{3683C0D3-8A29-4E60-B125-96431C2F01A8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

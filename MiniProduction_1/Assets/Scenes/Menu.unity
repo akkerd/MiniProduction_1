@@ -845,12 +845,12 @@ MonoBehaviour:
   actionOnEventType: 0
   curveInterpolation: 4
   enableActionOnEvent: 0
-  eventID: -2127911266
+  eventID: -772898507
   m_callbackData: {fileID: 0}
   playingId: 0
   soundEmitterObject: {fileID: 0}
   transitionDuration: 0
-  valueGuid: 4e1c242d8adb7f4e8aa737bb0a088759
+  valueGuid: 38ed8b8415132443b76aa061f67366fe
   multiPositionArray: []
   MultiPositionType: 1
   multiPositionTypeLabel: 0
@@ -2061,12 +2061,12 @@ MonoBehaviour:
   actionOnEventType: 0
   curveInterpolation: 4
   enableActionOnEvent: 0
-  eventID: -2127911266
+  eventID: 159056440
   m_callbackData: {fileID: 0}
   playingId: 0
   soundEmitterObject: {fileID: 0}
   transitionDuration: 0
-  valueGuid: 4e1c242d8adb7f4e8aa737bb0a088759
+  valueGuid: e16089cecb892f4ca429280a5ef867a3
   multiPositionArray: []
   MultiPositionType: 1
   multiPositionTypeLabel: 0

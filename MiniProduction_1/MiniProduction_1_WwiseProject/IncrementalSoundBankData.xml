@@ -7,14 +7,14 @@
 				<File Name="Click" Hash="3009915969" Timestamp="1536587407"/>
 				<File Name="Init" Hash="2027033840" Timestamp="1536659478"/>
 				<File Name="Music" Hash="268693913" Timestamp="1536659548"/>
-				<File Name="SFX" Hash="23746811" Timestamp="1536658547"/>
+				<File Name="SFX" Hash="1970090768" Timestamp="1536661552"/>
 				<File Name="Test" Hash="2111629074" Timestamp="1536236137"/>
 				<File Name="Virk_nu" Hash="3798876410" Timestamp="1536237051"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="796346381" Timestamp="1536659548"/>
+				<File Name="" Hash="567177976" Timestamp="1536661552"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
@@ -25,14 +25,14 @@
 				<File Name="Click" Hash="3009915969" Timestamp="1536587378"/>
 				<File Name="Init" Hash="1920407592" Timestamp="1536659465"/>
 				<File Name="Music" Hash="268693913" Timestamp="1536659524"/>
-				<File Name="SFX" Hash="23746811" Timestamp="1536658527"/>
+				<File Name="SFX" Hash="1970090768" Timestamp="1536661527"/>
 				<File Name="Test" Hash="2111629074" Timestamp="1536236136"/>
 				<File Name="Virk_nu" Hash="3798876410" Timestamp="1536237048"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="440858879" Timestamp="1536659524"/>
+				<File Name="" Hash="528160378" Timestamp="1536661527"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
@@ -43,14 +43,14 @@
 				<File Name="Click" Hash="3009915969" Timestamp="1536587387"/>
 				<File Name="Init" Hash="2630452602" Timestamp="1536659477"/>
 				<File Name="Music" Hash="268693913" Timestamp="1536659547"/>
-				<File Name="SFX" Hash="23746811" Timestamp="1536658545"/>
+				<File Name="SFX" Hash="1970090768" Timestamp="1536661552"/>
 				<File Name="Test" Hash="2111629074" Timestamp="1536236136"/>
 				<File Name="Virk_nu" Hash="3798876410" Timestamp="1536237050"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="741801779" Timestamp="1536659547"/>
+				<File Name="" Hash="4139561238" Timestamp="1536661552"/>
 			</Language>
 		</XMLInfo>
 	</Platform>

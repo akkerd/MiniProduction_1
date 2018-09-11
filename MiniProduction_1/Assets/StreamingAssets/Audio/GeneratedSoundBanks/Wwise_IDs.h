@@ -15,7 +15,9 @@ namespace AK
     {
         static const AkUniqueID PLAY_CLICKS = 2790046261U;
         static const AkUniqueID PLAY_ELECTRIC_ANOMALIES = 614939413U;
+        static const AkUniqueID PLAY_MENU_EXIT_SELECT = 3522068789U;
         static const AkUniqueID PLAY_MENU_SELECT = 2167056030U;
+        static const AkUniqueID PLAY_MENU_START__SELECT = 159056440U;
         static const AkUniqueID PLAY_PLACEHOLDER_MUSIC = 3200335893U;
         static const AkUniqueID PLAY_SCREAMS = 2700195184U;
         static const AkUniqueID PLAY_VENTILATION = 2644260023U;
