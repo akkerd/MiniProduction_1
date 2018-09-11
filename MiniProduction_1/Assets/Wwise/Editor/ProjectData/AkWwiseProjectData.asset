@@ -24,8 +24,8 @@ MonoBehaviour:
     List: []
   AuxBusWwu:
   - Guid: '{B1726A29-26A1-41A7-A548-3B244B3BF392}'
-    m_lastTimePart2: -1999235124
-    m_lastTimePsrt1: 429728896
+    m_lastTimePart2: -1999235108
+    m_lastTimePsrt1: -1284715136
     ParentPhysicalPath: 
     PhysicalPath: Master-Mixer Hierarchy/Default Work Unit.wwu
     List: []
@@ -37,8 +37,8 @@ MonoBehaviour:
     PhysicalPath: SoundBanks/Default Work Unit.wwu
     List: []
   - Guid: '{CC5CF97E-E9A0-40ED-9B93-01FC29F58407}'
-    m_lastTimePart2: -1999235127
-    m_lastTimePsrt1: -340336512
+    m_lastTimePart2: -1999235099
+    m_lastTimePsrt1: 1425546496
     ParentPhysicalPath: 
     PhysicalPath: SoundBanks/Main.wwu
     List:
@@ -139,11 +139,47 @@ MonoBehaviour:
       maxDuration: 0
       minDuration: 0
   - Guid: '{E7FA6859-C268-4205-B746-E4153D6A95AE}'
-    m_lastTimePart2: -1999235127
-    m_lastTimePsrt1: -340336512
+    m_lastTimePart2: -1999235099
+    m_lastTimePsrt1: 1425546496
     ParentPhysicalPath: 
     PhysicalPath: Events/Default Work Unit.wwu
     List:
+    - Guid: e3dcc954295df44697b5b22a89f97dc4
+      ID: -1072394285
+      Name: Play_contract_select
+      Path: Default Work Unit/Play_contract_select
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_contract_select
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: 9f90a8c24271bc4e8edb8a57280976d6
+      ID: 2029151984
+      Name: Play_fluid_leak
+      Path: Default Work Unit/Play_fluid_leak
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_fluid_leak
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: 38ed8b8415132443b76aa061f67366fe
+      ID: -772898507
+      Name: Play_menu_exit_select
+      Path: Default Work Unit/Play_menu_exit_select
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_menu_exit_select
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - Guid: 4e1c242d8adb7f4e8aa737bb0a088759
       ID: -2127911266
       Name: play_menu_select
@@ -152,6 +188,30 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
       - ElementName: play_menu_select
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: e16089cecb892f4ca429280a5ef867a3
+      ID: -419726091
+      Name: Play_menu_start_select
+      Path: Default Work Unit/Play_menu_start_select
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_menu_start_select
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: 13090484d92d414893d32eaff02cffcd
+      ID: 1079308955
+      Name: Play_slime_impact
+      Path: Default Work Unit/Play_slime_impact
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_slime_impact
         ObjectType: 3
       maxAttenuation: 0
       maxDuration: 0
@@ -192,10 +252,6 @@ MonoBehaviour:
   - /MiniProduction_1_WwiseProject
   - /MiniProduction_1_WwiseProject/Events
   - /MiniProduction_1_WwiseProject/Events/Default Work Unit
-  - /MiniProduction_1_WwiseProject/Events/Default Work Unit/Music
-  - /MiniProduction_1_WwiseProject/SoundBanks
-  - /MiniProduction_1_WwiseProject/SoundBanks/Main
-  - /MiniProduction_1_WwiseProject/SoundBanks/Music
   RtpcWwu:
   - Guid: '{CD646BC5-A30F-4FDF-B8CC-2F9CC05343BA}'
     m_lastTimePart2: -1999235127

@@ -3,23 +3,22 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-public class MoveSleeveForwardScript : MonoBehaviour {
+public class MoveSleeveForwardScript : Manager<MoveSleeveForwardScript> {
 
 	Action callbackAction;
 	
+	[SerializeField]
+	Transform referenceEndTransform;
 
 	float movementSpeed = 1.0f;
 	bool isMoving = false;
 	Vector3 originalStartPosition;
 	Vector3 originalEndPosition;
-
 	Vector3 currentDestination;
 	public void Setup()
 	{
 		originalStartPosition = transform.position;
-		originalEndPosition = transform.position;
-		originalEndPosition.z -= 5.0f;
-		originalEndPosition.y -= 1.5f;
+		originalEndPosition = referenceEndTransform.position;
 	}
 	public void MoveSleeveForward(Action callWhenDone)
 	{
@@ -48,6 +47,7 @@ public class MoveSleeveForwardScript : MonoBehaviour {
 		{
 			isMoving = false;
 			callbackAction();
+            gameObject.SetActive(false);
 			return;
 		}
 		Vector3 newPosition = Vector3.MoveTowards(transform.position,currentDestination,movementSpeed * Time.deltaTime);

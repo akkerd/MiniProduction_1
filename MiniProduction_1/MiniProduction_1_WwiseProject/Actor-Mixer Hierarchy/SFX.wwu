@@ -5,6 +5,7 @@
 			<ChildrenList>
 				<WorkUnit Name="Ambience" ID="{5099C182-2621-47B5-9ED2-55ED74B8F20A}" PersistMode="Reference"/>
 				<WorkUnit Name="menu_select" ID="{3683C0D3-8A29-4E60-B125-96431C2F01A8}" PersistMode="Reference"/>
+				<WorkUnit Name="Slime" ID="{02D89404-9444-4CE9-8D09-00DF634A7CF3}" PersistMode="Reference"/>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

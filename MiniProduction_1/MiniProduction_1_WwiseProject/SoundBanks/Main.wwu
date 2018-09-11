@@ -17,9 +17,12 @@
 				<SoundBank Name="SFX" ID="{09279403-5082-43B6-AEAC-3B8B5AC9B1E5}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Play_menu_exit_select" ID="{848BED38-1315-4324-B76A-A061F67366FE}" WorkUnitID="{E7FA6859-C268-4205-B746-E4153D6A95AE}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_contract_select" ID="{54C9DCE3-5D29-46F4-97B5-B22A89F97DC4}" WorkUnitID="{E7FA6859-C268-4205-B746-E4153D6A95AE}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_slime_impact" ID="{84040913-2DD9-4841-93D3-2EAFF02CFFCD}" WorkUnitID="{E7FA6859-C268-4205-B746-E4153D6A95AE}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Zipper_loop" ID="{B14CD5CD-A793-48E9-862A-006C9D435B4F}" WorkUnitID="{E7FA6859-C268-4205-B746-E4153D6A95AE}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="Play_menu_start__select" ID="{CE8960E1-89CB-4C2F-A429-280A5EF867A3}" WorkUnitID="{E7FA6859-C268-4205-B746-E4153D6A95AE}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_menu_start_select" ID="{CE8960E1-89CB-4C2F-A429-280A5EF867A3}" WorkUnitID="{E7FA6859-C268-4205-B746-E4153D6A95AE}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="play_menu_select" ID="{2D241C4E-DB8A-4E7F-8AA7-37BB0A088759}" WorkUnitID="{E7FA6859-C268-4205-B746-E4153D6A95AE}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_fluid_leak" ID="{C2A8909F-7142-4EBC-8EDB-8A57280976D6}" WorkUnitID="{E7FA6859-C268-4205-B746-E4153D6A95AE}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

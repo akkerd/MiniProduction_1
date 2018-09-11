@@ -29,7 +29,6 @@
 														<XPos>0</XPos>
 														<YPos>-160.082</YPos>
 														<Flags>5</Flags>
-														<SegmentShape>Log3</SegmentShape>
 													</Point>
 													<Point>
 														<XPos>100</XPos>
@@ -60,9 +59,8 @@
 												<PointList>
 													<Point>
 														<XPos>0</XPos>
-														<YPos>-160.08227</YPos>
+														<YPos>-400</YPos>
 														<Flags>5</Flags>
-														<SegmentShape>Log3</SegmentShape>
 													</Point>
 													<Point>
 														<XPos>100</XPos>
