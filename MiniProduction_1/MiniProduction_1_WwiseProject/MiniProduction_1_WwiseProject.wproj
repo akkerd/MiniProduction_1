@@ -28,6 +28,7 @@
 						<Value Platform="Mac">GeneratedSoundBanks\Mac\</Value>
 					</ValueList>
 				</Property>
+				<Property Name="LicenseKey" Type="string" Value="PHByb2plY3QgaWQ9IjYwNzQiIG1hc2s9Ik5HWFk4NjQyIiBlbmM9IjAiPjxsaWNlbnNlIGlkPSIxIiBuYW1lPSJXd2lzZSIgdHlwZT0iMyIgcGxhdGZvcm1zPSIyLDMsNCwxMCwxMywxNCIgZXhwaXJlcz0iMjAxOS0wNy0zMSIgIC8+PGxpY2Vuc2UgaWQ9IjIyIiBuYW1lPSJMZXZlbCBBIExpY2Vuc2UiIHR5cGU9IjMiIHBsYXRmb3Jtcz0iMiwzLDQsMTAsMTMsMTQiIGV4cGlyZXM9IjIwMTktMDctMzEiICAvPjxsaWNlbnNlIGlkPSIyMSIgbmFtZT0iTWFpbnRlbmFuY2UiIHR5cGU9IjMiIHBsYXRmb3Jtcz0iMiwzLDQsMTAsMTMsMTQiIGV4cGlyZXM9IjIwMTktMDctMzEiICAvPjxsaWNlbnNlIGlkPSIyNSIgbmFtZT0iQWxsIFd3aXNlIFBsdWctSW5zIiB0eXBlPSIzIiAgZXhwaXJlcz0iMjAxOS0wNy0zMSIgIC8+PC9wcm9qZWN0Pg==|C3u2YnuB6AM0WwMVPQHGqtowYEMOPmPcbFk7Z7MMDXmiyxxDwFWxVmHafwvGOBd+mdupP68cS2YIYY3ZqSj26JZa0i+a3R6qG/1ZpSeueOj5dlvsDKpEMSMSvasRsyBX5i8QhAj48T2TTVZVXF1q90JPNbNDE6XN2Fttre7KEzhfuKqU+F4UJRfZ/xzIopHWQCZh3+NPRWbLNmflGjTvO9NNfUNZGYLuV6KLXh/OyFhK5XBvg5Sihm6AQlNlVVJOlCDaVwB9KsQth67GykI/J3z+2c/K8dMQfqeIHP0vGtbyE4967dHRoL0UaWE1tt2O+JMgi5UPkkXX/dhTLSOksA=="/>
 				<Property Name="SoundBankGenerateHeaderFile" Type="bool" Value="True"/>
 				<Property Name="SoundBankGenerateMaxAttenuationInfo" Type="bool" Value="True"/>
 				<Property Name="SoundBankHeaderFilePath" Type="string" Value="Z:/Users/Makvaerk/Documents/GitHub/MiniProduction_1/MiniProduction_1/Assets/StreamingAssets/Audio/GeneratedSoundBanks"/>

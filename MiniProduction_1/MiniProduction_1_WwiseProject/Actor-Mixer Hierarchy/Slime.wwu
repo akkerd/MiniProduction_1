@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{02D89404-9444-4CE9-8D09-00DF634A7CF3}" SchemaVersion="89" RootDocumentID="{B5DF0418-4528-4A68-9A2E-5248978A2EBB}">
+	<AudioObjects>
+		<WorkUnit Name="Slime" ID="{02D89404-9444-4CE9-8D09-00DF634A7CF3}" OwnerID="{3433864E-26DA-483F-A914-52334BC9BB07}" PersistMode="Nested">
+			<ChildrenList>
+				<RandomSequenceContainer Name="fluid_leak" ID="{4B7441F0-F34D-4B03-A9DE-6ADC6E0B3DD7}" ShortID="401204416">
+					<PropertyList>
+						<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{927F7A75-4417-4637-B92A-8DA435F58DFE}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="100"/>
+											<Property Name="Min" Type="Real64" Value="-100"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="SFX" ID="{8C28CA86-36D0-4526-A71B-9C0EE3E07DEF}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Fluid_leak_1" ID="{67BED4F7-B9CF-41EB-B9B9-6867F689B8E1}" ShortID="940636405">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Fluid_leak_1" ID="{25D64938-2EDF-4FFF-97F7-3005881CACD6}" ShortID="101673522">
+									<Language>SFX</Language>
+									<AudioFile>Fluid_leak_1.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Fluid_leak_1" ID="{25D64938-2EDF-4FFF-97F7-3005881CACD6}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Fluid_leak_2" ID="{CFA3C014-3D8C-4FAB-BCBF-F8385621BFF6}" ShortID="1057512041">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Fluid_leak_2" ID="{9D143B56-DCB2-4E05-9DFF-438B15E32E57}" ShortID="7280614">
+									<Language>SFX</Language>
+									<AudioFile>Fluid_leak_2.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Fluid_leak_2" ID="{9D143B56-DCB2-4E05-9DFF-438B15E32E57}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Fluid_leak_3" ID="{B5ECECF6-3808-45AB-9272-AF5A53F91570}" ShortID="74595272">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Fluid_leak_3" ID="{DE5D24EA-4807-4A08-87B7-14B235B653B8}" ShortID="513540313">
+									<Language>SFX</Language>
+									<AudioFile>Fluid_leak_3.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Fluid_leak_3" ID="{DE5D24EA-4807-4A08-87B7-14B235B653B8}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Fluid_leak_4" ID="{C5B0996F-7F71-4C9B-AAD2-B7D35CD6E945}" ShortID="230635456">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Fluid_leak_4" ID="{CDE53972-BC5B-47D7-A496-7968EF016BBC}" ShortID="1049990235">
+									<Language>SFX</Language>
+									<AudioFile>Fluid_leak_4.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Fluid_leak_4" ID="{CDE53972-BC5B-47D7-A496-7968EF016BBC}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Fluid_leak_5" ID="{5CB04878-8182-4EC1-84C9-07B5CC80F0DD}" ShortID="437682770">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Fluid_leak_5" ID="{5D314252-1A01-440D-A2E6-0C95EDD083C0}" ShortID="133990861">
+									<Language>SFX</Language>
+									<AudioFile>Fluid_leak_5.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Fluid_leak_5" ID="{5D314252-1A01-440D-A2E6-0C95EDD083C0}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Fluid_leak_6" ID="{115B21E6-1A81-4F19-AD67-2E55A7562B2A}" ShortID="808208968">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Fluid_leak_6" ID="{AC9C6ACB-B895-43D5-9949-EF88F33281CC}" ShortID="526445884">
+									<Language>SFX</Language>
+									<AudioFile>Fluid_leak_6.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Fluid_leak_6" ID="{AC9C6ACB-B895-43D5-9949-EF88F33281CC}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Fluid_leak_7" ID="{BEF51685-24ED-4238-8388-CFBFAFFF203D}" ShortID="377815095">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Fluid_leak_7" ID="{49E7E7BA-44A5-4A91-BE9E-AC111E3B05C8}" ShortID="891523264">
+									<Language>SFX</Language>
+									<AudioFile>Fluid_leak_7.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Fluid_leak_7" ID="{49E7E7BA-44A5-4A91-BE9E-AC111E3B05C8}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="slime_impact" ID="{0FA4E9AA-9AB8-4D56-B328-5B4AA54F2B53}" ShortID="411317292">
+					<PropertyList>
+						<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{AF3ED275-4BBA-4294-8E36-535504FD9555}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="100"/>
+											<Property Name="Min" Type="Real64" Value="-100"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="SFX" ID="{8C28CA86-36D0-4526-A71B-9C0EE3E07DEF}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="slimy_impact_1" ID="{DE88FD25-7C0D-42B4-9455-F85BDF6C3751}" ShortID="382836867">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="slimy_impact_1" ID="{DF93396F-59A0-44DC-872D-F3A7AD78900C}" ShortID="274452425">
+									<Language>SFX</Language>
+									<AudioFile>slimy_impact_1.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="slimy_impact_1" ID="{DF93396F-59A0-44DC-872D-F3A7AD78900C}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="slimy_impact_2" ID="{43D3EE9C-542E-44CD-AB83-7F5F256A7AA0}" ShortID="901508899">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="slimy_impact_2" ID="{66274321-5F79-4C1A-A681-4763A2DA2164}" ShortID="563182954">
+									<Language>SFX</Language>
+									<AudioFile>slimy_impact_2.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="slimy_impact_2" ID="{66274321-5F79-4C1A-A681-4763A2DA2164}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="slimy_impact_3" ID="{1E697BC7-9373-4B8B-82E9-0704B07E928C}" ShortID="133591072">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="slimy_impact_3" ID="{B0B4B45E-0233-4DB8-B7CA-C6B329224D29}" ShortID="255867892">
+									<Language>SFX</Language>
+									<AudioFile>slimy_impact_3.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="slimy_impact_3" ID="{B0B4B45E-0233-4DB8-B7CA-C6B329224D29}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="slimy_impact_4" ID="{20C6D29C-F80A-4A44-9380-0BCF597ED6B1}" ShortID="18357843">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="slimy_impact_4" ID="{A7FEC254-A834-4107-9CF7-68220203B503}" ShortID="401584748">
+									<Language>SFX</Language>
+									<AudioFile>slimy_impact_4.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="slimy_impact_4" ID="{A7FEC254-A834-4107-9CF7-68220203B503}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="slimy_impact_5" ID="{442AA44E-50D0-4C31-AE45-1985D8008B45}" ShortID="964407532">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="slimy_impact_5" ID="{DB037CEA-8B4D-4947-99E7-FB9C64780D0C}" ShortID="211606250">
+									<Language>SFX</Language>
+									<AudioFile>slimy_impact_5.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="slimy_impact_5" ID="{DB037CEA-8B4D-4947-99E7-FB9C64780D0C}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="slimy_impact_6" ID="{CAF261C1-7F05-447D-9F09-099EF8D69FC1}" ShortID="71835086">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="slimy_impact_6" ID="{71F5271A-FC1E-4E98-AA05-39D969DE98B6}" ShortID="836984824">
+									<Language>SFX</Language>
+									<AudioFile>slimy_impact_6.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="slimy_impact_6" ID="{71F5271A-FC1E-4E98-AA05-39D969DE98B6}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="slimy_impact_7" ID="{CCFB24F1-3754-4171-9F6F-6EFE56215B82}" ShortID="818430386">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="slimy_impact_7" ID="{AAAE5E21-27E1-4F71-AED6-AEBC1DB98273}" ShortID="980224971">
+									<Language>SFX</Language>
+									<AudioFile>slimy_impact_7.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="slimy_impact_7" ID="{AAAE5E21-27E1-4F71-AED6-AEBC1DB98273}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>
