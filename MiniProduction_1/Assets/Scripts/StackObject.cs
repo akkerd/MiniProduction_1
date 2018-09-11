@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Stack : MonoBehaviour {
+public class StackObject : MonoBehaviour {
 
-    GameObject rayChosenObj = null;
-    GameObject receivingStackObj = null;
+    GameObject chosenStack = null;
+    GameObject receivingSleeve = null;
     Plane objPlane;
     Vector3 m0;
     Vector3 startPosition;
@@ -39,20 +39,20 @@ public class Stack : MonoBehaviour {
                 Debug.DrawRay(mouseRay.origin, mouseRay.direction);
                 if (Physics.Raycast(mouseRay.origin, mouseRay.direction, out hit))
                 {
-                    rayChosenObj = hit.transform.gameObject;
-                    Debug.Log(rayChosenObj.name);
+                    chosenStack = hit.transform.gameObject;
+                    Debug.Log(chosenStack.name);
 
-                    startPosition = rayChosenObj.transform.position;
+                    startPosition = chosenStack.transform.position;
 
-                    objPlane = new Plane(Camera.main.transform.forward * -1, rayChosenObj.transform.position);
+                    objPlane = new Plane(Camera.main.transform.forward * -1, chosenStack.transform.position);
 
-                    if (rayChosenObj.name == "stack")
+                    if (chosenStack.name == "Stack")
                     {
                         // calc mouse offset
                         Ray mRay = Camera.main.ScreenPointToRay(Input.mousePosition);
                         float rayDistance;
                         objPlane.Raycast(mRay, out rayDistance);
-                        m0 = rayChosenObj.transform.position - mRay.GetPoint(rayDistance);
+                        m0 = chosenStack.transform.position - mRay.GetPoint(rayDistance);
                     }
                 }
                 else
@@ -60,14 +60,14 @@ public class Stack : MonoBehaviour {
                     Debug.Log("not hitting");
                 }
             }
-            else if (Input.GetMouseButton(0) && rayChosenObj != null && rayChosenObj.name == "Stack")
+            else if (Input.GetMouseButton(0) && chosenStack != null && chosenStack.name == "Stack")
             {
                 Ray mRay = Camera.main.ScreenPointToRay(Input.mousePosition);
                 float rayDistance;
 
                 if (objPlane.Raycast(mRay, out rayDistance))
                 {
-                    rayChosenObj.transform.position = mRay.GetPoint(rayDistance) + m0;
+                    chosenStack.transform.position = mRay.GetPoint(rayDistance) + m0;
                 }
             }
             else if (Input.GetMouseButtonUp(0))
@@ -78,24 +78,24 @@ public class Stack : MonoBehaviour {
                 Debug.DrawRay(mouseRay.origin, mouseRay.direction);
                 if (Physics.Raycast(mouseRay.origin, mouseRay.direction, out hit, raycastSelection))
                 {
-                    receivingStackObj = hit.transform.gameObject;
-                    //Debug.Log(rayChosenObj.name);
+                    receivingSleeve = hit.transform.gameObject;
+                    //Debug.Log(chosenStack.name);
                     
-                    if (receivingStackObj != null && receivingStackObj.layer == 9)
+                    if (receivingSleeve != null && receivingSleeve.layer == 9)
                     {
-                        Debug.Log(receivingStackObj.name + " received stack");
-                        rayChosenObj.SetActive(false);
+                        Debug.Log(receivingSleeve.name + " received stack");
+                        chosenStack.SetActive(false);
                     }
                     else
                     {
                         Debug.Log("No sleeve chosen");
-                        rayChosenObj.transform.position = startPosition;
+                        chosenStack.transform.position = startPosition;
                     }
                 }
             }
             else
             {
-                rayChosenObj = null;
+                chosenStack = null;
             }
             
             //transform.position += Vector3.right * 5 * Time.deltaTime;            
