@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TouchInputController : MonoBehaviour {
+public class TouchInputController : Manager<TouchInputController> {
 
 	//The transform the distance of the cube to the center will move
 	public Transform lineController;
@@ -66,6 +66,10 @@ public class TouchInputController : MonoBehaviour {
 		transform.position = nextPosition;
 	}
 
+	public void ResetCubePosition()
+	{
+		transform.position = startPosition;
+	}
 	//Checks which phase the touches[0] is in, and if it has moved, apply that movement to the control cube
 	void FirstTouch(Touch currentTouch)
 	{
@@ -88,7 +92,7 @@ public class TouchInputController : MonoBehaviour {
 			//Debug.Log(direction);
 
 			Vector3 newPositionOfCube = Vector3.Lerp(transform.position, transform.position +(direction * forceAddedToCube),force * Time.deltaTime);
-			Debug.Log("New position of cube: " +newPositionOfCube);
+			//Debug.Log("New position of cube: " +newPositionOfCube);
 			if (newPositionOfCube.x < -maxDistanceFromCenter +startPosition.x)
 			{
 				newPositionOfCube.x = -maxDistanceFromCenter +startPosition.x;

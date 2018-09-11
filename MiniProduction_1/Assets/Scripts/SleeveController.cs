@@ -10,6 +10,7 @@ public class SleeveController : Manager<SleeveController> {
 	{
 		sleevesAvaliable = new List<Sleeve>();
 		AddSleeves(12);
+		UpdateSleevesInConveyor();
 	}
 
 	public void AddSleeves(int numberOfNewSleeves)
@@ -28,5 +29,9 @@ public class SleeveController : Manager<SleeveController> {
 	public void UpdateSleevesInConveyor()
 	{
 		ConveyorController.Instance.SetupConveyor(sleevesAvaliable.ToArray());
+	}
+	public Sleeve[] GetActiveSleeves()
+	{
+		return sleevesAvaliable.ToArray();
 	}
 }
