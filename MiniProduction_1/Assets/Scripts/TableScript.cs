@@ -26,7 +26,7 @@ public class TableScript : MonoBehaviour {
         }
         if (PTravelled >= 1)
         {
-            Moving = false;
+            
             transform.parent =null ;
             UnsleeveManager.Instance.DestroyPrefab();
         }
