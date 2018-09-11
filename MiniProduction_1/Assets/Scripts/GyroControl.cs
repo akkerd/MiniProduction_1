@@ -63,22 +63,17 @@ public class GyroControl : MonoBehaviour {
             bool rotateY = true;
             bool rotateX = true;
 
-            float maxRot = 0.2f;
-
-            Debug.Log("StartTrans: " + startRotation.y);
-            Debug.Log("CameraTrans: " + cameraContainer.transform.rotation.y);
-
             // max move to the right
             if (-gyro.rotationRateUnbiased.y > 0 && cameraContainer.transform.rotation.y > startRotation.y + maxRotationRight)
             {
                 rotateY = false;
-                nextRotation.y = startRotation.y + maxRot;
+                nextRotation.y = startRotation.y + maxRotationDown;
             }
             // max move to the left
             else if (-gyro.rotationRateUnbiased.y < 0 && cameraContainer.transform.rotation.y < startRotation.y - maxRotationLeft)
             {
                 rotateY = false;
-                nextRotation.y = startRotation.y - maxRot;
+                nextRotation.y = startRotation.y - maxRotationDown;
             }
 
             if (rotateY)
@@ -91,13 +86,13 @@ public class GyroControl : MonoBehaviour {
             if (-gyro.rotationRateUnbiased.x > 0 && transform.rotation.x > startRotation.x + maxRotationDown)
             {
                 rotateX = false;
-                nextRotation.x = startRotation.x + maxRot;
+                nextRotation.x = startRotation.x + maxRotationDown;
             }
             // max move up
             else if (-gyro.rotationRateUnbiased.x < 0 && transform.rotation.x < startRotation.x - maxRotationUp)
             {
                 rotateX = false;
-                nextRotation.x = startRotation.x - maxRot;
+                nextRotation.x = startRotation.x - maxRotationDown;
             }
 
             if (rotateX)
