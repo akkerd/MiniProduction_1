@@ -1389,6 +1389,46 @@ Prefab:
       propertyPath: m_RootOrder
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 114641016577423564, guid: 4d9363546af69af48919eb7ef8e49518,
+        type: 2}
+      propertyPath: m_MinValue
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114641016577423564, guid: 4d9363546af69af48919eb7ef8e49518,
+        type: 2}
+      propertyPath: m_WholeNumbers
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114641016577423564, guid: 4d9363546af69af48919eb7ef8e49518,
+        type: 2}
+      propertyPath: m_MaxValue
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 114773911034718016, guid: 4d9363546af69af48919eb7ef8e49518,
+        type: 2}
+      propertyPath: m_MinValue
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114773911034718016, guid: 4d9363546af69af48919eb7ef8e49518,
+        type: 2}
+      propertyPath: m_MaxValue
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 114773911034718016, guid: 4d9363546af69af48919eb7ef8e49518,
+        type: 2}
+      propertyPath: m_Value
+      value: 68
+      objectReference: {fileID: 0}
+    - target: {fileID: 114963904019641552, guid: 4d9363546af69af48919eb7ef8e49518,
+        type: 2}
+      propertyPath: m_Text
+      value: Music On
+      objectReference: {fileID: 0}
+    - target: {fileID: 114498328051515494, guid: 4d9363546af69af48919eb7ef8e49518,
+        type: 2}
+      propertyPath: m_Text
+      value: SFX On
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d9363546af69af48919eb7ef8e49518, type: 2}
   m_IsPrefabAsset: 0
@@ -1839,6 +1879,8 @@ GameObject:
   - component: {fileID: 1389862062}
   - component: {fileID: 1389862061}
   - component: {fileID: 1389862060}
+  - component: {fileID: 1389862065}
+  - component: {fileID: 1389862064}
   m_Layer: 0
   m_Name: WwiseGlobal
   m_TagString: Untagged
@@ -1954,6 +1996,50 @@ MonoBehaviour:
   saveDecodedBank: 0
   unloadTriggerList: 958ca0ea
   valueGuid: 039427098250b643aeac3b8b5ac9b1e5
+--- !u!114 &1389862064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1389862057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbdf7c3e91887443d9d26c7a1de0383e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  actionOnEventType: 0
+  curveInterpolation: 4
+  enableActionOnEvent: 0
+  eventID: -1094631403
+  m_callbackData: {fileID: 0}
+  playingId: 0
+  soundEmitterObject: {fileID: 0}
+  transitionDuration: 0
+  valueGuid: f9658367bcc8ed4787a6eb2979b4f431
+  multiPositionArray: []
+  MultiPositionType: 1
+  multiPositionTypeLabel: 0
+--- !u!114 &1389862065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1389862057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03755a6fda09e4b31af9824c124f0347, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  bankName: Music
+  decodeBank: 0
+  loadAsynchronous: 0
+  saveDecodedBank: 0
+  unloadTriggerList: 958ca0ea
+  valueGuid: b9d030bfdf4da641ad26f39b682568cc
 --- !u!1 &1566113930 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1437457128739986, guid: 4d9363546af69af48919eb7ef8e49518,

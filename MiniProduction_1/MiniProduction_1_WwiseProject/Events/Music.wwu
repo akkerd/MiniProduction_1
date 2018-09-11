@@ -11,7 +11,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Create Jam Spring 2018 soundtrack" ID="{BEE6B342-EB5E-4B23-B9C4-B98C5E15C695}" WorkUnitID="{0EC489FF-9FA4-47C6-98BF-5C2870819FA9}"/>
+									<ObjectRef Name="Menu Music" ID="{BEE6B342-EB5E-4B23-B9C4-B98C5E15C695}" WorkUnitID="{0EC489FF-9FA4-47C6-98BF-5C2870819FA9}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

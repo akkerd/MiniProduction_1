@@ -146,9 +146,13 @@
 			<Path>SFX.bnk</Path>
 			<IncludedEvents>
 				<Event Id="2167056030" Name="play_menu_select" ObjectPath="\Events\Default Work Unit\play_menu_select"/>
-				<Event Id="3149298709" Name="Play_Zipper_loop" ObjectPath="\Events\Default Work Unit\Play_Zipper_loop" MaxAttenuation="0.000000"/>
+				<Event Id="3149298709" Name="Play_Zipper_loop" ObjectPath="\Events\Default Work Unit\Play_Zipper_loop"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="11681909" Language="SFX">
+					<ShortName>Zipper_loop.wav</ShortName>
+					<Path>SFX/Zipper_loop_8956FC97.wem</Path>
+				</File>
 				<File Id="275948153" Language="SFX">
 					<ShortName>click_5.wav</ShortName>
 					<Path>SFX/click_5_56D34C19.wem</Path>
