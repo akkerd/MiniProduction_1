@@ -36,8 +36,11 @@ public class SettingsMenu : MonoBehaviour
 
     public void ChangeMusicValue()
     {
-        SettingsFlags.Instance.MusicVolume = (int)musicVolumeSlider.value;
-        AkSoundEngine.SetRTPCValue("music_mix", musicVolumeSlider.value);
+        if (SettingsFlags.Instance.IsMusicOn)
+        {
+            SettingsFlags.Instance.MusicVolume = (int)musicVolumeSlider.value;
+            AkSoundEngine.SetRTPCValue("music_mix", musicVolumeSlider.value);
+        }
     }
 
     public void SwithMusic()
@@ -58,8 +61,11 @@ public class SettingsMenu : MonoBehaviour
 
     public void ChangeSFXValue()
     {
-        SettingsFlags.Instance.SFXVolume = (int)sfxVolumeSlider.value;
-        AkSoundEngine.SetRTPCValue("sfx_mix", sfxVolumeSlider.value);
+        if (SettingsFlags.Instance.IsSFXOn)
+        {
+            SettingsFlags.Instance.SFXVolume = (int)sfxVolumeSlider.value;
+            AkSoundEngine.SetRTPCValue("sfx_mix", sfxVolumeSlider.value);
+        }
 
     }
 
