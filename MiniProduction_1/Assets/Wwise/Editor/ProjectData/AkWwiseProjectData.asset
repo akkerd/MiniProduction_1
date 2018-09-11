@@ -252,6 +252,8 @@ MonoBehaviour:
   - /MiniProduction_1_WwiseProject
   - /MiniProduction_1_WwiseProject/Events
   - /MiniProduction_1_WwiseProject/Events/Default Work Unit
+  - /MiniProduction_1_WwiseProject/SoundBanks
+  - /MiniProduction_1_WwiseProject/SoundBanks/Main
   RtpcWwu:
   - Guid: '{CD646BC5-A30F-4FDF-B8CC-2F9CC05343BA}'
     m_lastTimePart2: -1999235089

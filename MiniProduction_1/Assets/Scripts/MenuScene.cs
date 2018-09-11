@@ -22,7 +22,7 @@ public class MenuScene : MonoBehaviour {
     public void OnPlayClick()
     {
         Debug.Log("Pushed button");
-        AkSoundEngine.PostEvent("play_menu_select",gameObject);
+        AkSoundEngine.PostEvent("play_menu_start_select",gameObject);
         SceneManager.LoadScene(1);
         
     }
@@ -30,7 +30,7 @@ public class MenuScene : MonoBehaviour {
     public void OnQuitClick()
     {
         Debug.Log("Show confirmation screen");
-        AkSoundEngine.PostEvent("play_menu_select", gameObject);
+        AkSoundEngine.PostEvent("play_menu_exit_select", gameObject);
         confirmExit.SetActive(true);
     }
     public void OnSettingsClick()
@@ -47,7 +47,7 @@ public class MenuScene : MonoBehaviour {
     }
     public void OnBackClick()
     {
-        AkSoundEngine.PostEvent("play_menu_select", gameObject);
+        AkSoundEngine.PostEvent("play_menu_exit_select", gameObject);
         settingsMenu.ChangeSettingsMenu();
         backButton.SetActive(false);
         mainButtons.SetActive(true);
