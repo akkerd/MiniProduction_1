@@ -139,8 +139,8 @@ MonoBehaviour:
       maxDuration: 0
       minDuration: 0
   - Guid: '{E7FA6859-C268-4205-B746-E4153D6A95AE}'
-    m_lastTimePart2: -1999235099
-    m_lastTimePsrt1: 1425546496
+    m_lastTimePart2: -1999235098
+    m_lastTimePsrt1: -54388096
     ParentPhysicalPath: 
     PhysicalPath: Events/Default Work Unit.wwu
     List:
@@ -252,10 +252,12 @@ MonoBehaviour:
   - /MiniProduction_1_WwiseProject
   - /MiniProduction_1_WwiseProject/Events
   - /MiniProduction_1_WwiseProject/Events/Default Work Unit
+  - /MiniProduction_1_WwiseProject/SoundBanks
+  - /MiniProduction_1_WwiseProject/SoundBanks/Main
   RtpcWwu:
   - Guid: '{CD646BC5-A30F-4FDF-B8CC-2F9CC05343BA}'
-    m_lastTimePart2: -1999235127
-    m_lastTimePsrt1: -340336512
+    m_lastTimePart2: -1999235089
+    m_lastTimePsrt1: -1119093760
     ParentPhysicalPath: 
     PhysicalPath: Game Parameters/Default Work Unit.wwu
     List:
@@ -267,6 +269,15 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
       - ElementName: music_mix
+        ObjectType: 13
+    - Guid: 8756746653ec974681817a7e2d3e0dbd
+      ID: 1235540206
+      Name: rack_acc
+      Path: Default Work Unit/rack_acc
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: rack_acc
         ObjectType: 13
     - Guid: 5fff173851e373419e40ec20e52e9f71
       ID: 681424821

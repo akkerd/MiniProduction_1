@@ -5,6 +5,7 @@
 			<ChildrenList>
 				<GameParameter Name="sfx_mix" ID="{3817FF5F-E351-4173-9E40-EC20E52E9F71}"/>
 				<GameParameter Name="music_mix" ID="{81B23315-B11A-4FB6-9F69-3DFC23879721}"/>
+				<GameParameter Name="rack_acc" ID="{66745687-EC53-4697-8181-7A7E2D3E0DBD}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

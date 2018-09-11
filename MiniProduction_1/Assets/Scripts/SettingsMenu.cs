@@ -36,8 +36,11 @@ public class SettingsMenu : MonoBehaviour
 
     public void ChangeMusicValue()
     {
-        SettingsFlags.Instance.MusicVolume = (int)musicVolumeSlider.value;
-        AkSoundEngine.SetRTPCValue("music_mix", musicVolumeSlider.value);
+        if (SettingsFlags.Instance.IsMusicOn)
+        {
+            SettingsFlags.Instance.MusicVolume = (int)musicVolumeSlider.value;
+            AkSoundEngine.SetRTPCValue("music_mix", musicVolumeSlider.value);
+        }
     }
 
     public void SwithMusic()
@@ -46,20 +49,23 @@ public class SettingsMenu : MonoBehaviour
 
         if (SettingsFlags.Instance.IsMusicOn)
         {
-            AkSoundEngine.SetRTPCValue("music_mix", 0);
+            AkSoundEngine.SetRTPCValue("music_mix", SettingsFlags.Instance.MusicVolume);
             Debug.Log("Music muted");
         }
         else
         {
-            AkSoundEngine.SetRTPCValue("music_mix", SettingsFlags.Instance.MusicVolume);
+            AkSoundEngine.SetRTPCValue("music_mix", 0);
             Debug.Log("Music unmuted");
         }
     }
 
     public void ChangeSFXValue()
     {
-        SettingsFlags.Instance.SFXVolume = (int)sfxVolumeSlider.value;
-        AkSoundEngine.SetRTPCValue("sfx_mix", sfxVolumeSlider.value);
+        if (SettingsFlags.Instance.IsSFXOn)
+        {
+            SettingsFlags.Instance.SFXVolume = (int)sfxVolumeSlider.value;
+            AkSoundEngine.SetRTPCValue("sfx_mix", sfxVolumeSlider.value);
+        }
 
     }
 
@@ -69,12 +75,12 @@ public class SettingsMenu : MonoBehaviour
 
         if (SettingsFlags.Instance.IsSFXOn)
         {
-            AkSoundEngine.SetRTPCValue("sfx_mix", 0);
+            AkSoundEngine.SetRTPCValue("sfx_mix", SettingsFlags.Instance.SFXVolume);
             Debug.Log("SFX muted");
         }
         else 
         {
-            AkSoundEngine.SetRTPCValue("sfx_mix", sfxVolumeSlider.value);
+            AkSoundEngine.SetRTPCValue("sfx_mix", 0);
             Debug.Log("SFX unmuted");
         }
     }

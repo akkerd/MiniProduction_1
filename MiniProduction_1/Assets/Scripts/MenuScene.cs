@@ -9,8 +9,17 @@ public class MenuScene : MonoBehaviour {
     public GameObject credits;
     public GameObject mainButtons;
     public GameObject backButton;
+    public GameObject confirmExit;
 
-	public void OnPlayClick()
+    // Update is called once per frame
+	void Update () {
+        if (Input.GetKeyDown(KeyCode.Escape) )
+        {
+            OnQuitClick();
+        }
+	}
+
+    public void OnPlayClick()
     {
         Debug.Log("Pushed button");
         AkSoundEngine.PostEvent("play_menu_start_select",gameObject);
@@ -20,9 +29,9 @@ public class MenuScene : MonoBehaviour {
 
     public void OnQuitClick()
     {
-        Debug.Log("Quit Game");
-        AkSoundEngine.PostEvent("play_menu_exit_select",gameObject);
-        Application.Quit();
+        Debug.Log("Show confirmation screen");
+        AkSoundEngine.PostEvent("play_menu_exit_select", gameObject);
+        confirmExit.SetActive(true);
     }
     public void OnSettingsClick()
     {
@@ -42,5 +51,18 @@ public class MenuScene : MonoBehaviour {
         settingsMenu.ChangeSettingsMenu();
         backButton.SetActive(false);
         mainButtons.SetActive(true);
+    }
+
+    public void OnYesClick()
+    {
+        Debug.Log("Quit Game");
+        AkSoundEngine.PostEvent("play_menu_select",gameObject);
+        Application.Quit();
+    }
+    public void OnNoClick()
+    {
+        Debug.Log("Back to Menu");
+        confirmExit.SetActive(false);
+        AkSoundEngine.PostEvent("play_menu_select", gameObject);
     }
 }

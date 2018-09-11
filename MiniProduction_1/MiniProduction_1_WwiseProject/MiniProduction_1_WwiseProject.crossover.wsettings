@@ -5,6 +5,7 @@
 			<PropertyList>
 				<Property Name="AudioFilesImporter\Path" Type="string" Value="Y:\Dropbox\DADIU_Team4\Minigame1\050_sound\SFX\AMBIENCE"/>
 				<Property Name="Event Action List\{0690F5D4-E667-4C3B-8C7F-12BAF9B3C88D}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{2428F104-5B70-408D-A192-15E744E69CE0}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{2D241C4E-DB8A-4E7F-8AA7-37BB0A088759}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{51592C6B-7013-4768-ADD7-AB38549A05C3}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{52A150D3-13D4-4798-8447-A5E94B3B93F8}\x64_Expand States" Type="string" Value=""/>

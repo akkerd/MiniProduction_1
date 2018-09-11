@@ -27,7 +27,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Zipper_loop" ID="{8F927ECB-E5F3-422F-86E1-266AD2CAF068}" WorkUnitID="{5099C182-2621-47B5-9ED2-55ED74B8F20A}"/>
+									<ObjectRef Name="Zipper_loop" ID="{8F927ECB-E5F3-422F-86E1-266AD2CAF068}" WorkUnitID="{4758ED26-90AB-4098-A44F-3CFA49BE46F1}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

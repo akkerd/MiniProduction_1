@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{4758ED26-90AB-4098-A44F-3CFA49BE46F1}" SchemaVersion="89" RootDocumentID="{B5DF0418-4528-4A68-9A2E-5248978A2EBB}">
+	<AudioObjects>
+		<WorkUnit Name="Conveyor" ID="{4758ED26-90AB-4098-A44F-3CFA49BE46F1}" OwnerID="{3433864E-26DA-483F-A914-52334BC9BB07}" PersistMode="Nested">
+			<ChildrenList>
+				<Sound Name="Zipper_loop" ID="{8F927ECB-E5F3-422F-86E1-266AD2CAF068}" ShortID="205490948">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-25</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="SFX" ID="{8C28CA86-36D0-4526-A71B-9C0EE3E07DEF}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Zipper_loop" ID="{256E87AA-C612-4979-AB21-02C63317C3B9}" ShortID="11681909">
+							<Language>SFX</Language>
+							<AudioFile>Zipper_loop.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Zipper_loop" ID="{256E87AA-C612-4979-AB21-02C63317C3B9}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<WorkUnit Name="Slime" ID="{02D89404-9444-4CE9-8D09-00DF634A7CF3}" PersistMode="Reference"/>
+				<Folder Name="Rack" ID="{A54C96B8-5A10-4237-BC6E-B1590E70A243}" ShortID="891279701">
+					<ChildrenList>
+						<BlendContainer Name="Rack_movement" ID="{8FE7EECD-000E-4F0C-B8EE-1058ADEA4C86}" ShortID="505199796">
+							<PropertyList>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>19</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-8</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="rack_metal_grind" ID="{CBC27CE1-6437-42BE-88F5-4CD5D2519097}" ShortID="686784528">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Rack_metal_grind" ID="{AE9FE210-455D-4073-89DB-600CFC8EED5D}" ShortID="113379550">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Rack_metal_grind" ID="{76505248-EF9A-4CEC-BFB0-6B5A9ACE87E6}" ShortID="909718294">
+													<Language>SFX</Language>
+													<AudioFile>Rack\Rack_metal_grind.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Rack_metal_grind" ID="{76505248-EF9A-4CEC-BFB0-6B5A9ACE87E6}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Rack_metal_grind_1" ID="{A712F9D3-6FD5-4AF1-8FB3-01A4E507EF43}" ShortID="482322831">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Rack_metal_grind_1" ID="{EB5AB567-911B-4207-84FD-432E639334DD}" ShortID="199048522">
+													<Language>SFX</Language>
+													<AudioFile>Rack\Rack_metal_grind_1.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Rack_metal_grind_1" ID="{EB5AB567-911B-4207-84FD-432E639334DD}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Rack_metal_grind_2" ID="{13D350F5-ADC9-477A-AE32-31E6FBDE9C59}" ShortID="125203707">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Rack_metal_grind_2" ID="{D236212B-DDFF-4E1C-A18F-E75A035C5176}" ShortID="838753121">
+													<Language>SFX</Language>
+													<AudioFile>Rack\Rack_metal_grind_2.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Rack_metal_grind_2" ID="{D236212B-DDFF-4E1C-A18F-E75A035C5176}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Rack_metal_grind_3" ID="{577256D8-E64A-45F5-884D-B7118E7E9C3B}" ShortID="803412013">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Rack_metal_grind_3" ID="{BAD5404A-56D3-4011-8955-3C445C5BE4CE}" ShortID="289356136">
+													<Language>SFX</Language>
+													<AudioFile>Rack\Rack_metal_grind_3.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Rack_metal_grind_3" ID="{BAD5404A-56D3-4011-8955-3C445C5BE4CE}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Rack_metal_grind_4" ID="{107D0240-0183-4F85-99D1-14886C6844CA}" ShortID="198235876">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Rack_metal_grind_4" ID="{2F5524BD-3CC9-4C33-BDFD-02CF6E98ECA5}" ShortID="355840524">
+													<Language>SFX</Language>
+													<AudioFile>Rack\Rack_metal_grind_4.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Rack_metal_grind_4" ID="{2F5524BD-3CC9-4C33-BDFD-02CF6E98ECA5}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Rack_metal_grind_5" ID="{CBE1CA28-02EF-43F6-B1C3-3E654D42DE4F}" ShortID="916186984">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Rack_metal_grind_5" ID="{4F305591-D26F-490B-8A3C-3D014EA18C7E}" ShortID="532262488">
+													<Language>SFX</Language>
+													<AudioFile>Rack\Rack_metal_grind_5.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Rack_metal_grind_5" ID="{4F305591-D26F-490B-8A3C-3D014EA18C7E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<Sound Name="Rack_movement_loop" ID="{C20D3463-51CF-4E7C-BA8C-E38BAC0A8C86}" ShortID="298724834">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="OutputBusVolume" Type="Real64">
+											<RTPCList>
+												<RTPC Name="" ID="{45D2DE54-D1FA-4BFC-A242-195A6CD05C1C}" ShortID="614875131">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="rack_acc" ID="{66745687-EC53-4697-8181-7A7E2D3E0DBD}" WorkUnitID="{CD646BC5-A30F-4FDF-B8CC-2F9CC05343BA}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{EF76BB6F-71D3-49D1-9903-584C88ECEBCE}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-16.54</YPos>
+																<Flags>5</Flags>
+																<SegmentShape>Log3</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>9.76253</XPos>
+																<YPos>-0.27443</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<RTPCList>
+												<RTPC Name="" ID="{04702770-3BC6-4E5C-8B53-90CE4AE4B6DD}" ShortID="494179439">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="rack_acc" ID="{66745687-EC53-4697-8181-7A7E2D3E0DBD}" WorkUnitID="{CD646BC5-A30F-4FDF-B8CC-2F9CC05343BA}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{4C94C256-EB77-4D73-9ABF-010BE2F4C300}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-4034</YPos>
+																<Flags>5</Flags>
+																<SegmentShape>Log3</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>7.91557</XPos>
+																<YPos>-510</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Rack_movement_loop" ID="{AF04578E-0505-442C-9A08-C304B9FF095E}" ShortID="1008370828">
+											<Language>SFX</Language>
+											<AudioFile>Rack\Rack_movement_loop.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Rack_movement_loop" ID="{AF04578E-0505-442C-9A08-C304B9FF095E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Rack_movement_noise" ID="{293F14C2-FF00-441B-A50A-F56697C61BAC}" ShortID="843001642">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Rack_movement_noise" ID="{D0305B15-3773-4473-A9DA-411618F3E97A}" ShortID="950608053">
+											<Language>SFX</Language>
+											<AudioFile>Rack\Rack_movement_noise.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Rack_movement_noise" ID="{D0305B15-3773-4473-A9DA-411618F3E97A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</BlendContainer>
+						<RandomSequenceContainer Name="rack_stop" ID="{CF5B4BDD-64A5-4EBD-9EA6-14A7C883B457}" ShortID="651073387">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{DE64934B-3C5C-48D5-8787-0B4F8EBFECAD}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="100"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-9</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Rack_stop" ID="{08D205D9-6806-407D-A20B-91ABF661E846}" ShortID="88893022">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Rack_stop" ID="{CE60F66E-E08E-4C47-92DE-45A9065DF33E}" ShortID="494947875">
+											<Language>SFX</Language>
+											<AudioFile>Rack\Rack_stop.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Rack_stop" ID="{CE60F66E-E08E-4C47-92DE-45A9065DF33E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Rack_stop_2" ID="{E3B62C2B-DF85-46E1-BB4D-615F96F1A3E0}" ShortID="1012850746">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Rack_stop_2" ID="{70EB783F-B2DD-4435-AE71-E93AB88E81FB}" ShortID="885260352">
+											<Language>SFX</Language>
+											<AudioFile>Rack\Rack_stop_2.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Rack_stop_2" ID="{70EB783F-B2DD-4435-AE71-E93AB88E81FB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Rack_stop_3" ID="{8E778B38-37F3-4747-913D-0299A75AD9CF}" ShortID="896107578">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Rack_stop_3" ID="{24AD9A22-D5E5-42B8-AAA1-C5B24F598C32}" ShortID="287276400">
+											<Language>SFX</Language>
+											<AudioFile>Rack\Rack_stop_3.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Rack_stop_3" ID="{24AD9A22-D5E5-42B8-AAA1-C5B24F598C32}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>
