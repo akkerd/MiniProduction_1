@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{3683C0D3-8A29-4E60-B125-96431C2F01A8}" SchemaVersion="89" RootDocumentID="{B5DF0418-4528-4A68-9A2E-5248978A2EBB}">
 	<AudioObjects>
-		<WorkUnit Name="Menu click" ID="{3683C0D3-8A29-4E60-B125-96431C2F01A8}" OwnerID="{B5DF0418-4528-4A68-9A2E-5248978A2EBB}" PersistMode="Nested">
+		<WorkUnit Name="menu_select" ID="{3683C0D3-8A29-4E60-B125-96431C2F01A8}" OwnerID="{B5DF0418-4528-4A68-9A2E-5248978A2EBB}" PersistMode="Nested">
 			<ChildrenList>
 				<Sound Name="click_2" ID="{592A74B5-B2E5-4CEB-92AD-E15F020C4558}" ShortID="70295666">
 					<ReferenceList>

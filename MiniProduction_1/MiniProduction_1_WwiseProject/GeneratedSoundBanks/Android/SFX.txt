@@ -1,8 +1,7 @@
 Event	ID	Name			Wwise Object Path	Notes
-	311910498	Play_click			\Default Work Unit\Play_click	
+	2167056030	play_menu_select			\Default Work Unit\play_menu_select	
 	3149298709	Play_Zipper_loop			\Default Work Unit\Play_Zipper_loop	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	11681909	Zipper_loop	Y:\Documents\GitHub\MiniProduction_1\MiniProduction_1\MiniProduction_1_WwiseProject\.cache\Android\SFX\Zipper_loop_8956FC97.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Zipper_loop		765464
-	275948153	click_5	Y:\Documents\GitHub\MiniProduction_1\MiniProduction_1\MiniProduction_1_WwiseProject\.cache\Android\SFX\click_5_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Menu click\click_5		683696
+	275948153	click_5	Y:\Documents\GitHub\MiniProduction_1\MiniProduction_1\MiniProduction_1_WwiseProject\.cache\Android\SFX\click_5_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\menu_select\click_5		683696
 

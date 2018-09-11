@@ -37,8 +37,8 @@ MonoBehaviour:
     PhysicalPath: SoundBanks/Default Work Unit.wwu
     List: []
   - Guid: '{CC5CF97E-E9A0-40ED-9B93-01FC29F58407}'
-    m_lastTimePart2: -1999235292
-    m_lastTimePsrt1: 1224234624
+    m_lastTimePart2: -1999235136
+    m_lastTimePsrt1: 1849336448
     ParentPhysicalPath: 
     PhysicalPath: SoundBanks/Main.wwu
     List:
@@ -52,13 +52,13 @@ MonoBehaviour:
       - ElementName: Ambience
         ObjectType: 7
     - Guid: 039427098250b643aeac3b8b5ac9b1e5
-      ID: 1584507803
-      Name: Click
-      Path: Main/Click
+      ID: 393239870
+      Name: SFX
+      Path: Main/SFX
       PathAndIcons:
       - ElementName: Main
         ObjectType: 12
-      - ElementName: Click
+      - ElementName: SFX
         ObjectType: 7
   - Guid: '{7FB9ACC7-7BF5-4431-8EE2-ED9D6D61F0EE}'
     m_lastTimePart2: -1999235339
@@ -77,25 +77,11 @@ MonoBehaviour:
         ObjectType: 7
   EventWwu:
   - Guid: '{3ADFA3ED-74F6-456B-BA2C-59641A1C28BB}'
-    m_lastTimePart2: -1999235321
-    m_lastTimePsrt1: 1458286208
+    m_lastTimePart2: -1999235137
+    m_lastTimePsrt1: -360663552
     ParentPhysicalPath: Events/Default Work Unit.wwu
     PhysicalPath: Events/Ambience.wwu
     List:
-    - Guid: 524142a4e1a8ad4fba515e0572a04ccc
-      ID: 752289768
-      Name: Play_Clanks
-      Path: Default Work Unit/Ambience/Play_Clanks
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Ambience
-        ObjectType: 12
-      - ElementName: Play_Clanks
-        ObjectType: 3
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
     - Guid: d4f5900667e63b4c8c7f12baf9b3c88d
       ID: -1504921035
       Name: Play_Clicks
@@ -153,19 +139,31 @@ MonoBehaviour:
       maxDuration: 0
       minDuration: 0
   - Guid: '{E7FA6859-C268-4205-B746-E4153D6A95AE}'
-    m_lastTimePart2: -1999235292
-    m_lastTimePsrt1: 1224234624
+    m_lastTimePart2: -1999235136
+    m_lastTimePsrt1: 1849336448
     ParentPhysicalPath: 
     PhysicalPath: Events/Default Work Unit.wwu
     List:
     - Guid: 4e1c242d8adb7f4e8aa737bb0a088759
-      ID: 311910498
-      Name: Play_click
-      Path: Default Work Unit/Play_click
+      ID: -2127911266
+      Name: play_menu_select
+      Path: Default Work Unit/play_menu_select
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
-      - ElementName: Play_click
+      - ElementName: play_menu_select
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: cdd54cb193a7e948862a006c9d435b4f
+      ID: -1145668587
+      Name: Play_Zipper_loop
+      Path: Default Work Unit/Play_Zipper_loop
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Zipper_loop
         ObjectType: 3
       maxAttenuation: 0
       maxDuration: 0
@@ -194,6 +192,8 @@ MonoBehaviour:
   - /MiniProduction_1_WwiseProject
   - /MiniProduction_1_WwiseProject/Events
   - /MiniProduction_1_WwiseProject/Events/Default Work Unit
+  - /MiniProduction_1_WwiseProject/SoundBanks
+  - /MiniProduction_1_WwiseProject/SoundBanks/Main
   RtpcWwu:
   - Guid: '{CD646BC5-A30F-4FDF-B8CC-2F9CC05343BA}'
     m_lastTimePart2: -1999235289
