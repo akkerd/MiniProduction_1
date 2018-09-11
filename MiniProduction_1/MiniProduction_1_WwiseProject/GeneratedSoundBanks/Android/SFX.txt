@@ -1,7 +1,30 @@
 Event	ID	Name			Wwise Object Path	Notes
+	1079308955	Play_slime_impact			\Default Work Unit\Play_slime_impact	
+	2029151984	Play_fluid_leak			\Default Work Unit\Play_fluid_leak	
 	2167056030	play_menu_select			\Default Work Unit\play_menu_select	
 	3149298709	Play_Zipper_loop			\Default Work Unit\Play_Zipper_loop	
+	3222573011	Play_contract_select			\Default Work Unit\Play_contract_select	
+	3522068789	Play_menu_exit_select			\Default Work Unit\Play_menu_exit_select	
+	3875241205	Play_menu_start_select			\Default Work Unit\Play_menu_start_select	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	275948153	click_5	Y:\Documents\GitHub\MiniProduction_1\MiniProduction_1\MiniProduction_1_WwiseProject\.cache\Android\SFX\click_5_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\menu_select\click_5		683696
+	7280614	Fluid_leak_2	Y:\Documents\GitHub\MiniProduction_1\MiniProduction_1\MiniProduction_1_WwiseProject\.cache\Android\SFX\Fluid_leak_2_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Slime\fluid_leak\Fluid_leak_2		562420
+	11681909	Zipper_loop	Y:\Documents\GitHub\MiniProduction_1\MiniProduction_1\MiniProduction_1_WwiseProject\.cache\Android\SFX\Zipper_loop_8956FC97.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Ambience\Zipper_loop		765464
+	101673522	Fluid_leak_1	Y:\Documents\GitHub\MiniProduction_1\MiniProduction_1\MiniProduction_1_WwiseProject\.cache\Android\SFX\Fluid_leak_1_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Slime\fluid_leak\Fluid_leak_1		562420
+	133990861	Fluid_leak_5	Y:\Documents\GitHub\MiniProduction_1\MiniProduction_1\MiniProduction_1_WwiseProject\.cache\Android\SFX\Fluid_leak_5_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Slime\fluid_leak\Fluid_leak_5		562420
+	211606250	slimy_impact_5	Y:\Documents\GitHub\MiniProduction_1\MiniProduction_1\MiniProduction_1_WwiseProject\.cache\Android\SFX\slimy_impact_5_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Slime\slime_impact\slimy_impact_5		227992
+	255867892	slimy_impact_3	Y:\Documents\GitHub\MiniProduction_1\MiniProduction_1\MiniProduction_1_WwiseProject\.cache\Android\SFX\slimy_impact_3_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Slime\slime_impact\slimy_impact_3		213292
+	274452425	slimy_impact_1	Y:\Documents\GitHub\MiniProduction_1\MiniProduction_1\MiniProduction_1_WwiseProject\.cache\Android\SFX\slimy_impact_1_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Slime\slime_impact\slimy_impact_1		264744
+	275948153	click_5	Y:\Documents\GitHub\MiniProduction_1\MiniProduction_1\MiniProduction_1_WwiseProject\.cache\Android\SFX\click_5_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\menu_select\click_5		683696
+	401584748	slimy_impact_4	Y:\Documents\GitHub\MiniProduction_1\MiniProduction_1\MiniProduction_1_WwiseProject\.cache\Android\SFX\slimy_impact_4_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Slime\slime_impact\slimy_impact_4		227992
+	457147855	menu_start__select	Y:\Documents\GitHub\MiniProduction_1\MiniProduction_1\MiniProduction_1_WwiseProject\.cache\Android\SFX\Menu\menu_start__select_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\menu_select\menu_start__select		705744
+	458805218	menu_exit_select	Y:\Documents\GitHub\MiniProduction_1\MiniProduction_1\MiniProduction_1_WwiseProject\.cache\Android\SFX\Menu\menu_exit_select_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\menu_select\menu_exit_select		329056
+	505386533	contract_select	Y:\Documents\GitHub\MiniProduction_1\MiniProduction_1\MiniProduction_1_WwiseProject\.cache\Android\SFX\contract_select_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\menu_select\contract_select		270168
+	513540313	Fluid_leak_3	Y:\Documents\GitHub\MiniProduction_1\MiniProduction_1\MiniProduction_1_WwiseProject\.cache\Android\SFX\Fluid_leak_3_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Slime\fluid_leak\Fluid_leak_3		562420
+	526445884	Fluid_leak_6	Y:\Documents\GitHub\MiniProduction_1\MiniProduction_1\MiniProduction_1_WwiseProject\.cache\Android\SFX\Fluid_leak_6_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Slime\fluid_leak\Fluid_leak_6		562420
+	563182954	slimy_impact_2	Y:\Documents\GitHub\MiniProduction_1\MiniProduction_1\MiniProduction_1_WwiseProject\.cache\Android\SFX\slimy_impact_2_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Slime\slime_impact\slimy_impact_2		213292
+	836984824	slimy_impact_6	Y:\Documents\GitHub\MiniProduction_1\MiniProduction_1\MiniProduction_1_WwiseProject\.cache\Android\SFX\slimy_impact_6_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Slime\slime_impact\slimy_impact_6		227992
+	891523264	Fluid_leak_7	Y:\Documents\GitHub\MiniProduction_1\MiniProduction_1\MiniProduction_1_WwiseProject\.cache\Android\SFX\Fluid_leak_7_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Slime\fluid_leak\Fluid_leak_7		562420
+	980224971	slimy_impact_7	Y:\Documents\GitHub\MiniProduction_1\MiniProduction_1\MiniProduction_1_WwiseProject\.cache\Android\SFX\slimy_impact_7_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Slime\slime_impact\slimy_impact_7		264744
+	1049990235	Fluid_leak_4	Y:\Documents\GitHub\MiniProduction_1\MiniProduction_1\MiniProduction_1_WwiseProject\.cache\Android\SFX\Fluid_leak_4_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Slime\fluid_leak\Fluid_leak_4		562420
 

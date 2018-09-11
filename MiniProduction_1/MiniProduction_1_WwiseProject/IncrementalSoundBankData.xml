@@ -3,54 +3,54 @@
 	<Platform GUID="{8AB45666-05BD-40FF-9DAE-B76E62679749}">
 		<Banks>
 			<Language ID="393239870">
-				<File Name="Ambience" Hash="2420777803" Timestamp="1536587407"/>
+				<File Name="Ambience" Hash="1254140101" Timestamp="1536666612"/>
 				<File Name="Click" Hash="3009915969" Timestamp="1536587407"/>
-				<File Name="Init" Hash="281446106" Timestamp="1536654248"/>
-				<File Name="Music" Hash="39338879" Timestamp="1536587407"/>
-				<File Name="SFX" Hash="3118830452" Timestamp="1536654904"/>
+				<File Name="Init" Hash="3127658941" Timestamp="1536666613"/>
+				<File Name="Music" Hash="134126396" Timestamp="1536666613"/>
+				<File Name="SFX" Hash="3665296232" Timestamp="1536670493"/>
 				<File Name="Test" Hash="2111629074" Timestamp="1536236137"/>
 				<File Name="Virk_nu" Hash="3798876410" Timestamp="1536237051"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="1761071229" Timestamp="1536654904"/>
+				<File Name="" Hash="3216113730" Timestamp="1536670493"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
 	<Platform GUID="{1ECB8ED5-F41A-4117-B1D0-1D54609A0CE0}">
 		<Banks>
 			<Language ID="393239870">
-				<File Name="Ambience" Hash="2420777803" Timestamp="1536654231"/>
+				<File Name="Ambience" Hash="1254140101" Timestamp="1536666593"/>
 				<File Name="Click" Hash="3009915969" Timestamp="1536587378"/>
-				<File Name="Init" Hash="1961783754" Timestamp="1536654232"/>
-				<File Name="Music" Hash="39338879" Timestamp="1536654232"/>
-				<File Name="SFX" Hash="3118830452" Timestamp="1536654903"/>
+				<File Name="Init" Hash="2034285285" Timestamp="1536666595"/>
+				<File Name="Music" Hash="134126396" Timestamp="1536666595"/>
+				<File Name="SFX" Hash="3665296232" Timestamp="1536670485"/>
 				<File Name="Test" Hash="2111629074" Timestamp="1536236136"/>
 				<File Name="Virk_nu" Hash="3798876410" Timestamp="1536237048"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="1271095051" Timestamp="1536654903"/>
+				<File Name="" Hash="2003966384" Timestamp="1536670485"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
 	<Platform GUID="{ACD8F89B-3C70-47F4-80E5-24AF2636AA25}">
 		<Banks>
 			<Language ID="393239870">
-				<File Name="Ambience" Hash="2420777803" Timestamp="1536654246"/>
+				<File Name="Ambience" Hash="1254140101" Timestamp="1536666611"/>
 				<File Name="Click" Hash="3009915969" Timestamp="1536587387"/>
-				<File Name="Init" Hash="1666263028" Timestamp="1536654247"/>
-				<File Name="Music" Hash="39338879" Timestamp="1536654247"/>
-				<File Name="SFX" Hash="3118830452" Timestamp="1536654903"/>
+				<File Name="Init" Hash="1682591243" Timestamp="1536666611"/>
+				<File Name="Music" Hash="134126396" Timestamp="1536666611"/>
+				<File Name="SFX" Hash="3665296232" Timestamp="1536670492"/>
 				<File Name="Test" Hash="2111629074" Timestamp="1536236136"/>
 				<File Name="Virk_nu" Hash="3798876410" Timestamp="1536237050"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="3821906831" Timestamp="1536654903"/>
+				<File Name="" Hash="4068395772" Timestamp="1536670492"/>
 			</Language>
 		</XMLInfo>
 	</Platform>

@@ -3,12 +3,12 @@
 	<InteractiveMusic>
 		<WorkUnit Name="Menu Music" ID="{0EC489FF-9FA4-47C6-98BF-5C2870819FA9}" PersistMode="Standalone">
 			<ChildrenList>
-				<MusicSegment Name="Create Jam Spring 2018 soundtrack" ID="{BEE6B342-EB5E-4B23-B9C4-B98C5E15C695}" ShortID="464292078">
+				<MusicSegment Name="Menu Music" ID="{BEE6B342-EB5E-4B23-B9C4-B98C5E15C695}" ShortID="464292078">
 					<PropertyList>
 						<Property Name="EndPosition" Type="Real64" Value="312000"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-35</Value>
+								<Value>-10</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -17,11 +17,11 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
+							<ObjectRef Name="Music" ID="{0F785AEF-26F8-4450-ACCE-5E3D4C75000B}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<MusicTrack Name="Create Jam Spring 2018 soundtrack" ID="{F7448607-1146-478D-9AB8-2802DBB81122}" ShortID="520703933">
+						<MusicTrack Name="Menu Music" ID="{F7448607-1146-478D-9AB8-2802DBB81122}" ShortID="520703933">
 							<ReferenceList>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>

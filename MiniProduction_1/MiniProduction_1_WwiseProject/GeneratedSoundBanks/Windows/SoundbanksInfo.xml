@@ -145,13 +145,90 @@
 			<ShortName>SFX</ShortName>
 			<Path>SFX.bnk</Path>
 			<IncludedEvents>
+				<Event Id="3222573011" Name="Play_contract_select" ObjectPath="\Events\Default Work Unit\Play_contract_select"/>
+				<Event Id="2029151984" Name="Play_fluid_leak" ObjectPath="\Events\Default Work Unit\Play_fluid_leak"/>
+				<Event Id="3522068789" Name="Play_menu_exit_select" ObjectPath="\Events\Default Work Unit\Play_menu_exit_select"/>
 				<Event Id="2167056030" Name="play_menu_select" ObjectPath="\Events\Default Work Unit\play_menu_select"/>
-				<Event Id="3149298709" Name="Play_Zipper_loop" ObjectPath="\Events\Default Work Unit\Play_Zipper_loop" MaxAttenuation="0.000000"/>
+				<Event Id="3875241205" Name="Play_menu_start_select" ObjectPath="\Events\Default Work Unit\Play_menu_start_select"/>
+				<Event Id="1079308955" Name="Play_slime_impact" ObjectPath="\Events\Default Work Unit\Play_slime_impact"/>
+				<Event Id="3149298709" Name="Play_Zipper_loop" ObjectPath="\Events\Default Work Unit\Play_Zipper_loop"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="7280614" Language="SFX">
+					<ShortName>Fluid_leak_2.wav</ShortName>
+					<Path>SFX/Fluid_leak_2_56D34C19.wem</Path>
+				</File>
+				<File Id="11681909" Language="SFX">
+					<ShortName>Zipper_loop.wav</ShortName>
+					<Path>SFX/Zipper_loop_8956FC97.wem</Path>
+				</File>
+				<File Id="101673522" Language="SFX">
+					<ShortName>Fluid_leak_1.wav</ShortName>
+					<Path>SFX/Fluid_leak_1_56D34C19.wem</Path>
+				</File>
+				<File Id="133990861" Language="SFX">
+					<ShortName>Fluid_leak_5.wav</ShortName>
+					<Path>SFX/Fluid_leak_5_56D34C19.wem</Path>
+				</File>
+				<File Id="211606250" Language="SFX">
+					<ShortName>slimy_impact_5.wav</ShortName>
+					<Path>SFX/slimy_impact_5_56D34C19.wem</Path>
+				</File>
+				<File Id="255867892" Language="SFX">
+					<ShortName>slimy_impact_3.wav</ShortName>
+					<Path>SFX/slimy_impact_3_56D34C19.wem</Path>
+				</File>
+				<File Id="274452425" Language="SFX">
+					<ShortName>slimy_impact_1.wav</ShortName>
+					<Path>SFX/slimy_impact_1_56D34C19.wem</Path>
+				</File>
 				<File Id="275948153" Language="SFX">
 					<ShortName>click_5.wav</ShortName>
 					<Path>SFX/click_5_56D34C19.wem</Path>
+				</File>
+				<File Id="401584748" Language="SFX">
+					<ShortName>slimy_impact_4.wav</ShortName>
+					<Path>SFX/slimy_impact_4_56D34C19.wem</Path>
+				</File>
+				<File Id="457147855" Language="SFX">
+					<ShortName>Menu\menu_start__select.wav</ShortName>
+					<Path>SFX/Menu/menu_start__select_56D34C19.wem</Path>
+				</File>
+				<File Id="458805218" Language="SFX">
+					<ShortName>Menu\menu_exit_select.wav</ShortName>
+					<Path>SFX/Menu/menu_exit_select_56D34C19.wem</Path>
+				</File>
+				<File Id="505386533" Language="SFX">
+					<ShortName>contract_select.wav</ShortName>
+					<Path>SFX/contract_select_56D34C19.wem</Path>
+				</File>
+				<File Id="513540313" Language="SFX">
+					<ShortName>Fluid_leak_3.wav</ShortName>
+					<Path>SFX/Fluid_leak_3_56D34C19.wem</Path>
+				</File>
+				<File Id="526445884" Language="SFX">
+					<ShortName>Fluid_leak_6.wav</ShortName>
+					<Path>SFX/Fluid_leak_6_56D34C19.wem</Path>
+				</File>
+				<File Id="563182954" Language="SFX">
+					<ShortName>slimy_impact_2.wav</ShortName>
+					<Path>SFX/slimy_impact_2_56D34C19.wem</Path>
+				</File>
+				<File Id="836984824" Language="SFX">
+					<ShortName>slimy_impact_6.wav</ShortName>
+					<Path>SFX/slimy_impact_6_56D34C19.wem</Path>
+				</File>
+				<File Id="891523264" Language="SFX">
+					<ShortName>Fluid_leak_7.wav</ShortName>
+					<Path>SFX/Fluid_leak_7_56D34C19.wem</Path>
+				</File>
+				<File Id="980224971" Language="SFX">
+					<ShortName>slimy_impact_7.wav</ShortName>
+					<Path>SFX/slimy_impact_7_56D34C19.wem</Path>
+				</File>
+				<File Id="1049990235" Language="SFX">
+					<ShortName>Fluid_leak_4.wav</ShortName>
+					<Path>SFX/Fluid_leak_4_56D34C19.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

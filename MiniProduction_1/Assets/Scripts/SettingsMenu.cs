@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class SettingsMenu : MonoBehaviour {
+public class SettingsMenu : MonoBehaviour
+{
     bool settingsVisible = false;
 
     public GameObject settingsMenu;
@@ -23,7 +24,8 @@ public class SettingsMenu : MonoBehaviour {
         {
             settingsVisible = false;
             settingsMenu.SetActive(false);
-        } else
+        }
+        else
         {
 
             settingsVisible = true;
@@ -35,19 +37,46 @@ public class SettingsMenu : MonoBehaviour {
     public void ChangeMusicValue()
     {
         SettingsFlags.Instance.MusicVolume = (int)musicVolumeSlider.value;
+        AkSoundEngine.SetRTPCValue("music_mix", musicVolumeSlider.value);
     }
+
     public void SwithMusic()
     {
         SettingsFlags.Instance.IsMusicOn = musicToggle.isOn;
+
+        if (SettingsFlags.Instance.IsMusicOn)
+        {
+            AkSoundEngine.SetRTPCValue("music_mix", 0);
+            Debug.Log("Music muted");
+        }
+        else
+        {
+            AkSoundEngine.SetRTPCValue("music_mix", SettingsFlags.Instance.MusicVolume);
+            Debug.Log("Music unmuted");
+        }
     }
+
     public void ChangeSFXValue()
     {
         SettingsFlags.Instance.SFXVolume = (int)sfxVolumeSlider.value;
+        AkSoundEngine.SetRTPCValue("sfx_mix", sfxVolumeSlider.value);
 
     }
+
     public void SwithSFX()
     {
-        SettingsFlags.Instance.IsMusicOn = sfxToggle.isOn;
+        SettingsFlags.Instance.IsSFXOn = sfxToggle.isOn;
+
+        if (SettingsFlags.Instance.IsSFXOn)
+        {
+            AkSoundEngine.SetRTPCValue("sfx_mix", 0);
+            Debug.Log("SFX muted");
+        }
+        else 
+        {
+            AkSoundEngine.SetRTPCValue("sfx_mix", sfxVolumeSlider.value);
+            Debug.Log("SFX unmuted");
+        }
     }
 
     public void ChangeLanguage(int value)
