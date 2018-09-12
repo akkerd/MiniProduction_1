@@ -33,7 +33,7 @@ public class TableScript : MonoBehaviour {
             }
             if (PTravelled >= 1)
             {
-
+                StackDeliveryController.Instance.SetColliderOnSleeve();
                 transform.SetParent(UnsleeveManager.Instance.transform);
                 UnsleeveManager.Instance.DestroyPrefab();
             }
