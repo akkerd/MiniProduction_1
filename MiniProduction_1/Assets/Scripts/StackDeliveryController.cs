@@ -7,6 +7,7 @@ public class StackDeliveryController : Manager<StackDeliveryController> {
     GameObject Stacks;
     int[] stackCombinations;
     int stackHomesFound = 0;
+    int numberOfActivatedSleeves = 0;
     [SerializeField]
 	GameObject[] colliders;
     List<GameObject> childStacks;    
@@ -59,9 +60,14 @@ public class StackDeliveryController : Manager<StackDeliveryController> {
         ScoringController.Instance.CalculateReport(stackCombinations);
     }
 
+    public void SetColliderOnSleeve()
+    {
+        colliders[numberOfActivatedSleeves].SetActive(true);
+        numberOfActivatedSleeves++;
+    }
+
     public void ShowStacks()
     {
-        Debug.Log("ShowStacks");
         stackCombinations = new int[ContractController.Instance.GetCurrentContract().GetNumberOfStacks()];
         int stackHomesFound = 0;
 
@@ -75,10 +81,9 @@ public class StackDeliveryController : Manager<StackDeliveryController> {
             GameObject stack = (GameObject)Instantiate(Resources.Load("Stack"));
             stack.name = "Stack";
             stack.transform.SetParent(Stacks.transform);
-            stack.transform.position = new Vector3(Stacks.transform.position.x, Stacks.transform.position.y+(i*0.05f), Stacks.transform.position.z);
+            stack.transform.position = new Vector3(Stacks.transform.position.x-2.0f+(i*0.3f), Stacks.transform.position.y, Stacks.transform.position.z+0.5f);
             stack.GetComponent<StackObject>().stackNumber = i;
             childStacks.Add(stack);
-            colliders[i].SetActive(true);            
         }
 
         stacksCreated = true;
@@ -92,15 +97,12 @@ public class StackDeliveryController : Manager<StackDeliveryController> {
             {
                 Ray mouseRay = GenerateMouseRay();
                 RaycastHit hit;
-                Debug.DrawRay(mouseRay.origin, mouseRay.direction);
                 if (Physics.Raycast(mouseRay.origin, mouseRay.direction, out hit, raycastStackSelection))
                 {
                     chosenStack = hit.transform.gameObject;
 
                     if (chosenStack != null && chosenStack.name == "Stack")
                     {
-                        Debug.Log(chosenStack.name);
-
                         startPosition = chosenStack.transform.position;
 
                         objPlane = new Plane(Camera.main.transform.forward * -1, chosenStack.transform.position);
@@ -127,7 +129,6 @@ public class StackDeliveryController : Manager<StackDeliveryController> {
             {
                 Ray mouseRay = GenerateMouseRay();
                 RaycastHit hit;
-                Debug.DrawRay(mouseRay.origin, mouseRay.direction);
                 if (Physics.Raycast(mouseRay.origin, mouseRay.direction, out hit, raycastSleeveSelection))
                 {
                     receivingSleeve = hit.transform.gameObject;
@@ -135,10 +136,10 @@ public class StackDeliveryController : Manager<StackDeliveryController> {
                     if (receivingSleeve != null && receivingSleeve.layer == 10)
                     {
                         Debug.Log(receivingSleeve.name + " received stack");
-                        Debug.Log(chosenStack.GetComponent<StackObject>().stackNumber);
                         CombinedStackWithSleeve(chosenStack.GetComponent<StackObject>().stackNumber, receivingSleeve.name.ToCharArray()[6]);
                         chosenStack.SetActive(false);
                         childStacks.Remove(chosenStack);
+                        receivingSleeve.SetActive(false);
                         chosenStack = null;
                     }
                     else

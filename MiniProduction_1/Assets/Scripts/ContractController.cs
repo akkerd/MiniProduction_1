@@ -36,7 +36,9 @@ public class ContractController : Manager<ContractController> {
 	public void AcceptContract(int acceptedContractPositionInArray)
 	{
 		currectAcceptedContract = acceptedContractPositionInArray;
-	}
+
+        StackDeliveryController.Instance.ShowStacks();
+    }
 
 	public void FinishContract()
 	{
