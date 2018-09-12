@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 23737020869736706}
   - component: {fileID: 65978508606411470}
   - component: {fileID: 114550116503265032}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Stack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -108,6 +108,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08c9fc3679ceb6641a05c6deebc92ae0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  raycastSelection:
-    serializedVersion: 2
-    m_Bits: 1024
+  stackNumber: 0
