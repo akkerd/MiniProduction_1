@@ -11,7 +11,7 @@ public class SleeveSelection : Manager<SleeveSelection>, IPointerClickHandler
 	GameObject sleeveInfoBackground;
 	Color startColor;
 	[SerializeField]
-	Text sleeveInfoText; 
+	GameObject sleeveInfoText; 
 	[SerializeField]
 	Button sleeveAcceptButton;
 
