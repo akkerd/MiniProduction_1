@@ -81,7 +81,7 @@ public class TouchInputController : Manager<TouchInputController> {
 			return;
 		}
 		//Where the check if its allowed to run
-		if (ContractController.Instance.GetCurrentContract() == null || SleeveSelection.Instance.IsSleeveInfoVisible() /* Add if unzipping is currently happening*/)
+		if (ContractController.Instance.GetCurrentContract() == null || SleeveSelection.Instance.IsSleeveInfoVisible() || UnsleeveManager.Instance.isCurrentlyUnsleeving)
 		{
 			return;
 		}
