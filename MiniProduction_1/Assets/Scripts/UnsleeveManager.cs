@@ -36,8 +36,8 @@ public class UnsleeveManager : Manager<UnsleeveManager> {
 
     public void DestroyPrefab()
     {
-        //Destroy(Unsleeving);
-        Unsleeving.SetActive(false);
+        Destroy(Unsleeving);
+        
         MoveSleeveForwardScript.Instance.MoveSleeveBackwards();
         isCurrentlyUnsleeving = false;
         //Might have to call convayorController.RemoveCenterSleeveFromShell()

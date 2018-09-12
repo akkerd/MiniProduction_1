@@ -16,25 +16,28 @@ public class TableScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        float distance = Vector3.Distance(transform.position,EndPosition.position);
-        if (distance == 0 || distance == Mathf.Infinity)
-        {
-            return;
-        }
 
-        if (Moving == true)
+        if (EndPosition != null)
         {
-            PTravelled += 0.5f* Time.deltaTime;
-            transform.position = Vector3.Lerp(StartPosition.position, EndPosition.position, PTravelled);
+            float distance = Vector3.Distance(transform.position, EndPosition.position);
+            if (distance == 0 || distance == Mathf.Infinity)
+            {
+                return;
+            }
 
-        }
-        if (PTravelled >= 1)
-        {
-            
-            transform.SetParent(UnsleeveManager.Instance.transform);
-            UnsleeveManager.Instance.DestroyPrefab();
-        }
-                
-                
+            if (Moving == true)
+            {
+                PTravelled += 0.5f * Time.deltaTime;
+                transform.position = Vector3.Lerp(StartPosition.position, EndPosition.position, PTravelled);
+
+            }
+            if (PTravelled >= 1)
+            {
+
+                transform.SetParent(UnsleeveManager.Instance.transform);
+                UnsleeveManager.Instance.DestroyPrefab();
+            }
+
+        }      
 	}
 }
