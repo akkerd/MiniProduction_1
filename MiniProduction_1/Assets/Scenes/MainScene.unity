@@ -1017,6 +1017,12 @@ Prefab:
       propertyPath: m_Color.a
       value: 0.69803923
       objectReference: {fileID: 0}
+    - target: {fileID: 114830978029277596, guid: 6d53cb224b6875a48abc7b401d7a4163,
+        type: 2}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: d77549dfa76063141bb994692c574eb2,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d53cb224b6875a48abc7b401d7a4163, type: 2}
   m_IsPrefabAsset: 0
@@ -1393,7 +1399,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: d77549dfa76063141bb994692c574eb2, type: 3}
     m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
@@ -3396,6 +3402,7 @@ GameObject:
   - component: {fileID: 1453549266}
   - component: {fileID: 1453549263}
   - component: {fileID: 1453549267}
+  - component: {fileID: 1453549268}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -3437,7 +3444,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 1000
+  far clip plane: 100
   field of view: 55
   orthographic: 0
   orthographic size: 5
@@ -3463,7 +3470,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1453549262}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.05, y: 1.249, z: 0}
+  m_LocalPosition: {x: -3.1, y: 1.5, z: 0.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3496,7 +3503,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1453549262}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 27ec7fb924c8cdd43a1dc5d298101c39, type: 3}
   m_Name: 
@@ -3505,6 +3512,17 @@ MonoBehaviour:
   maxRotationRight: 0.02
   maxRotationUp: 0.02
   maxRotationDown: 0.02
+--- !u!114 &1453549268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1453549262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0fc6c773e435a948a726a5a4fa6a1bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1482238278 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4964318039276930, guid: 31f008b3d2e59ab49bc4c661891c7ee2,
