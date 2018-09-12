@@ -7,18 +7,21 @@ public class ContractController : Manager<ContractController> {
 	Contract[] contracts;
 	int currectAcceptedContract = -1;
 
-	void Start()
+	
+	protected override void onAwake()
+	{
+		base.onAwake();
+		contracts = new Contract[3];
+	}
+	
+	public void Reset()
 	{
 		contracts = new Contract[3];
-		AddContract(new Contract(3));
-		AddContract(new Contract(4));
-
-		AddContract(new Contract(2));
-
 	}
 
 	public void AddContract(Contract newContract)
 	{
+		
 		for (int i = 0; i < contracts.Length; i++)
 		{
 			if (contracts[i] == null)
@@ -40,8 +43,7 @@ public class ContractController : Manager<ContractController> {
 
 	public void FinishContract()
 	{
-		SleeveController.Instance.AddSleeves(GetCurrentContract().GetNumberOfStacks());
-		SleeveController.Instance.UpdateSleevesInConveyor();
+		SaveLoadController.Instance.CompleteContract(contracts[currectAcceptedContract].id);
 		currectAcceptedContract = -1;
 		//ActivateScoringThang
 	}
