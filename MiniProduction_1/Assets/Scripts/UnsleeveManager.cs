@@ -28,7 +28,7 @@ public class UnsleeveManager : Manager<UnsleeveManager> {
     {
 
        Unsleeving = Instantiate(brick, new Vector3(-3.88f, 0.78f, 4.54f), Quaternion.identity);
-        Unsleeving.GetComponent<EndPosReceiver>().EndTransform = EndPosistions[count];
+        Unsleeving.GetComponent<EndPosReceiver>().Setpos( EndPosistions[count]);
     
         count += 1;
         isCurrentlyUnsleeving = true;

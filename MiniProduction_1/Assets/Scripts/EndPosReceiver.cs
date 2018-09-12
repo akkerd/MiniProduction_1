@@ -4,12 +4,15 @@ using UnityEngine;
 
 public class EndPosReceiver : MonoBehaviour {
 
-     public Transform EndTransform;
+     
     [SerializeField]
     Transform EndposObject;
 
-    void Start()
+
+    public void Setpos(Transform t)
     {
-       EndposObject.position = EndTransform.position;
+
+        EndposObject.position = t.position;
+
     }
 }
