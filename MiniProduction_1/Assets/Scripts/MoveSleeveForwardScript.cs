@@ -32,6 +32,10 @@ public class MoveSleeveForwardScript : Manager<MoveSleeveForwardScript> {
 		isMoving = true;
 		currentDestination = originalStartPosition;
 	}
+	public void MoveSleeveBackwards()
+	{
+		transform.position = originalStartPosition;
+	}
 	void Update()
 	{
 		if (isMoving)

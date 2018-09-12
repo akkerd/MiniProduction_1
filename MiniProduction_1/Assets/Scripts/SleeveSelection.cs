@@ -5,13 +5,14 @@ using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
 
-public class SleeveSelection : MonoBehaviour, IPointerClickHandler
+public class SleeveSelection : Manager<SleeveSelection>, IPointerClickHandler
 {
 	[SerializeField]
 	GameObject sleeveInfoBackground;
 	[SerializeField]
-
 	Text sleeveInfoText; 
+	[SerializeField]
+	Button sleeveAcceptButton;
 
 	[SerializeField]
 	ConveyorSleeve bodyBag;
@@ -23,11 +24,33 @@ public class SleeveSelection : MonoBehaviour, IPointerClickHandler
 	}
     public void OnPointerClick(PointerEventData eventData)
     {
-        ShowSleeveInfo();
+		if (ContractController.Instance.GetCurrentContract() == null)
+		{
+			return;	
+		}
+		if (!ConveyorController.Instance.GetCenterConveyorSleeve().gameObject.activeSelf || UnsleeveManager.Instance.count == ContractController.Instance.GetCurrentContract().GetNumberOfStacks())
+		{
+			return;
+		}
+		
+		if (SleeveController.Instance.GetActiveSleeves()[ConveyorController.Instance.currentCenterOfLevelSleeves].isEmpty)
+		{
+			ShowSleeveInfo(false);	
+		} else {
+        	ShowSleeveInfo(true);
+		}
     }
 
-	void ShowSleeveInfo()
+	void ShowSleeveInfo(bool isAcceptPosible)
 	{
+		
+		if (isAcceptPosible)
+		{
+			sleeveAcceptButton.interactable = true;
+		} else {
+			sleeveAcceptButton.interactable = false;
+		}
+		
 		//Might be unnessesary until movement script have been collider dependent
 		TouchInputController.Instance.ResetCubePosition();
 		sleeveInfoBackground.SetActive(true);
@@ -64,5 +87,9 @@ public class SleeveSelection : MonoBehaviour, IPointerClickHandler
 	public void CancelUnSleeving()
 	{
 		moveSleeveForward.MoveSleeveBackwards(ResetCenterOfConveyor);
+	}
+	public bool IsSleeveInfoVisible()
+	{
+		return sleeveInfoBackground.activeSelf;
 	}
 }

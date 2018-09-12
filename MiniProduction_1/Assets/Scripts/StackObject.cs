@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class StackObject : MonoBehaviour {
 
+    public int stackNumber;
+
     GameObject chosenStack = null;
     GameObject receivingSleeve = null;
     Plane objPlane;
@@ -80,10 +82,11 @@ public class StackObject : MonoBehaviour {
                     receivingSleeve = hit.transform.gameObject;
                     //Debug.Log(chosenStack.name);
                     
-                    if (receivingSleeve != null && receivingSleeve.layer == 9)
+                    if (receivingSleeve != null && receivingSleeve.layer == 10)
                     {
                         Debug.Log(receivingSleeve.name + " received stack");
                         chosenStack.SetActive(false);
+                        StackDeliveryController.Instance.CombinedStackWithSleeve(stackNumber,receivingSleeve.name.ToCharArray()[6]);
                     }
                     else
                     {

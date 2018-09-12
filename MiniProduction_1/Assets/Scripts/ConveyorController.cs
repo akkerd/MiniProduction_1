@@ -87,6 +87,7 @@ public class ConveyorController : Manager<ConveyorController> {
             int sleeveToTransport = FindCorrectSleeve(conveyorSleevesOnEachSide);
             TeleportConveyorSleeve(startPositionOfConveyor, conveyorSleves[sleeveToTransport]);
             currentCenterOfConveyor--;
+            currentCenterOfLevelSleeves--;
             AddSleeveToEndShell(1,conveyorSleves[sleeveToTransport]);
 
             hasChanged = true;
@@ -97,6 +98,7 @@ public class ConveyorController : Manager<ConveyorController> {
             int sleeveToTransport = FindCorrectSleeve(-conveyorSleevesOnEachSide);
             TeleportConveyorSleeve(endPositionOfConveyor, conveyorSleves[sleeveToTransport]);
             currentCenterOfConveyor++;
+            currentCenterOfLevelSleeves++;
             AddSleeveToEndShell(-1,conveyorSleves[sleeveToTransport]);
             hasChanged = true;
         }
@@ -150,6 +152,7 @@ public class ConveyorController : Manager<ConveyorController> {
     //Checks if currentcenter is among the conveyorSleeves
     void CheckIfCenterIsBelowOrAbove()
     {
+        //Center of conveyor
         int min = 0;
         int max = conveyorSleves.Length - 1;
         if (currentCenterOfConveyor < min)
@@ -158,6 +161,17 @@ public class ConveyorController : Manager<ConveyorController> {
         } else if (currentCenterOfConveyor > max)
         {
             currentCenterOfConveyor = min;
+
+        }
+
+        //Center of levelsleeves
+        max = sleevesInLevel.Length;
+        if (currentCenterOfLevelSleeves < min)
+        {
+            currentCenterOfLevelSleeves = max;
+        } else if (currentCenterOfLevelSleeves > max)
+        {
+            currentCenterOfLevelSleeves = min;
 
         }
     }
@@ -203,6 +217,10 @@ public class ConveyorController : Manager<ConveyorController> {
     {
         conveyorSleves[currentCenterOfConveyor].gameObject.SetActive(true);
 
+    }
+    public ConveyorSleeve GetCenterConveyorSleeve()
+    {
+        return conveyorSleves[currentCenterOfConveyor];
     }
 
 }

@@ -5,7 +5,7 @@ using UnityEngine;
 public class UnsleeveManager : Manager<UnsleeveManager> {
     [SerializeField]
     GameObject brick;
-    int count=0;
+    public int count=0;
     [SerializeField]
     Transform[] EndPosistions = new Transform[5];
 
@@ -33,9 +33,12 @@ public class UnsleeveManager : Manager<UnsleeveManager> {
 
     public void DestroyPrefab()
     {
-        Destroy(Unsleeving);
-
-        if (UnsleeveManager.Instance.count == ContractController.Instance.GetCurrentContract().GetNumberOfStacks())
+        //Destroy(Unsleeving);
+        Unsleeving.SetActive(false);
+        MoveSleeveForwardScript.Instance.MoveSleeveBackwards();
+        //Might have to call convayorController.RemoveCenterSleeveFromShell()
+        SleeveController.Instance.GetActiveSleeves()[ConveyorController.Instance.currentCenterOfLevelSleeves].isEmpty = true;
+        if (count == ContractController.Instance.GetCurrentContract().GetNumberOfStacks())
         {
             StackDeliveryController.Instance.ShowStacks();   
         }

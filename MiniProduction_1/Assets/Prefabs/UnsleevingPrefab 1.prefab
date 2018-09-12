@@ -1340,6 +1340,7 @@ MonoBehaviour:
   Moving: 0
   EndPosition: {fileID: 4983145920757532}
   StartPosition: {fileID: 4626893594706060}
+  PTravelled: 0
 --- !u!114 &114225027609557984
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1485,6 +1486,7 @@ MonoBehaviour:
   Moving: 0
   EndPosition: {fileID: 4983145920757532}
   StartPosition: {fileID: 4626893594706060}
+  PTravelled: 0
 --- !u!114 &114771412632081458
 MonoBehaviour:
   m_ObjectHideFlags: 1

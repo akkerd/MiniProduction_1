@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ScoringUIController : MonoBehaviour {
+public class ScoringUIController : Manager<ScoringUIController> {
 
 	[SerializeField]
 	GameObject scoringScreen;

@@ -16,7 +16,11 @@ public class TableScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
+        float distance = Vector3.Distance(transform.position,EndPosition.position);
+        if (distance == 0 || distance == Mathf.Infinity)
+        {
+            return;
+        }
 
         if (Moving == true)
         {
@@ -27,9 +31,8 @@ public class TableScript : MonoBehaviour {
         if (PTravelled >= 1)
         {
             
-            transform.parent =null ;
+            transform.SetParent(UnsleeveManager.Instance.transform);
             UnsleeveManager.Instance.DestroyPrefab();
-            enabled = false;
         }
                 
                 
