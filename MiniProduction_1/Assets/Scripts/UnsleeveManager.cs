@@ -42,7 +42,7 @@ public class UnsleeveManager : Manager<UnsleeveManager> {
         isCurrentlyUnsleeving = false;
         //Might have to call convayorController.RemoveCenterSleeveFromShell()
         SleeveController.Instance.GetActiveSleeves()[ConveyorController.Instance.currentCenterOfLevelSleeves].isEmpty = true;
-        if (count == ContractController.Instance.GetCurrentContract().GetNumberOfStacks())
+        if (count == ContractController.Instance.GetCurrentContract().GetNumberOfStacks() && !StackDeliveryController.Instance.stacksCreated)
         {
             StackDeliveryController.Instance.ShowStacks();   
         }
