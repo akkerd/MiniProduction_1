@@ -12,6 +12,8 @@ public class UnsleeveManager : Manager<UnsleeveManager> {
     GameObject Unsleeving;
     GameObject Stacks;
 
+    public bool isCurrentlyUnsleeving = false;
+
     // Use this for initialization
     void Start () {
        // CreateBodybag();
@@ -26,9 +28,10 @@ public class UnsleeveManager : Manager<UnsleeveManager> {
     {
 
        Unsleeving = Instantiate(brick, new Vector3(-3.88f, 0.78f, 4.54f), Quaternion.identity);
-        Unsleeving.GetComponent<EndPosReceiver>().EndTransform = EndPosistions[count];
+        Unsleeving.GetComponent<EndPosReceiver>().Setpos( EndPosistions[count]);
     
         count += 1;
+        isCurrentlyUnsleeving = true;
     }
 
     public void DestroyPrefab()
@@ -36,9 +39,10 @@ public class UnsleeveManager : Manager<UnsleeveManager> {
         //Destroy(Unsleeving);
         Unsleeving.SetActive(false);
         MoveSleeveForwardScript.Instance.MoveSleeveBackwards();
+        isCurrentlyUnsleeving = false;
         //Might have to call convayorController.RemoveCenterSleeveFromShell()
         SleeveController.Instance.GetActiveSleeves()[ConveyorController.Instance.currentCenterOfLevelSleeves].isEmpty = true;
-        if (count == ContractController.Instance.GetCurrentContract().GetNumberOfStacks())
+        if (count == ContractController.Instance.GetCurrentContract().GetNumberOfStacks() && !StackDeliveryController.Instance.stacksCreated)
         {
             StackDeliveryController.Instance.ShowStacks();   
         }

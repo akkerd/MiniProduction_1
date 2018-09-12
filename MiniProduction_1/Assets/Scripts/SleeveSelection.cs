@@ -9,6 +9,7 @@ public class SleeveSelection : Manager<SleeveSelection>, IPointerClickHandler
 {
 	[SerializeField]
 	GameObject sleeveInfoBackground;
+	Color startColor;
 	[SerializeField]
 	Text sleeveInfoText; 
 	[SerializeField]
@@ -21,6 +22,7 @@ public class SleeveSelection : Manager<SleeveSelection>, IPointerClickHandler
 	void Start()
 	{
 		moveSleeveForward.Setup();
+		startColor = sleeveInfoBackground.GetComponent<Image>().color;
 	}
     public void OnPointerClick(PointerEventData eventData)
     {
@@ -28,7 +30,7 @@ public class SleeveSelection : Manager<SleeveSelection>, IPointerClickHandler
 		{
 			return;	
 		}
-		if (!ConveyorController.Instance.GetCenterConveyorSleeve().gameObject.activeSelf || UnsleeveManager.Instance.count == ContractController.Instance.GetCurrentContract().GetNumberOfStacks())
+		if (!ConveyorController.Instance.GetCenterConveyorSleeve().gameObject.activeSelf || UnsleeveManager.Instance.count == ContractController.Instance.GetCurrentContract().GetNumberOfStacks() || UnsleeveManager.Instance.isCurrentlyUnsleeving)
 		{
 			return;
 		}
@@ -58,13 +60,23 @@ public class SleeveSelection : Manager<SleeveSelection>, IPointerClickHandler
 	}
 	public void CloseSleeveInfo()
 	{
+		CancelInvoke("ChangeColor");
+		sleeveInfoBackground.GetComponent<Image>().color = startColor;
 		sleeveInfoBackground.SetActive(false);
 	}
 	public void AcceptSleeve()
 	{
 		Invoke("CloseSleeveInfo",1.0f);
+		InvokeRepeating("ChangeColor",0.05f,0.05f);
 		sleeveInfoText.gameObject.SetActive(false);
+		sleeveAcceptButton.interactable = false;
 		MoveSleeveForward();
+	}
+	void ChangeColor()
+	{
+		Color tempColor = sleeveInfoBackground.GetComponent<Image>().color;
+		tempColor.a -= 0.05f;
+		sleeveInfoBackground.GetComponent<Image>().color = tempColor;
 	}
 	void MoveSleeveForward()
 	{
