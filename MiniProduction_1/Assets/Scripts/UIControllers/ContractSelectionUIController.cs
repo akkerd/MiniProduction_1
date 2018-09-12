@@ -110,6 +110,7 @@ public class ContractSelectionUIController : Manager<ContractSelectionUIControll
 	{
 		ContractController.Instance.AcceptContract(currentViewedContract);
 		CloseContractInfoScreen();
+		CloseContractScreen();
 	}
 	public void CloseContractScreen()
 	{

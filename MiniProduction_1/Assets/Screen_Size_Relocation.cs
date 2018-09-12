@@ -10,7 +10,7 @@ public class Screen_Size_Relocation : MonoBehaviour {
 
 		 if(Screen.width >= 1500)
 		 {
-			transform.position = new Vector3(transform.position.x, transform.position.y, -1.5f);
+			transform.position = new Vector3(transform.position.x, transform.position.y, -0.7f);
 		 }
 		 else
 		 {

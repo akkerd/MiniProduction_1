@@ -8,10 +8,10 @@ using UnityEngine.EventSystems;
 public class SleeveSelection : Manager<SleeveSelection>, IPointerClickHandler
 {
 	[SerializeField]
-	GameObject sleeveInfoUI;
-	//Color startColor;
-	//[SerializeField]
-	//Text sleeveInfoText; 
+	GameObject sleeveInfoBackground;
+	Color startColor;
+	[SerializeField]
+	GameObject sleeveInfoText; 
 	[SerializeField]
 	Button sleeveAcceptButton;
 
@@ -22,7 +22,7 @@ public class SleeveSelection : Manager<SleeveSelection>, IPointerClickHandler
 	void Start()
 	{
 		moveSleeveForward.Setup();
-		//startColor = sleeveInfoBackground.GetComponent<Image>().color;
+		startColor = sleeveInfoBackground.GetComponent<Image>().color;
 	}
     public void OnPointerClick(PointerEventData eventData)
     {
@@ -55,28 +55,28 @@ public class SleeveSelection : Manager<SleeveSelection>, IPointerClickHandler
 		
 		//Might be unnessesary until movement script have been collider dependent
 		TouchInputController.Instance.ResetCubePosition();
-		sleeveInfoUI.SetActive(true);
-		//sleeveInfoText.gameObject.SetActive(true);
+		sleeveInfoBackground.SetActive(true);
+		sleeveInfoText.gameObject.SetActive(true);
 	}
 	public void CloseSleeveInfo()
 	{
-		//CancelInvoke("ChangeColor");
-		//sleeveInfoBackground.GetComponent<Image>().color = startColor;
-		sleeveInfoUI.SetActive(false);
+		CancelInvoke("ChangeColor");
+		sleeveInfoBackground.GetComponent<Image>().color = startColor;
+		sleeveInfoBackground.SetActive(false);
 	}
 	public void AcceptSleeve()
 	{
 		Invoke("CloseSleeveInfo",1.0f);
-		//InvokeRepeating("ChangeColor",0.05f,0.05f);
-		//sleeveInfoText.gameObject.SetActive(false);
+		InvokeRepeating("ChangeColor",0.05f,0.05f);
+		sleeveInfoText.gameObject.SetActive(false);
 		sleeveAcceptButton.interactable = false;
 		MoveSleeveForward();
 	}
 	void ChangeColor()
 	{
-		Color tempColor = sleeveInfoUI.GetComponent<Image>().color;
+		Color tempColor = sleeveInfoBackground.GetComponent<Image>().color;
 		tempColor.a -= 0.05f;
-		sleeveInfoUI.GetComponent<Image>().color = tempColor;
+		sleeveInfoBackground.GetComponent<Image>().color = tempColor;
 	}
 	void MoveSleeveForward()
 	{
@@ -102,6 +102,6 @@ public class SleeveSelection : Manager<SleeveSelection>, IPointerClickHandler
 	}
 	public bool IsSleeveInfoVisible()
 	{
-		return sleeveInfoUI.activeSelf;
+		return sleeveInfoBackground.activeSelf;
 	}
 }
