@@ -4,9 +4,14 @@ using UnityEngine;
 
 public class Contract {
 
+	public string description;
 	Stack[] stacks;
+	Sleeve[] sleeveRewards;
 	public bool isCompleted = false;
 	public bool haveBeenShown = false;
+
+	public int id;
+	
 	public Contract(int numberOfStacks)
 	{
 		stacks = new Stack[numberOfStacks];
@@ -15,6 +20,19 @@ public class Contract {
 			stacks[i] = new Stack(i.ToString());
 		}
 	}
+	public Contract(int newId, string newDescription, Stack[] stacksForContract, Sleeve[] rewardSleeves)
+	{
+		id = newId;
+		description = newDescription;
+		stacks = stacksForContract;
+		sleeveRewards = rewardSleeves;
+	}
+
+	public Sleeve RewardSleeve(int sleeveNumberToReward)
+	{
+		return sleeveRewards[sleeveNumberToReward];
+	}
+
 	public int GetNumberOfStacks()
 	{
 		return stacks.Length;
@@ -23,4 +41,5 @@ public class Contract {
 	{
 		return stacks;
 	}
+	
 }

@@ -21,7 +21,7 @@ public class Sleeve {
     float weight;
     float bodyFatRatio;
     float neuronCapacity;
-
+    public int id;
     public Sleeve()
     {
 
@@ -29,6 +29,11 @@ public class Sleeve {
     public Sleeve(bool makeEmpty)
     {
         isEmpty = true;
+    }
+    public Sleeve(int newId, int[] stats, bool isMale)
+    {
+        SetStats(stats[0],stats[1],stats[2],stats[3],stats[4],isMale);
+        id = newId;
     }
     public void SetStats(int newStrenght, int newAgility, int newIntelligence, int newKnowledge, int newBeauty, bool isMale)
     {
