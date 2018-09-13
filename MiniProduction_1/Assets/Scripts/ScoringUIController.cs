@@ -10,7 +10,7 @@ public class ScoringUIController : Manager<ScoringUIController> {
 	[SerializeField]
 	Text[] stackCompletionFields;
 
-	public void ShowScoringScreen()
+	public void ShowScoringScreen(int[] percentages)
 	{
 		scoringScreen.SetActive(true);
 		Contract tempContract = ContractController.Instance.GetCurrentContract();
@@ -19,7 +19,8 @@ public class ScoringUIController : Manager<ScoringUIController> {
 			if (i < tempContract.GetStacks().Length)
 			{
 				stackCompletionFields[i].gameObject.SetActive(true);
-				//Implement measurement			
+				//Implement measurement
+				stackCompletionFields[i].text = percentages[i].ToString();		
 			} else {
 				stackCompletionFields[i].gameObject.SetActive(false);
 			}
@@ -28,6 +29,7 @@ public class ScoringUIController : Manager<ScoringUIController> {
 	public void CloseScoringScreen()
 	{
 		scoringScreen.SetActive(false);
+		ContractController.Instance.FinishContract();
 	}	
 
 }

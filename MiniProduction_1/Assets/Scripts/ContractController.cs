@@ -7,6 +7,9 @@ public class ContractController : Manager<ContractController> {
 	Contract[] contracts;
 	int currectAcceptedContract = -1;
 
+	public Sleeve[] choosenSleevesForContract;
+	int acceptedSleeves = 0;
+	public bool isContractDone = false;
 	
 	protected override void onAwake()
 	{
@@ -38,8 +41,9 @@ public class ContractController : Manager<ContractController> {
 
 	public void AcceptContract(int acceptedContractPositionInArray)
 	{
+		isContractDone = false;
 		currectAcceptedContract = acceptedContractPositionInArray;
-
+		choosenSleevesForContract = new Sleeve[contracts[acceptedContractPositionInArray].GetStacks().Length];
         StackDeliveryController.Instance.ShowStacks();
     }
 
@@ -47,6 +51,11 @@ public class ContractController : Manager<ContractController> {
 	{
 		SaveLoadController.Instance.CompleteContract(contracts[currectAcceptedContract].id);
 		currectAcceptedContract = -1;
+		for (int i = 0; i < choosenSleevesForContract.Length; i++)
+		{
+			SaveLoadController.Instance.UseSleeve(choosenSleevesForContract[i].id);
+		}
+		SaveLoadController.Instance.Setup();
 		//ActivateScoringThang
 	}
 	public Contract GetCurrentContract()
@@ -68,6 +77,20 @@ public class ContractController : Manager<ContractController> {
 	public int GetNumberOfActiveContracts()
 	{
 		return contracts.Length;
+	}
+	public void AcceptSleeveForContract(Sleeve acceptedSleeve, int arrayPosition)
+	{
+		choosenSleevesForContract[arrayPosition] = acceptedSleeve;
+		
+	}
+	public Sleeve GetSleeveInPosition(int arrayPosition)
+	{
+		acceptedSleeves++;
+		if (acceptedSleeves == choosenSleevesForContract.Length)
+		{
+			isContractDone = true;
+		}
+		return choosenSleevesForContract[arrayPosition];	
 	}
 
 }

@@ -23,6 +23,8 @@ public class SleeveSelection : Manager<SleeveSelection>, IPointerClickHandler
 	[SerializeField]
 	GameObject[] sleeveStats;
 
+	int currentPositionOfUnzippedSleeves = 0;
+
 	void Start()
 	{
 		moveSleeveForward.Setup();
@@ -111,7 +113,8 @@ public class SleeveSelection : Manager<SleeveSelection>, IPointerClickHandler
 		bodyBag.gameObject.SetActive(true);
 		//Add the real center to the bodybag
 		bodyBag.AddSleeve( SleeveController.Instance.GetActiveSleeves()[ConveyorController.Instance.currentCenterOfLevelSleeves],-1);
-
+		ContractController.Instance.AcceptSleeveForContract(SleeveController.Instance.GetActiveSleeves()[ConveyorController.Instance.currentCenterOfLevelSleeves],currentPositionOfUnzippedSleeves);
+		currentPositionOfUnzippedSleeves++;
 		moveSleeveForward.MoveSleeveForward(UnsleeveManager.Instance.CreateBodybag);
 	}
 	void TestWhenDoneMovingForward()
