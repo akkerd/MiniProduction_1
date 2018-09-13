@@ -23,6 +23,7 @@ public class SlimeControl : MonoBehaviour {
 
 
         transform.LookAt(new Vector3(tail.transform.position.x, tail.transform.position.y, transform.position.z), new Vector3(0, 0, -1));
+        //transform.Rotate(0, 0, -90);
 
 
 
