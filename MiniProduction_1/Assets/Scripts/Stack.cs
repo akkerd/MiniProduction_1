@@ -25,7 +25,7 @@ public class Stack {
 		lStrength = LowerAndUpperStats[0];
 		uStrength = LowerAndUpperStats[1];
 		lagility = LowerAndUpperStats[2];
-		lagility = LowerAndUpperStats[3];
+		uagility = LowerAndUpperStats[3];
 		lintelligence = LowerAndUpperStats[4];
 		uintelligence = LowerAndUpperStats[5];
 		lknowledge = LowerAndUpperStats[6];
@@ -34,7 +34,17 @@ public class Stack {
 		ubeauty = LowerAndUpperStats[9];
 		isFemale = !isMale;
 		description = newDescription;
-		Debug.Log(description);
+		//Debug.Log(description);
+	}
+
+	public int[] GetStats()
+	{
+		return new int[] {lStrength,uStrength,lagility,uagility,lintelligence,uintelligence,lknowledge,uknowledge,lbeauty,ubeauty};
+	}
+
+	public bool GetIsFemale()
+	{
+		return isFemale;
 	}
 
 	
