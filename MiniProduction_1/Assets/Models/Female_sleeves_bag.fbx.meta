@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 22d820c2d72ef504c8f3aad10c1eb0a8
+guid: 95279b830c98ed54a8d72d85102c5acf
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -220,12 +220,7 @@ ModelImporter:
     7400000: Take 001
     9500000: //RootNode
     13700000: low_female
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Sleeves_bag_Platic1
-    second: {fileID: 2100000, guid: e37737cc9bf262646b5c5944c0d00d57, type: 2}
+  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 0

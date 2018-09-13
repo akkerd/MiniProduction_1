@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{6A9FC1E3-FDBD-4383-9337-89849EE27963}" SchemaVersion="89">
+	<AudioObjects>
+		<WorkUnit Name="Contract" ID="{6A9FC1E3-FDBD-4383-9337-89849EE27963}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Contract" ID="{C58A091B-1BFF-45ED-A326-709CDB7F0DD4}" ShortID="291040121">
+					<ChildrenList>
+						<Sound Name="contract_deselect_1" ID="{B40BEACE-14BD-4092-B4E5-65E859D2E1BC}" ShortID="138419241">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-10</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Contract" ID="{9FB0C2A3-66CF-4697-A8B8-7A32849B7021}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="contract_deselect_1" ID="{33C426CD-1F92-41CC-8E9A-5F92761191F2}" ShortID="8260152">
+									<Language>SFX</Language>
+									<AudioFile>Contract\contract_deselect_1.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="contract_deselect_1" ID="{33C426CD-1F92-41CC-8E9A-5F92761191F2}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="contract_deselect_2" ID="{E49C608F-E7D7-47A1-913F-A2D39E8EB46C}" ShortID="914516631">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Contract" ID="{9FB0C2A3-66CF-4697-A8B8-7A32849B7021}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="contract_deselect_2" ID="{6E5D0B18-3512-46A8-A1BE-93D4E576CB30}" ShortID="949500483">
+									<Language>SFX</Language>
+									<AudioFile>Contract\contract_deselect_2.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="contract_deselect_2" ID="{6E5D0B18-3512-46A8-A1BE-93D4E576CB30}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="contract_open" ID="{1B4E6546-037F-4D22-A9E5-EE971C204ECA}" ShortID="877412356">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-8</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Contract" ID="{9FB0C2A3-66CF-4697-A8B8-7A32849B7021}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="contract_open" ID="{10E0CCDC-098C-43CD-9624-83C79C15A550}" ShortID="984642088">
+									<Language>SFX</Language>
+									<AudioFile>Contract\contract_open.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="contract_open" ID="{10E0CCDC-098C-43CD-9624-83C79C15A550}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="contract_open_1" ID="{8E6E71DB-CBD2-4402-AA8F-8B7869DF9B41}" ShortID="747177718">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Contract" ID="{9FB0C2A3-66CF-4697-A8B8-7A32849B7021}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="contract_open_1" ID="{D195C216-7ABD-4E1C-B87A-7DB2F5734CB5}" ShortID="351203050">
+									<Language>SFX</Language>
+									<AudioFile>Contract\contract_open_1.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="contract_open_1" ID="{D195C216-7ABD-4E1C-B87A-7DB2F5734CB5}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="contract_open_2" ID="{086F2D52-D349-4BE1-8A55-0B72FF694CC1}" ShortID="762090906">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Contract" ID="{9FB0C2A3-66CF-4697-A8B8-7A32849B7021}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="contract_open_2" ID="{93CC0DCF-885B-4C24-A63A-9160669CF835}" ShortID="823288682">
+									<Language>SFX</Language>
+									<AudioFile>Contract\contract_open_2.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="contract_open_2" ID="{93CC0DCF-885B-4C24-A63A-9160669CF835}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="contract_open_3" ID="{DE1A1D48-5F1D-46C4-A7E3-A3034A99E855}" ShortID="502652714">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Contract" ID="{9FB0C2A3-66CF-4697-A8B8-7A32849B7021}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="contract_open_3" ID="{3830F5AA-36A2-4F13-A873-86A3EA557367}" ShortID="106219315">
+									<Language>SFX</Language>
+									<AudioFile>Contract\contract_open_3.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="contract_open_3" ID="{3830F5AA-36A2-4F13-A873-86A3EA557367}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="contract_select" ID="{045DC369-101C-4637-952F-E8B2C5383269}" ShortID="880660314">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Contract" ID="{9FB0C2A3-66CF-4697-A8B8-7A32849B7021}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="contract_select" ID="{6066229A-1E43-4366-BB08-1C71FA71295B}" ShortID="125636033">
+									<Language>SFX</Language>
+									<AudioFile>Contract\contract_select.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="contract_select" ID="{6066229A-1E43-4366-BB08-1C71FA71295B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="contract_select_1" ID="{D1E888E4-E279-4D68-9DDD-C8D9DF874786}" ShortID="945790368">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Contract" ID="{9FB0C2A3-66CF-4697-A8B8-7A32849B7021}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="contract_select_1" ID="{870FB8D2-BA22-4AE1-A047-1D196F9BC4BE}" ShortID="213847376">
+									<Language>SFX</Language>
+									<AudioFile>Contract\contract_select_1.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="contract_select_1" ID="{870FB8D2-BA22-4AE1-A047-1D196F9BC4BE}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="contract_select_2" ID="{FBF11041-9EA9-4592-B245-E9562671EDEC}" ShortID="280969194">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Contract" ID="{9FB0C2A3-66CF-4697-A8B8-7A32849B7021}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="contract_select_2" ID="{47CC4B84-69EF-45DF-A11E-BF95BEF4F3ED}" ShortID="135959634">
+									<Language>SFX</Language>
+									<AudioFile>Contract\contract_select_2.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="contract_select_2" ID="{47CC4B84-69EF-45DF-A11E-BF95BEF4F3ED}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="contract_select_3" ID="{F270B77A-6C29-43C3-A2FF-8B2871DE6FBB}" ShortID="533777439">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-15</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Contract" ID="{9FB0C2A3-66CF-4697-A8B8-7A32849B7021}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="contract_select_3" ID="{235701E9-3ED8-41D0-BE7C-4F43B099378F}" ShortID="157647274">
+									<Language>SFX</Language>
+									<AudioFile>Contract\contract_select_3.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="contract_select_3" ID="{235701E9-3ED8-41D0-BE7C-4F43B099378F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="contract_select_affirmative_1" ID="{3D293826-C357-4D7A-98F8-C9699DE185A9}" ShortID="806223147">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-11</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Contract" ID="{9FB0C2A3-66CF-4697-A8B8-7A32849B7021}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="contract_select_affirmative_1" ID="{D27ECE1B-9C00-44AD-890A-06759B32CEEF}" ShortID="525688187">
+									<Language>SFX</Language>
+									<AudioFile>Contract\contract_select_affirmative_1.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="contract_select_affirmative_1" ID="{D27ECE1B-9C00-44AD-890A-06759B32CEEF}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="contract_select_affirmative_2" ID="{0B8BDA8D-2DC1-4865-807B-EC17998D3A12}" ShortID="363650661">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Contract" ID="{9FB0C2A3-66CF-4697-A8B8-7A32849B7021}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="contract_select_affirmative_2" ID="{11CD2C2D-00CC-4EBE-A959-702AEED75ED0}" ShortID="983766704">
+									<Language>SFX</Language>
+									<AudioFile>Contract\contract_select_affirmative_2.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="contract_select_affirmative_2" ID="{11CD2C2D-00CC-4EBE-A959-702AEED75ED0}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

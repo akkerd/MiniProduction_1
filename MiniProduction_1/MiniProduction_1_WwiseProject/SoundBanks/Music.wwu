@@ -4,8 +4,15 @@
 		<WorkUnit Name="Music" ID="{7FB9ACC7-7BF5-4431-8EE2-ED9D6D61F0EE}" PersistMode="Standalone">
 			<ChildrenList>
 				<SoundBank Name="Music" ID="{BF30D0B9-4DDF-41A6-AD26-F39B682568CC}">
+					<PropertyList>
+						<Property Name="Maximum" Type="int32">
+							<ValueList>
+								<Value>99000000</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ObjectInclusionList>
-						<ObjectRef Name="Play_Placeholder_music" ID="{678365F9-C8BC-47ED-87A6-EB2979B4F431}" WorkUnitID="{A141F3EB-B504-435C-82CE-03AFB1A09F76}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Soundtrack" ID="{394931D6-77F8-4F69-88A5-E6FEA697616A}" WorkUnitID="{A141F3EB-B504-435C-82CE-03AFB1A09F76}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
