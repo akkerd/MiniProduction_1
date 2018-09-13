@@ -20,6 +20,8 @@ public class ContractSelectionUIController : Manager<ContractSelectionUIControll
 	[Header("ContractInfoPopup")]
 	[SerializeField]
 	GameObject contractInfoScreen;
+	[SerializeField]
+	GameObject StackTableScreen;
 	
 	[SerializeField]
 	Text totalNumberOfSleeves;
@@ -111,6 +113,7 @@ public class ContractSelectionUIController : Manager<ContractSelectionUIControll
 		ContractController.Instance.AcceptContract(currentViewedContract);
 		CloseContractInfoScreen();
 		CloseContractScreen();
+		StackTableScreen.SetActive(true);
 	}
 	public void CloseContractScreen()
 	{

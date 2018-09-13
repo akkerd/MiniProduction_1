@@ -10,11 +10,11 @@ public class Screen_Size_Relocation : MonoBehaviour {
 
 		 if(Screen.width >= 1500)
 		 {
-			transform.position = new Vector3(transform.position.x, transform.position.y, -0.7f);
+			transform.position = new Vector3(transform.position.x, transform.position.y, -0.55f);
 		 }
 		 else
 		 {
-			transform.position = new Vector3(transform.position.x, transform.position.y, 0.3f);
+			transform.position = new Vector3(transform.position.x, transform.position.y, 0.45f);
 		 }
          // get the vertical FOV from the camera
          // divide by 2 since the triangle we're solving is half the actual FOV triangle
