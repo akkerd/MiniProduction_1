@@ -129,18 +129,14 @@ public class StackDeliveryController : Manager<StackDeliveryController> {
             {
                 Ray mouseRay = GenerateMouseRay();
                 RaycastHit hit;
-                Debug.Log("1");
                 if (Physics.Raycast(mouseRay.origin, mouseRay.direction, out hit, Mathf.Infinity, raycastSleeveSelection))
                 {
-                    Debug.Log("2");
-                    
                     receivingSleeve = hit.transform.gameObject;
                     Debug.Log(receivingSleeve.name);
                     if (receivingSleeve != null && receivingSleeve.layer == 10)
                     {
-                        Debug.Log("3");
                         Debug.Log(receivingSleeve.name + " received stack");
-                        //CombinedStackWithSleeve(chosenStack.GetComponent<StackObject>().stackNumber, receivingSleeve.name.ToCharArray()[6]);
+                        CombinedStackWithSleeve(chosenStack.GetComponent<StackObject>().stackNumber, receivingSleeve.name.ToCharArray()[6]);
                         chosenStack.SetActive(false);
                         childStacks.Remove(chosenStack);
                         receivingSleeve.SetActive(false);
@@ -153,9 +149,19 @@ public class StackDeliveryController : Manager<StackDeliveryController> {
                         chosenStack = null;
                     }
                 }
+                else
+                {
+                    Debug.Log("No sleeve chosen");
+                    chosenStack.transform.position = startPosition;
+                    chosenStack = null;
+                }
             }
             else
             {
+                if (chosenStack != null) 
+                {
+                    chosenStack.transform.position = startPosition;
+                }
                 chosenStack = null;
             }
         }
