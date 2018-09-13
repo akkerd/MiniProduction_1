@@ -13,6 +13,13 @@ public class TableScript : MonoBehaviour {
 	void Start () {
 		
 	}
+
+    public void ChangeParent()
+    {
+
+        transform.SetParent(UnsleeveManager.Instance.transform);
+        UnsleeveManager.Instance.DeactivatePrefab();
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -29,6 +36,9 @@ public class TableScript : MonoBehaviour {
             {
                 PTravelled += 0.5f * Time.deltaTime;
                 transform.position = Vector3.Lerp(StartPosition.position, EndPosition.position, PTravelled);
+                transform.SetParent(UnsleeveManager.Instance.transform);
+                UnsleeveManager.Instance.DeactivatePrefab();
+
 
             }
             if (PTravelled >= 1)
