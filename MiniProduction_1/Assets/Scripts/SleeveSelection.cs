@@ -19,6 +19,12 @@ public class SleeveSelection : Manager<SleeveSelection>, IPointerClickHandler
 	ConveyorSleeve bodyBag;
 	[SerializeField]
 	MoveSleeveForwardScript moveSleeveForward;
+	
+	[SerializeField]
+	GameObject[] sleeveStats;
+
+	int currentPositionOfUnzippedSleeves = 0;
+
 	void Start()
 	{
 		moveSleeveForward.Setup();
@@ -53,22 +59,44 @@ public class SleeveSelection : Manager<SleeveSelection>, IPointerClickHandler
 
             //Might be unnessesary until movement script have been collider dependent
             TouchInputController.Instance.ResetCubePosition();
+
+			float[] stats;
+			bool isMale;
+			SleeveController.Instance.GetActiveSleeves()[ConveyorController.Instance.currentCenterOfLevelSleeves].GetVisibleStats(out stats, out isMale);
+
+			// For each stat, take each of the values in order and change the display
+			// Text stats
+			sleeveStats[0].GetComponent<Text>().text = stats[0].ToString();
+			sleeveStats[1].GetComponent<Text>().text = stats[1].ToString();
+			
+			// Bar stats
+			sleeveStats[2].GetComponent<Image>().fillAmount = stats[2];
+			sleeveStats[3].GetComponent<Image>().fillAmount = stats[3];
+			sleeveStats[4].GetComponent<Image>().fillAmount = stats[4];
+			for( int i = 0; i < sleeveStats.Length; i++ )
+			{
+				Debug.Log(stats[i]);
+			}
+
             sleeveInfoBackground.SetActive(true);
             sleeveInfoText.gameObject.SetActive(true);
+
         } else {
 			sleeveAcceptButton.interactable = false;
 		}
 	}
 	public void CloseSleeveInfo()
 	{
-		CancelInvoke("ChangeColor");
-		sleeveInfoBackground.GetComponent<Image>().color = startColor;
+		Debug.Log("AcceptSleeve");
+		//CancelInvoke("ChangeColor");
+		//sleeveInfoBackground.GetComponent<Image>().color = startColor;
 		sleeveInfoBackground.SetActive(false);
 	}
 	public void AcceptSleeve()
 	{
+		Debug.Log("AcceptSleeve");
 		Invoke("CloseSleeveInfo",1.0f);
-		InvokeRepeating("ChangeColor",0.05f,0.05f);
+		//InvokeRepeating("ChangeColor",0.05f,0.05f);
 		sleeveInfoText.gameObject.SetActive(false);
 		sleeveAcceptButton.interactable = false;
 		MoveSleeveForward();
@@ -85,7 +113,8 @@ public class SleeveSelection : Manager<SleeveSelection>, IPointerClickHandler
 		bodyBag.gameObject.SetActive(true);
 		//Add the real center to the bodybag
 		bodyBag.AddSleeve( SleeveController.Instance.GetActiveSleeves()[ConveyorController.Instance.currentCenterOfLevelSleeves],-1);
-
+		ContractController.Instance.AcceptSleeveForContract(SleeveController.Instance.GetActiveSleeves()[ConveyorController.Instance.currentCenterOfLevelSleeves],currentPositionOfUnzippedSleeves);
+		currentPositionOfUnzippedSleeves++;
 		moveSleeveForward.MoveSleeveForward(UnsleeveManager.Instance.CreateBodybag);
 	}
 	void TestWhenDoneMovingForward()

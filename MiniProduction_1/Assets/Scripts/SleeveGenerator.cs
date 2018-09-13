@@ -54,8 +54,7 @@ public class SleeveGenerator : Manager<SleeveGenerator> {
 	public void GenerateVisibleStats(Sleeve sleeveToGenerateStatsFrom, out float age, out float height, out float weight, out float bodyFatRatio,out float neuronCapacity)
 	{
 		int[] stats;
-		bool emptyContainer;
-		sleeveToGenerateStatsFrom.GetStats(out stats,out emptyContainer);
+		sleeveToGenerateStatsFrom.GetStats(out stats);
 		//float tempCal = (200-stats[0]-stats[1]+stats[3]) / 300.0f;
 		age = Mathf.Pow(((200.0f-(float)stats[0]-(float)stats[1]+(float)stats[3])/300.0f)*2-1,3.0f)/2 +0.5f;
 		height = Mathf.Pow((((float)stats[0]+(float)stats[4])/200.0f)*2-1,3.0f)/2 +0.5f;

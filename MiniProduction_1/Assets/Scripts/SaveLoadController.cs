@@ -22,7 +22,7 @@ public class SaveLoadController : Manager<SaveLoadController> {
 		Setup();
 	}
 
-	void Setup()
+	public void Setup()
 	{
 		//CompleteFirstContract
 		PlayerPrefs.SetInt("Contract0",1);

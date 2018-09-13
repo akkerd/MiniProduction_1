@@ -5,7 +5,7 @@ using UnityEngine;
 public class StackDeliveryController : Manager<StackDeliveryController> {
     [SerializeField]
     GameObject Stacks;
-    int[] stackCombinations;
+    Sleeve[] combinedSleevesInStackOrder;
     int stackHomesFound = 0;
     int numberOfActivatedSleeves = 0;
     [SerializeField]
@@ -45,7 +45,7 @@ public class StackDeliveryController : Manager<StackDeliveryController> {
         Debug.DrawRay(mousePosN, mousePosF - mousePosN);
         return new Ray(mousePosN, mousePosF - mousePosN);
     }
-
+    /*
     public void CombinedStackWithSleeve(int stackNumber, int sleeveNumber)
     {
         stackCombinations[stackNumber] = sleeveNumber;
@@ -55,9 +55,10 @@ public class StackDeliveryController : Manager<StackDeliveryController> {
             AllStackCombined();
         }
     }
+    */
     void AllStackCombined()
     {
-        ScoringController.Instance.CalculateReport(stackCombinations);
+        //ScoringController.Instance.CalculateReport(stackCombinations);
     }
 
     public void SetColliderOnSleeve()
@@ -68,7 +69,7 @@ public class StackDeliveryController : Manager<StackDeliveryController> {
 
     public void ShowStacks()
     {
-        stackCombinations = new int[ContractController.Instance.GetCurrentContract().GetNumberOfStacks()];
+        combinedSleevesInStackOrder = new Sleeve[ContractController.Instance.GetCurrentContract().GetNumberOfStacks()];
         int stackHomesFound = 0;
 
         for (int i = 0; i < colliders.Length; i++)
@@ -78,7 +79,7 @@ public class StackDeliveryController : Manager<StackDeliveryController> {
 
         for (int i = 0; i < ContractController.Instance.GetCurrentContract().GetNumberOfStacks(); i++)
         {
-            GameObject stack = Stack_Selection_Controller.Instance.Stack_Buttons[i];            
+            GameObject stack = Stack_Selection_Controller.Instance.Stack_Objects[i];            
             stack.name = "Stack";
             //stack.transform.SetParent(Stacks.transform);            
             stack.SetActive(true);
@@ -129,22 +130,25 @@ public class StackDeliveryController : Manager<StackDeliveryController> {
             {
                 Ray mouseRay = GenerateMouseRay();
                 RaycastHit hit;
-                Debug.Log("1");
                 if (Physics.Raycast(mouseRay.origin, mouseRay.direction, out hit, Mathf.Infinity, raycastSleeveSelection))
                 {
-                    Debug.Log("2");
-                    
                     receivingSleeve = hit.transform.gameObject;
                     Debug.Log(receivingSleeve.name);
                     if (receivingSleeve != null && receivingSleeve.layer == 10)
                     {
-                        Debug.Log("3");
                         Debug.Log(receivingSleeve.name + " received stack");
                         //CombinedStackWithSleeve(chosenStack.GetComponent<StackObject>().stackNumber, receivingSleeve.name.ToCharArray()[6]);
+                        char tempChar = receivingSleeve.name[6];
+                        int tempint = int.Parse(tempChar.ToString());
+                        combinedSleevesInStackOrder[chosenStack.GetComponent<StackObject>().stackNumber] = ContractController.Instance.GetSleeveInPosition(tempint);
                         chosenStack.SetActive(false);
                         childStacks.Remove(chosenStack);
                         receivingSleeve.SetActive(false);
                         chosenStack = null;
+                        if (ContractController.Instance.isContractDone)
+                        {
+                            ScoringController.Instance.CalculateReport(ContractController.Instance.choosenSleevesForContract);
+                        }
                     }
                     else
                     {
@@ -153,9 +157,19 @@ public class StackDeliveryController : Manager<StackDeliveryController> {
                         chosenStack = null;
                     }
                 }
+                else
+                {
+                    Debug.Log("No sleeve chosen");
+                    chosenStack.transform.position = startPosition;
+                    chosenStack = null;
+                }
             }
             else
             {
+                if (chosenStack != null) 
+                {
+                    chosenStack.transform.position = startPosition;
+                }
                 chosenStack = null;
             }
         }

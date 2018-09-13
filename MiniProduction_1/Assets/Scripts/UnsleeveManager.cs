@@ -43,5 +43,10 @@ public class UnsleeveManager : Manager<UnsleeveManager> {
         //Might have to call convayorController.RemoveCenterSleeveFromShell()
         SleeveController.Instance.GetActiveSleeves()[ConveyorController.Instance.currentCenterOfLevelSleeves].isEmpty = true;
     }
-    
+
+    public void DeactivatePrefab()
+    {
+        Unsleeving.SetActive(false);
+    }
+
 }

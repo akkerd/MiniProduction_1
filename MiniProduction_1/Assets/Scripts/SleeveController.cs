@@ -5,6 +5,7 @@ using UnityEngine;
 public class SleeveController : Manager<SleeveController> {
 
 	List<Sleeve> sleevesAvaliable;
+	
 
 	protected override void onAwake()
 	{
@@ -23,7 +24,7 @@ public class SleeveController : Manager<SleeveController> {
 		}
 	}
 	public void AddSleeve(Sleeve addedSleeve)
-	{
+	{	
 		sleevesAvaliable.Add(addedSleeve);
 	}
 
