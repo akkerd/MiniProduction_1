@@ -10,6 +10,8 @@ public class Stack_Selection_Controller : Manager<Stack_Selection_Controller>
 	[SerializeField]
 	Sprite Selected_Image;
 	[SerializeField]
+	public GameObject[] Stack_Objects;
+	[SerializeField]
 	public GameObject[] Stack_Buttons;
 
 	private int previousIndex;
@@ -26,7 +28,6 @@ public class Stack_Selection_Controller : Manager<Stack_Selection_Controller>
 
 	public void SwitchStackButtonColor(int index)
 	{
-        /*
 		if ( index != previousIndex )
 		{
 			Stack_Buttons[previousIndex].GetComponent<Image>().sprite = Non_Selected_Image;
@@ -34,6 +35,5 @@ public class Stack_Selection_Controller : Manager<Stack_Selection_Controller>
 			previousIndex = index;
 			Stack_Buttons[index].GetComponent<Image>().sprite = Selected_Image;
 		}
-        */
 	}
 }

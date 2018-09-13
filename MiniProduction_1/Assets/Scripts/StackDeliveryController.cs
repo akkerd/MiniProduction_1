@@ -78,7 +78,7 @@ public class StackDeliveryController : Manager<StackDeliveryController> {
 
         for (int i = 0; i < ContractController.Instance.GetCurrentContract().GetNumberOfStacks(); i++)
         {
-            GameObject stack = Stack_Selection_Controller.Instance.Stack_Buttons[i];            
+            GameObject stack = Stack_Selection_Controller.Instance.Stack_Objects[i];            
             stack.name = "Stack";
             //stack.transform.SetParent(Stacks.transform);            
             stack.SetActive(true);
