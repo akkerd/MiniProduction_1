@@ -86,7 +86,7 @@ _ScanTexture("Main Color (RGB) Hello2",2D) = "white"{}
 
   {
 	  
-	  if ( tex2D(_MainTexture,i.uv).z > 0.97 && tex2D(_MainTexture,i.uv).x > 0.97 && tex2D(_MainTexture,i.uv).y > 0.97)discard;
+	 // if ( tex2D(_MainTexture,i.uv).z > 0.97 && tex2D(_MainTexture,i.uv).x > 0.97 && tex2D(_MainTexture,i.uv).y > 0.97)discard;
   if (tex2D(_ScanTexture, i.uv  +(_Time / 8)).x < 0.97 )discard;
   return  tex2D(_MainTexture, i.uv)*_Color;// Additive
 
