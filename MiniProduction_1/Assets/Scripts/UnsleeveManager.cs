@@ -48,6 +48,7 @@ public class UnsleeveManager : Manager<UnsleeveManager> {
     {
         Unsleeving.SetActive(false);
         isCurrentlyUnsleeving = false;
+        StackDeliveryController.Instance.SetColliderOnSleeve();
 
     }
 

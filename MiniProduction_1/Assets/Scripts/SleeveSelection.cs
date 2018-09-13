@@ -75,7 +75,7 @@ public class SleeveSelection : Manager<SleeveSelection>, IPointerClickHandler
 			sleeveStats[4].GetComponent<Image>().fillAmount = stats[4];
 			for( int i = 0; i < sleeveStats.Length; i++ )
 			{
-				Debug.Log(stats[i]);
+				//Debug.Log(stats[i]);
 			}
 
             sleeveInfoBackground.SetActive(true);
@@ -87,14 +87,14 @@ public class SleeveSelection : Manager<SleeveSelection>, IPointerClickHandler
 	}
 	public void CloseSleeveInfo()
 	{
-		Debug.Log("AcceptSleeve");
+		//Debug.Log("AcceptSleeve");
 		//CancelInvoke("ChangeColor");
 		//sleeveInfoBackground.GetComponent<Image>().color = startColor;
 		sleeveInfoBackground.SetActive(false);
 	}
 	public void AcceptSleeve()
 	{
-		Debug.Log("AcceptSleeve");
+		//Debug.Log("AcceptSleeve");
 		Invoke("CloseSleeveInfo",1.0f);
 		//InvokeRepeating("ChangeColor",0.05f,0.05f);
 		sleeveInfoText.gameObject.SetActive(false);

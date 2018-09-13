@@ -9,6 +9,8 @@ public class TableScript : MonoBehaviour {
     public Transform StartPosition;
     public float PTravelled =0;
 
+    bool haveDeactivated = false;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -18,7 +20,7 @@ public class TableScript : MonoBehaviour {
     {
 
         transform.SetParent(UnsleeveManager.Instance.transform);
-        UnsleeveManager.Instance.DeactivatePrefab();
+        //UnsleeveManager.Instance.DeactivatePrefab();
     }
 	
 	// Update is called once per frame
@@ -37,8 +39,11 @@ public class TableScript : MonoBehaviour {
                 PTravelled += 0.5f * Time.deltaTime;
                 transform.position = Vector3.Lerp(StartPosition.position, EndPosition.position, PTravelled);
                 transform.SetParent(UnsleeveManager.Instance.transform);
-                StackDeliveryController.Instance.SetColliderOnSleeve();
-                UnsleeveManager.Instance.DeactivatePrefab();
+                if (!haveDeactivated)
+                {
+                    haveDeactivated = true;
+                    UnsleeveManager.Instance.DeactivatePrefab();
+                }
 
 
             }
