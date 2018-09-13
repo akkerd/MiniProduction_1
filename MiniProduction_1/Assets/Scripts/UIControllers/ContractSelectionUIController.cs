@@ -45,6 +45,7 @@ public class ContractSelectionUIController : Manager<ContractSelectionUIControll
 	{
 		contractScreen.SetActive(true);
 		UpdateContracts();
+        AkSoundEngine.PostEvent("play_contract_open", gameObject);
 	}
 
 	public void InteractionWithContract(int positionOfContract)
@@ -53,6 +54,7 @@ public class ContractSelectionUIController : Manager<ContractSelectionUIControll
 		contractInfoScreen.SetActive(true);
 		Contract contractToShow = ContractController.Instance.GetActiveContracts()[positionOfContract];
 		ShowContract(contractToShow);
+        AkSoundEngine.PostEvent("play_contract_select", gameObject);
 	}
 
 	
@@ -111,18 +113,22 @@ public class ContractSelectionUIController : Manager<ContractSelectionUIControll
 	public void AcceptContract()
 	{
 		ContractController.Instance.AcceptContract(currentViewedContract);
-		CloseContractInfoScreen();
-		CloseContractScreen();
-		StackTableScreen.SetActive(true);
+
+        contractScreen.SetActive(false);
+        contractInfoScreen.SetActive(false);
+        StackTableScreen.SetActive(true);
+        AkSoundEngine.PostEvent("play_contract_select_affirmative",gameObject);
 	}
 	public void CloseContractScreen()
 	{
 		contractScreen.SetActive(false);
 		contractInfoScreen.SetActive(false);
+        AkSoundEngine.PostEvent("play_contract_deselect", gameObject);
 	}
 	public void CloseContractInfoScreen()
 	{
 		contractInfoScreen.SetActive(false);
 		UpdateContracts();
-	}
+        AkSoundEngine.PostEvent("play_contract_deselect", gameObject);
+    }
 }

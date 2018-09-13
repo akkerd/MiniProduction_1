@@ -17,6 +17,20 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Soundtrack" ID="{394931D6-77F8-4F69-88A5-E6FEA697616A}">
+					<ChildrenList>
+						<Action Name="" ID="{0AB23125-E309-42A7-A3E7-8A81DFFD432C}" ShortID="316086555">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Soundtrack" ID="{0FB6AC42-9945-42D9-AA82-C595C8EA9767}" WorkUnitID="{0F2BF584-7CF0-4B44-82F1-EFB46C633262}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

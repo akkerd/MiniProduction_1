@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{8A495955-DBD4-4F4C-BCDE-C466A817CBF1}" SchemaVersion="89" RootDocumentID="{E7FA6859-C268-4205-B746-E4153D6A95AE}">
+	<Events>
+		<WorkUnit Name="Menu" ID="{8A495955-DBD4-4F4C-BCDE-C466A817CBF1}" OwnerID="{E7FA6859-C268-4205-B746-E4153D6A95AE}" PersistMode="Nested">
+			<ChildrenList>
+				<Event Name="Play_menu_start_select" ID="{CE8960E1-89CB-4C2F-A429-280A5EF867A3}">
+					<ChildrenList>
+						<Action Name="" ID="{D1E5AC80-5B6B-4AC2-8D20-15D44B1ECA64}" ShortID="638690894">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="menu_start__select" ID="{B9CD7390-48CA-496D-9C9A-E6425815A2AA}" WorkUnitID="{3683C0D3-8A29-4E60-B125-96431C2F01A8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="play_menu_select" ID="{2D241C4E-DB8A-4E7F-8AA7-37BB0A088759}">
+					<ChildrenList>
+						<Action Name="" ID="{70A767AB-F677-40A7-B340-8F9CAD5FAE24}" ShortID="655305695">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="click_5" ID="{2EAD8776-8DC3-49B0-A737-E4CE1CE63001}" WorkUnitID="{3683C0D3-8A29-4E60-B125-96431C2F01A8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_menu_exit_select" ID="{848BED38-1315-4324-B76A-A061F67366FE}">
+					<ChildrenList>
+						<Action Name="" ID="{9DE1E2C8-1840-4655-A24C-38503FA2BD35}" ShortID="283077482">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="menu_exit_select" ID="{EB998B58-B218-4927-88D3-14383A880665}" WorkUnitID="{3683C0D3-8A29-4E60-B125-96431C2F01A8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
