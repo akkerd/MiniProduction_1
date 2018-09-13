@@ -19,6 +19,7 @@ public class SaveLoadController : Manager<SaveLoadController> {
 	}
 	void Start()
 	{
+		ResetAllContracts();
 		Setup();
 	}
 
