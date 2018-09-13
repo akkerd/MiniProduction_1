@@ -42,7 +42,7 @@ public class StackDeliveryController : Manager<StackDeliveryController> {
 
         Vector3 mousePosF = Camera.main.ScreenToWorldPoint(mousePosFar);
         Vector3 mousePosN = Camera.main.ScreenToWorldPoint(mousePosNear);
-
+        Debug.DrawRay(mousePosN, mousePosF - mousePosN);
         return new Ray(mousePosN, mousePosF - mousePosN);
     }
 
@@ -78,10 +78,10 @@ public class StackDeliveryController : Manager<StackDeliveryController> {
 
         for (int i = 0; i < ContractController.Instance.GetCurrentContract().GetNumberOfStacks(); i++)
         {
-            GameObject stack = (GameObject)Instantiate(Resources.Load("Stack"));
+            GameObject stack = Stack_Selection_Controller.Instance.Stack_Buttons[i];            
             stack.name = "Stack";
-            stack.transform.SetParent(Stacks.transform);
-            stack.transform.position = new Vector3(Stacks.transform.position.x-2.0f+(i*0.3f), Stacks.transform.position.y, Stacks.transform.position.z+0.5f);
+            //stack.transform.SetParent(Stacks.transform);            
+            stack.SetActive(true);
             stack.GetComponent<StackObject>().stackNumber = i;
             childStacks.Add(stack);
         }
@@ -97,10 +97,10 @@ public class StackDeliveryController : Manager<StackDeliveryController> {
             {
                 Ray mouseRay = GenerateMouseRay();
                 RaycastHit hit;
-                if (Physics.Raycast(mouseRay.origin, mouseRay.direction, out hit, raycastStackSelection))
+                if (Physics.Raycast(mouseRay.origin, mouseRay.direction, out hit,  Mathf.Infinity, raycastStackSelection))
                 {
                     chosenStack = hit.transform.gameObject;
-
+                    
                     if (chosenStack != null && chosenStack.name == "Stack")
                     {
                         startPosition = chosenStack.transform.position;
@@ -129,10 +129,10 @@ public class StackDeliveryController : Manager<StackDeliveryController> {
             {
                 Ray mouseRay = GenerateMouseRay();
                 RaycastHit hit;
-                if (Physics.Raycast(mouseRay.origin, mouseRay.direction, out hit, raycastSleeveSelection))
+                if (Physics.Raycast(mouseRay.origin, mouseRay.direction, out hit, Mathf.Infinity, raycastSleeveSelection))
                 {
                     receivingSleeve = hit.transform.gameObject;
-
+                    Debug.Log(receivingSleeve.name);
                     if (receivingSleeve != null && receivingSleeve.layer == 10)
                     {
                         Debug.Log(receivingSleeve.name + " received stack");
@@ -149,9 +149,19 @@ public class StackDeliveryController : Manager<StackDeliveryController> {
                         chosenStack = null;
                     }
                 }
+                else
+                {
+                    Debug.Log("No sleeve chosen");
+                    chosenStack.transform.position = startPosition;
+                    chosenStack = null;
+                }
             }
             else
             {
+                if (chosenStack != null) 
+                {
+                    chosenStack.transform.position = startPosition;
+                }
                 chosenStack = null;
             }
         }
