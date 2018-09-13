@@ -171,8 +171,6 @@ MonoBehaviour:
       minDuration: 0
   ExpandedItems:
   - /MiniProduction_1_WwiseProject
-  - /MiniProduction_1_WwiseProject/Banks
-  - /MiniProduction_1_WwiseProject/Banks/Main
   RtpcWwu:
   - Guid: '{CD646BC5-A30F-4FDF-B8CC-2F9CC05343BA}'
     m_lastTimePart2: -1999236110
