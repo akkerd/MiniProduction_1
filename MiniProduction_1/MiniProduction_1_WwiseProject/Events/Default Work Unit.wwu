@@ -5,6 +5,9 @@
 			<ChildrenList>
 				<WorkUnit Name="Ambience" ID="{3ADFA3ED-74F6-456B-BA2C-59641A1C28BB}" PersistMode="Reference"/>
 				<WorkUnit Name="Music" ID="{A141F3EB-B504-435C-82CE-03AFB1A09F76}" PersistMode="Reference"/>
+				<WorkUnit Name="Menu" ID="{8A495955-DBD4-4F4C-BCDE-C466A817CBF1}" PersistMode="Reference"/>
+				<WorkUnit Name="Contract" ID="{7A98CD8E-7576-4C7A-9711-756D47FC4865}" PersistMode="Reference"/>
+				<WorkUnit Name="Rack" ID="{EDBDE295-897D-48B2-980E-ADD99B7BF185}" PersistMode="Reference"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

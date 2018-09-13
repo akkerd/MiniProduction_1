@@ -9,6 +9,92 @@
 							<ObjectRef Name="System" ID="{1C29153D-8F45-4715-B5FD-335F3431415F}" WorkUnitID="{38EC169D-9319-4E00-86E1-1F9A2FFC7F9A}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="SFX" ID="{8C28CA86-36D0-4526-A71B-9C0EE3E07DEF}">
+							<PropertyList>
+								<Property Name="MakeUpGain" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{2A48562B-9676-454C-9C99-28136678F74D}" ShortID="292767269">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="sfx_mix" ID="{3817FF5F-E351-4173-9E40-EC20E52E9F71}" WorkUnitID="{CD646BC5-A30F-4FDF-B8CC-2F9CC05343BA}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{F5E14A98-101B-4B3F-A2F4-D85D12A033FE}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-160.082</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>100</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
+							<ChildrenList>
+								<Bus Name="Contract" ID="{9FB0C2A3-66CF-4697-A8B8-7A32849B7021}">
+									<ReferenceList>
+										<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+											<ObjectRef Name="Plate_Medium" ID="{33384D0C-6ACB-4E3D-AC82-73AAB3AE1CA5}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+									</ReferenceList>
+								</Bus>
+							</ChildrenList>
+						</Bus>
+						<Bus Name="Music" ID="{0F785AEF-26F8-4450-ACCE-5E3D4C75000B}">
+							<PropertyList>
+								<Property Name="MakeUpGain" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{B92750C3-7B22-40B5-9977-29EF55981B60}" ShortID="401226324">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="music_mix" ID="{81B23315-B11A-4FB6-9F69-3DFC23879721}" WorkUnitID="{CD646BC5-A30F-4FDF-B8CC-2F9CC05343BA}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{68A4AE1D-EF6D-4A78-BA7A-2736CF59F593}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-400</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>100</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
+							<DuckingList>
+								<DuckItem>
+									<BusRef Name="SFX" ID="{8C28CA86-36D0-4526-A71B-9C0EE3E07DEF}"/>
+									<DuckingParam>
+										<Volume>-6</Volume>
+										<FadeInTime>1</FadeInTime>
+										<FadeOutTime>1</FadeOutTime>
+										<FadeCurve>FadeLinear</FadeCurve>
+									</DuckingParam>
+								</DuckItem>
+							</DuckingList>
+						</Bus>
+					</ChildrenList>
 				</Bus>
 			</ChildrenList>
 		</WorkUnit>

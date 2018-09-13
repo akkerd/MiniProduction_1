@@ -1,0 +1,8 @@
+5;9;A politician, a whore, and a lawyer. I don't know what the story is here, but apparently the politician had his lawyer pay to put the whore in a nice sleeve.;
+80,100,80,100,40,60,0,20,60,80,1,Client was some bigshot politician. Prior sleeve was fat, short and not at all clever.;
+90,100,90,100,0,20,0,10,10,80,0,stackInfo;
+20,40,3,50,70,90,10,80,40,60,1,Former Lawer. Smart, ruthless and with a face only a mother could love.;
+20,40,3,50,70,90,10,80,40,60,1,stackInfo;
+20,40,3,50,70,90,10,80,40,60,1,stackInfo;
+10,10,10,10,10,false;
+10,10,10,10,10,false;

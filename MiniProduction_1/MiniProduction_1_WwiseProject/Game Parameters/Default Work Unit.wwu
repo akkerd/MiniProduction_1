@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{CD646BC5-A30F-4FDF-B8CC-2F9CC05343BA}" SchemaVersion="89">
 	<GameParameters>
-		<WorkUnit Name="Default Work Unit" ID="{CD646BC5-A30F-4FDF-B8CC-2F9CC05343BA}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{CD646BC5-A30F-4FDF-B8CC-2F9CC05343BA}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="sfx_mix" ID="{3817FF5F-E351-4173-9E40-EC20E52E9F71}"/>
+				<GameParameter Name="music_mix" ID="{81B23315-B11A-4FB6-9F69-3DFC23879721}"/>
+				<GameParameter Name="rack_acc" ID="{66745687-EC53-4697-8181-7A7E2D3E0DBD}"/>
+			</ChildrenList>
+		</WorkUnit>
 	</GameParameters>
 </WwiseDocument>

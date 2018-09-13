@@ -5,11 +5,16 @@
 			<ChildrenList>
 				<SoundBank Name="Ambience" ID="{41A20916-6527-4734-8FBB-0B8AAA2C0E76}">
 					<ObjectInclusionList>
-						<ObjectRef Name="Electric_anomalies" ID="{58FD1FF1-8B5D-40FD-8438-50FEE8A504B2}" WorkUnitID="{5099C182-2621-47B5-9ED2-55ED74B8F20A}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="Screams" ID="{E4191FD6-49DE-46A3-B5BD-E32F7B32A238}" WorkUnitID="{5099C182-2621-47B5-9ED2-55ED74B8F20A}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="Clicks" ID="{17A68D4A-BEBC-4B70-BD98-9B1F7432F14B}" WorkUnitID="{5099C182-2621-47B5-9ED2-55ED74B8F20A}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="Ventilation" ID="{B22DF292-F35E-4D65-B211-0A0E783EA51A}" WorkUnitID="{5099C182-2621-47B5-9ED2-55ED74B8F20A}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="Clanks" ID="{C4AF67C8-12F2-4EC6-B327-72B1149A9205}" WorkUnitID="{5099C182-2621-47B5-9ED2-55ED74B8F20A}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Ambience" ID="{3ADFA3ED-74F6-456B-BA2C-59641A1C28BB}" WorkUnitID="{3ADFA3ED-74F6-456B-BA2C-59641A1C28BB}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="SFX" ID="{09279403-5082-43B6-AEAC-3B8B5AC9B1E5}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Rack" ID="{EDBDE295-897D-48B2-980E-ADD99B7BF185}" WorkUnitID="{EDBDE295-897D-48B2-980E-ADD99B7BF185}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Contract" ID="{7A98CD8E-7576-4C7A-9711-756D47FC4865}" WorkUnitID="{7A98CD8E-7576-4C7A-9711-756D47FC4865}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Menu" ID="{8A495955-DBD4-4F4C-BCDE-C466A817CBF1}" WorkUnitID="{8A495955-DBD4-4F4C-BCDE-C466A817CBF1}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

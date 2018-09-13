@@ -1,6 +1,6 @@
 Event	ID	Name			Wwise Object Path	Notes
-	3200335893	Play_Placeholder_music			\Default Work Unit\Music\Play_Placeholder_music	
+	3884404148	Play_Soundtrack			\Default Work Unit\Music\Play_Soundtrack	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	178426947	Create Jam Spring 2018 soundtrack	Y:\Documents\GitHub\MiniProduction_1\MiniProduction_1\MiniProduction_1_WwiseProject\.cache\Windows\SFX\Create Jam Spring 2018 soundtrack_8956FC97.wem		\Interactive Music Hierarchy\Menu Music\Create Jam Spring 2018 soundtrack\Create Jam Spring 2018 soundtrack		55036944
+	1049755003	Altered Carbon	Y:\Documents\GitHub\MiniProduction_1\MiniProduction_1\MiniProduction_1_WwiseProject\.cache\Windows\SFX\Altered Carbon_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Soundtrack\Altered Carbon		81144144
 
