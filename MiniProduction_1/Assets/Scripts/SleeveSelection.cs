@@ -35,8 +35,9 @@ public class SleeveSelection : Manager<SleeveSelection>, IPointerClickHandler
 			return;
 		}
 		
-		if (SleeveController.Instance.GetActiveSleeves()[ConveyorController.Instance.currentCenterOfLevelSleeves].isEmpty)
-		{
+		if (ConveyorController.Instance.currentCenterOfLevelSleeves >= SleeveController.Instance.GetActiveSleeves().Length 
+            || SleeveController.Instance.GetActiveSleeves()[ConveyorController.Instance.currentCenterOfLevelSleeves].isEmpty
+        ) {
 			ShowSleeveInfo(false);	
 		} else {
         	ShowSleeveInfo(true);
@@ -49,14 +50,14 @@ public class SleeveSelection : Manager<SleeveSelection>, IPointerClickHandler
 		if (isAcceptPosible)
 		{
 			sleeveAcceptButton.interactable = true;
-		} else {
+
+            //Might be unnessesary until movement script have been collider dependent
+            TouchInputController.Instance.ResetCubePosition();
+            sleeveInfoBackground.SetActive(true);
+            sleeveInfoText.gameObject.SetActive(true);
+        } else {
 			sleeveAcceptButton.interactable = false;
 		}
-		
-		//Might be unnessesary until movement script have been collider dependent
-		TouchInputController.Instance.ResetCubePosition();
-		sleeveInfoBackground.SetActive(true);
-		sleeveInfoText.gameObject.SetActive(true);
 	}
 	public void CloseSleeveInfo()
 	{
