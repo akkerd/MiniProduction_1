@@ -5,6 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class GoToMainMenu : MonoBehaviour {
 
+	[SerializeField]
+	GameObject confirmationWindow;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -18,5 +21,15 @@ public class GoToMainMenu : MonoBehaviour {
 	public void MainMenu()
 	{
 		SceneManager.LoadScene(0);
+	}
+
+	public void CloseConfirmationWindow()
+	{
+		confirmationWindow.SetActive(false);
+	}
+
+	public void OpenConfirmationWindow()
+	{
+		confirmationWindow.SetActive(true);
 	}
 }
