@@ -10,6 +10,10 @@ public class ContractSelectionUIController : Manager<ContractSelectionUIControll
 	[SerializeField]
 	GameObject contractScreen;
 	[SerializeField]
+	Sprite unactiveInfoSprite;
+	[SerializeField]
+	Sprite activeInfoSprite;
+	[SerializeField]
 	GameObject[] contracts;
 	[SerializeField]
 	
@@ -30,6 +34,8 @@ public class ContractSelectionUIController : Manager<ContractSelectionUIControll
 
 	[SerializeField]
 	Button acceptButton;
+	[SerializeField]
+	Button contractInfoButton;
 
 	int currentViewedContract = 0;
 
@@ -43,8 +49,17 @@ public class ContractSelectionUIController : Manager<ContractSelectionUIControll
 	}
 	public void OpenContractScreen()
 	{
-		contractScreen.SetActive(true);
-		UpdateContracts();
+		if(contractScreen.activeSelf)
+		{
+			contractScreen.SetActive(false);
+			contractInfoButton.GetComponent<Image>().sprite = unactiveInfoSprite;
+		}
+		else
+		{
+			contractScreen.SetActive(true);
+			contractInfoButton.GetComponent<Image>().sprite = activeInfoSprite;
+			UpdateContracts();
+		}
 	}
 
 	public void InteractionWithContract(int positionOfContract)
@@ -69,9 +84,9 @@ public class ContractSelectionUIController : Manager<ContractSelectionUIControll
 				contracts[i].gameObject.SetActive(true);
 				if (tempContracts[i].haveBeenShown)
 				{
-					exclamationMarks[i].SetActive(false);
+					//exclamationMarks[i].SetActive(false);
 				} else {
-					exclamationMarks[i].SetActive(true);
+					//exclamationMarks[i].SetActive(true);
 				}
 				if (i == ContractController.Instance.GetNumberOfCurrentActiveContract())
 				{
@@ -80,7 +95,7 @@ public class ContractSelectionUIController : Manager<ContractSelectionUIControll
 				}				
 			} else {
 				contracts[i].SetActive(false);
-				exclamationMarks[i].SetActive(false);
+				//exclamationMarks[i].SetActive(false);
 			}
 		}
 	}
