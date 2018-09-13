@@ -10,6 +10,10 @@ public class ContractSelectionUIController : Manager<ContractSelectionUIControll
 	[SerializeField]
 	GameObject contractScreen;
 	[SerializeField]
+	Sprite unactiveInfoSprite;
+	[SerializeField]
+	Sprite activeInfoSprite;
+	[SerializeField]
 	GameObject[] contracts;
 	[SerializeField]
 	
@@ -20,6 +24,8 @@ public class ContractSelectionUIController : Manager<ContractSelectionUIControll
 	[Header("ContractInfoPopup")]
 	[SerializeField]
 	GameObject contractInfoScreen;
+	[SerializeField]
+	GameObject StackTableScreen;
 	
 	[SerializeField]
 	Text totalNumberOfSleeves;
@@ -28,6 +34,8 @@ public class ContractSelectionUIController : Manager<ContractSelectionUIControll
 
 	[SerializeField]
 	Button acceptButton;
+	[SerializeField]
+	Button contractInfoButton;
 
 	int currentViewedContract = 0;
 
@@ -41,8 +49,19 @@ public class ContractSelectionUIController : Manager<ContractSelectionUIControll
 	}
 	public void OpenContractScreen()
 	{
-		contractScreen.SetActive(true);
-		UpdateContracts();
+		if(contractScreen.activeSelf)
+		{
+			contractScreen.SetActive(false);
+			contractInfoButton.GetComponent<Image>().sprite = unactiveInfoSprite;
+        AkSoundEngine.PostEvent("play_contract_deselect", gameObject);
+		}
+		else
+		{
+			contractScreen.SetActive(true);
+			//contractInfoButton.GetComponent<Image>().sprite = activeInfoSprite;
+			UpdateContracts();
+        	AkSoundEngine.PostEvent("play_contract_open", gameObject);
+		}
 	}
 
 	public void InteractionWithContract(int positionOfContract)
@@ -51,6 +70,7 @@ public class ContractSelectionUIController : Manager<ContractSelectionUIControll
 		contractInfoScreen.SetActive(true);
 		Contract contractToShow = ContractController.Instance.GetActiveContracts()[positionOfContract];
 		ShowContract(contractToShow);
+        AkSoundEngine.PostEvent("play_contract_select", gameObject);
 	}
 
 	
@@ -67,9 +87,9 @@ public class ContractSelectionUIController : Manager<ContractSelectionUIControll
 				contracts[i].gameObject.SetActive(true);
 				if (tempContracts[i].haveBeenShown)
 				{
-					exclamationMarks[i].SetActive(false);
+					//exclamationMarks[i].SetActive(false);
 				} else {
-					exclamationMarks[i].SetActive(true);
+					//exclamationMarks[i].SetActive(true);
 				}
 				if (i == ContractController.Instance.GetNumberOfCurrentActiveContract())
 				{
@@ -78,7 +98,7 @@ public class ContractSelectionUIController : Manager<ContractSelectionUIControll
 				}				
 			} else {
 				contracts[i].SetActive(false);
-				exclamationMarks[i].SetActive(false);
+				//exclamationMarks[i].SetActive(false);
 			}
 		}
 	}
@@ -109,17 +129,22 @@ public class ContractSelectionUIController : Manager<ContractSelectionUIControll
 	public void AcceptContract()
 	{
 		ContractController.Instance.AcceptContract(currentViewedContract);
-		CloseContractInfoScreen();
-		SceneManager.LoadScene(2);
+
+        contractScreen.SetActive(false);
+        contractInfoScreen.SetActive(false);
+        StackTableScreen.SetActive(true);
+        AkSoundEngine.PostEvent("play_contract_select_affirmative",gameObject);
 	}
 	public void CloseContractScreen()
 	{
 		contractScreen.SetActive(false);
 		contractInfoScreen.SetActive(false);
+        AkSoundEngine.PostEvent("play_contract_deselect", gameObject);
 	}
 	public void CloseContractInfoScreen()
 	{
 		contractInfoScreen.SetActive(false);
 		UpdateContracts();
-	}
+        AkSoundEngine.PostEvent("play_contract_deselect", gameObject);
+    }
 }

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{5099C182-2621-47B5-9ED2-55ED74B8F20A}" SchemaVersion="89" RootDocumentID="{B5DF0418-4528-4A68-9A2E-5248978A2EBB}">
 	<AudioObjects>
-		<WorkUnit Name="Ambience" ID="{5099C182-2621-47B5-9ED2-55ED74B8F20A}" OwnerID="{B5DF0418-4528-4A68-9A2E-5248978A2EBB}" PersistMode="Nested">
+		<WorkUnit Name="Ambience" ID="{5099C182-2621-47B5-9ED2-55ED74B8F20A}" OwnerID="{3433864E-26DA-483F-A914-52334BC9BB07}" PersistMode="Nested">
 			<PropertyList>
 				<Property Name="Color" Type="int16" Value="1"/>
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
@@ -27,7 +27,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
+							<ObjectRef Name="SFX" ID="{8C28CA86-36D0-4526-A71B-9C0EE3E07DEF}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -118,7 +118,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
+							<ObjectRef Name="SFX" ID="{8C28CA86-36D0-4526-A71B-9C0EE3E07DEF}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -455,7 +455,7 @@
 							<ObjectRef Name="Aluminium_Tank" ID="{0D20C91A-F750-47E0-AE32-00E5F2AA1272}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
+							<ObjectRef Name="SFX" ID="{8C28CA86-36D0-4526-A71B-9C0EE3E07DEF}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -664,7 +664,7 @@
 							<ObjectRef Name="Plate_Sizzle" ID="{D4A5BBF1-6A59-47A7-BB97-E7695900B72F}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
+							<ObjectRef Name="SFX" ID="{8C28CA86-36D0-4526-A71B-9C0EE3E07DEF}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -854,7 +854,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
+							<ObjectRef Name="SFX" ID="{8C28CA86-36D0-4526-A71B-9C0EE3E07DEF}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -1114,6 +1114,33 @@
 						</Position>
 					</PositioningInfo>
 				</RandomSequenceContainer>
+				<Sound Name="Drone" ID="{B7610CA3-6B1E-42FC-95B3-A3244E19E254}" ShortID="241368994">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-6</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B1726A29-26A1-41A7-A548-3B244B3BF392}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Drone" ID="{DAD30252-58C0-46DD-9444-5D13BD328226}" ShortID="698560944">
+							<Language>SFX</Language>
+							<AudioFile>Drone.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Drone" ID="{DAD30252-58C0-46DD-9444-5D13BD328226}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

@@ -24,8 +24,8 @@ MonoBehaviour:
     List: []
   AuxBusWwu:
   - Guid: '{B1726A29-26A1-41A7-A548-3B244B3BF392}'
-    m_lastTimePart2: -1999235289
-    m_lastTimePsrt1: 1199332736
+    m_lastTimePart2: -1999234728
+    m_lastTimePsrt1: 662679680
     ParentPhysicalPath: 
     PhysicalPath: Master-Mixer Hierarchy/Default Work Unit.wwu
     List: []
@@ -37,8 +37,8 @@ MonoBehaviour:
     PhysicalPath: SoundBanks/Default Work Unit.wwu
     List: []
   - Guid: '{CC5CF97E-E9A0-40ED-9B93-01FC29F58407}'
-    m_lastTimePart2: -1999235292
-    m_lastTimePsrt1: 1224234624
+    m_lastTimePart2: -1999234730
+    m_lastTimePsrt1: 1382614272
     ParentPhysicalPath: 
     PhysicalPath: SoundBanks/Main.wwu
     List:
@@ -52,17 +52,17 @@ MonoBehaviour:
       - ElementName: Ambience
         ObjectType: 7
     - Guid: 039427098250b643aeac3b8b5ac9b1e5
-      ID: 1584507803
-      Name: Click
-      Path: Main/Click
+      ID: 393239870
+      Name: SFX
+      Path: Main/SFX
       PathAndIcons:
       - ElementName: Main
         ObjectType: 12
-      - ElementName: Click
+      - ElementName: SFX
         ObjectType: 7
   - Guid: '{7FB9ACC7-7BF5-4431-8EE2-ED9D6D61F0EE}'
-    m_lastTimePart2: -1999235339
-    m_lastTimePsrt1: 1397697536
+    m_lastTimePart2: -1999234730
+    m_lastTimePsrt1: 652614272
     ParentPhysicalPath: 
     PhysicalPath: SoundBanks/Music.wwu
     List:
@@ -77,25 +77,11 @@ MonoBehaviour:
         ObjectType: 7
   EventWwu:
   - Guid: '{3ADFA3ED-74F6-456B-BA2C-59641A1C28BB}'
-    m_lastTimePart2: -1999235321
-    m_lastTimePsrt1: 1458286208
+    m_lastTimePart2: -1999234729
+    m_lastTimePsrt1: -417320320
     ParentPhysicalPath: Events/Default Work Unit.wwu
     PhysicalPath: Events/Ambience.wwu
     List:
-    - Guid: 524142a4e1a8ad4fba515e0572a04ccc
-      ID: 752289768
-      Name: Play_Clanks
-      Path: Default Work Unit/Ambience/Play_Clanks
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Ambience
-        ObjectType: 12
-      - ElementName: Play_Clanks
-        ObjectType: 3
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
     - Guid: d4f5900667e63b4c8c7f12baf9b3c88d
       ID: -1504921035
       Name: Play_Clicks
@@ -152,27 +138,153 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
-  - Guid: '{E7FA6859-C268-4205-B746-E4153D6A95AE}'
-    m_lastTimePart2: -1999235292
-    m_lastTimePsrt1: 1224234624
-    ParentPhysicalPath: 
-    PhysicalPath: Events/Default Work Unit.wwu
+  - Guid: '{7A98CD8E-7576-4C7A-9711-756D47FC4865}'
+    m_lastTimePart2: -1999234729
+    m_lastTimePsrt1: -417320320
+    ParentPhysicalPath: Events/Default Work Unit.wwu
+    PhysicalPath: Events/Contract.wwu
     List:
-    - Guid: 4e1c242d8adb7f4e8aa737bb0a088759
-      ID: 311910498
-      Name: Play_click
-      Path: Default Work Unit/Play_click
+    - Guid: c6c1f3c956740c4683820a1af7fe19cd
+      ID: -1239531038
+      Name: Play_contract_deselect
+      Path: Default Work Unit/Contract/Play_contract_deselect
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
-      - ElementName: Play_click
+      - ElementName: Contract
+        ObjectType: 12
+      - ElementName: Play_contract_deselect
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: a3c68ae477b8ce42af0729d50d500b0b
+      ID: 1352023247
+      Name: Play_contract_open
+      Path: Default Work Unit/Contract/Play_contract_open
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Contract
+        ObjectType: 12
+      - ElementName: Play_contract_open
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: 03fef1b1c6c23448a45d11b99d888c3a
+      ID: -1072394285
+      Name: Play_contract_select
+      Path: Default Work Unit/Contract/Play_contract_select
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Contract
+        ObjectType: 12
+      - ElementName: Play_contract_select
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: e3dcc954295df44697b5b22a89f97dc4
+      ID: -1763194681
+      Name: Play_contract_select_01
+      Path: Default Work Unit/Contract/Play_contract_select_01
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Contract
+        ObjectType: 12
+      - ElementName: Play_contract_select_01
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: b92b1418b1a2284abc6679a604e9fe6c
+      ID: 1702921318
+      Name: Play_contract_select_affirmative
+      Path: Default Work Unit/Contract/Play_contract_select_affirmative
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Contract
+        ObjectType: 12
+      - ElementName: Play_contract_select_affirmative
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: 3004e945f084d342a7a66f5eb753c266
+      ID: 1218135685
+      Name: Play_contract_select_affirmative_2
+      Path: Default Work Unit/Contract/Play_contract_select_affirmative_2
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Contract
+        ObjectType: 12
+      - ElementName: Play_contract_select_affirmative_2
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+  - Guid: '{E7FA6859-C268-4205-B746-E4153D6A95AE}'
+    m_lastTimePart2: -1999234729
+    m_lastTimePsrt1: -417320320
+    ParentPhysicalPath: 
+    PhysicalPath: Events/Default Work Unit.wwu
+    List: []
+  - Guid: '{8A495955-DBD4-4F4C-BCDE-C466A817CBF1}'
+    m_lastTimePart2: -1999234730
+    m_lastTimePsrt1: 1382614272
+    ParentPhysicalPath: Events/Default Work Unit.wwu
+    PhysicalPath: Events/Menu.wwu
+    List:
+    - Guid: 38ed8b8415132443b76aa061f67366fe
+      ID: -772898507
+      Name: Play_menu_exit_select
+      Path: Default Work Unit/Menu/Play_menu_exit_select
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Menu
+        ObjectType: 12
+      - ElementName: Play_menu_exit_select
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: 4e1c242d8adb7f4e8aa737bb0a088759
+      ID: -2127911266
+      Name: play_menu_select
+      Path: Default Work Unit/Menu/play_menu_select
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Menu
+        ObjectType: 12
+      - ElementName: play_menu_select
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: e16089cecb892f4ca429280a5ef867a3
+      ID: -419726091
+      Name: Play_menu_start_select
+      Path: Default Work Unit/Menu/Play_menu_start_select
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Menu
+        ObjectType: 12
+      - ElementName: Play_menu_start_select
         ObjectType: 3
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
   - Guid: '{A141F3EB-B504-435C-82CE-03AFB1A09F76}'
-    m_lastTimePart2: -1999235339
-    m_lastTimePsrt1: 1317697536
+    m_lastTimePart2: -1999234730
+    m_lastTimePsrt1: 652614272
     ParentPhysicalPath: Events/Default Work Unit.wwu
     PhysicalPath: Events/Music.wwu
     List:
@@ -190,14 +302,81 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - Guid: d6314939f877694f88a5e6fea697616a
+      ID: -410563148
+      Name: Play_Soundtrack
+      Path: Default Work Unit/Music/Play_Soundtrack
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 12
+      - ElementName: Play_Soundtrack
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+  - Guid: '{EDBDE295-897D-48B2-980E-ADD99B7BF185}'
+    m_lastTimePart2: -1999234730
+    m_lastTimePsrt1: 1382614272
+    ParentPhysicalPath: Events/Default Work Unit.wwu
+    PhysicalPath: Events/Rack.wwu
+    List:
+    - Guid: 9f90a8c24271bc4e8edb8a57280976d6
+      ID: 2029151984
+      Name: Play_fluid_leak
+      Path: Default Work Unit/Rack/Play_fluid_leak
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Rack
+        ObjectType: 12
+      - ElementName: Play_fluid_leak
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: 13090484d92d414893d32eaff02cffcd
+      ID: 1079308955
+      Name: Play_slime_impact
+      Path: Default Work Unit/Rack/Play_slime_impact
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Rack
+        ObjectType: 12
+      - ElementName: Play_slime_impact
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: cdd54cb193a7e948862a006c9d435b4f
+      ID: -1145668587
+      Name: Play_Zipper_loop
+      Path: Default Work Unit/Rack/Play_Zipper_loop
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Rack
+        ObjectType: 12
+      - ElementName: Play_Zipper_loop
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
   ExpandedItems:
   - /MiniProduction_1_WwiseProject
   - /MiniProduction_1_WwiseProject/Events
   - /MiniProduction_1_WwiseProject/Events/Default Work Unit
+  - /MiniProduction_1_WwiseProject/Events/Default Work Unit/Ambience
+  - /MiniProduction_1_WwiseProject/Events/Default Work Unit/Music
+  - /MiniProduction_1_WwiseProject/SoundBanks
+  - /MiniProduction_1_WwiseProject/SoundBanks/Main
+  - /MiniProduction_1_WwiseProject/SoundBanks/Music
   RtpcWwu:
   - Guid: '{CD646BC5-A30F-4FDF-B8CC-2F9CC05343BA}'
-    m_lastTimePart2: -1999235289
-    m_lastTimePsrt1: 1199332736
+    m_lastTimePart2: -1999235089
+    m_lastTimePsrt1: -1119093760
     ParentPhysicalPath: 
     PhysicalPath: Game Parameters/Default Work Unit.wwu
     List:
@@ -209,6 +388,15 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
       - ElementName: music_mix
+        ObjectType: 13
+    - Guid: 8756746653ec974681817a7e2d3e0dbd
+      ID: 1235540206
+      Name: rack_acc
+      Path: Default Work Unit/rack_acc
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: rack_acc
         ObjectType: 13
     - Guid: 5fff173851e373419e40ec20e52e9f71
       ID: 681424821

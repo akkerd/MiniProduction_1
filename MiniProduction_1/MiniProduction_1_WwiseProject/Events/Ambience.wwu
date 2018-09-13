@@ -3,20 +3,6 @@
 	<Events>
 		<WorkUnit Name="Ambience" ID="{3ADFA3ED-74F6-456B-BA2C-59641A1C28BB}" OwnerID="{E7FA6859-C268-4205-B746-E4153D6A95AE}" PersistMode="Nested">
 			<ChildrenList>
-				<Event Name="Play_Clanks" ID="{A4424152-A8E1-4FAD-BA51-5E0572A04CCC}">
-					<ChildrenList>
-						<Action Name="" ID="{EF05C475-9B45-4E64-AE11-27F40181DD35}" ShortID="19072399">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Clanks" ID="{AC224A11-339F-4F08-9353-B1B00E0F00DC}" WorkUnitID="{5099C182-2621-47B5-9ED2-55ED74B8F20A}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="Play_Clicks" ID="{0690F5D4-E667-4C3B-8C7F-12BAF9B3C88D}">
 					<ChildrenList>
 						<Action Name="" ID="{A9C4B135-D1CE-492C-AEBC-34934FAD22F7}" ShortID="6428347">
@@ -68,6 +54,20 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Screams" ID="{E4191FD6-49DE-46A3-B5BD-E32F7B32A238}" WorkUnitID="{5099C182-2621-47B5-9ED2-55ED74B8F20A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Drone" ID="{EE859CC8-7C38-4251-8F3E-9960B91625E6}">
+					<ChildrenList>
+						<Action Name="" ID="{734A24A9-7266-4334-AC61-BEC5535B71CF}" ShortID="450767941">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Drone" ID="{B7610CA3-6B1E-42FC-95B3-A3244E19E254}" WorkUnitID="{5099C182-2621-47B5-9ED2-55ED74B8F20A}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

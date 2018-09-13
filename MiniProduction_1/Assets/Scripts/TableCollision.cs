@@ -21,6 +21,7 @@ public class TableCollision : MonoBehaviour {
 
     public void CloseDown()
     {
+        
         GetComponent<SlimeSpawn>().enabled = false;
         GetComponent<Rigidbody>().isKinematic = true;
         transform.parent = Table.transform;

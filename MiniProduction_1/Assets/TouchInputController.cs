@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TouchInputController : MonoBehaviour {
+public class TouchInputController : Manager<TouchInputController> {
 
 	//The transform the distance of the cube to the center will move
 	public Transform lineController;
 
+	bool isWithInField = false;
+	
 	//For audio
 	public float currentSpeed = 0;
 	Touch prevTouch;
@@ -66,17 +68,42 @@ public class TouchInputController : MonoBehaviour {
 		transform.position = nextPosition;
 	}
 
+	public void ResetCubePosition()
+	{
+		transform.position = startPosition;
+	}
 	//Checks which phase the touches[0] is in, and if it has moved, apply that movement to the control cube
 	void FirstTouch(Touch currentTouch)
 	{
-		if (currentTouch.phase == TouchPhase.Canceled)
+		if (currentTouch.phase == TouchPhase.Canceled || currentTouch.phase == TouchPhase.Ended)
+		{
+			isWithInField = false;
+			return;
+		}
+		//Where the check if its allowed to run
+		if (ContractController.Instance.GetCurrentContract() == null || SleeveSelection.Instance.IsSleeveInfoVisible() || UnsleeveManager.Instance.isCurrentlyUnsleeving)
 		{
 			return;
 		}
+		
 		if (currentTouch.phase == TouchPhase.Began)
+		{	
+			Debug.Log(Camera.main.ScreenToViewportPoint( currentTouch.position));
+			Vector3 testPosition = Camera.main.ScreenToViewportPoint( currentTouch.position);
+			if (testPosition.x > 0.1f && testPosition.x < 0.9f)
+			{
+				if (testPosition.y > 0.4f && testPosition.y < 0.9f)
+				{
+					isWithInField = true;
+					prevTouch = currentTouch;
+					transform.position = startPosition;
+				}
+			}
+			
+			return;
+		}
+		if (!isWithInField)
 		{
-			prevTouch = currentTouch;
-			transform.position = startPosition;
 			return;
 		}
 		if (currentTouch.phase == TouchPhase.Moved)
@@ -88,7 +115,7 @@ public class TouchInputController : MonoBehaviour {
 			//Debug.Log(direction);
 
 			Vector3 newPositionOfCube = Vector3.Lerp(transform.position, transform.position +(direction * forceAddedToCube),force * Time.deltaTime);
-			Debug.Log("New position of cube: " +newPositionOfCube);
+			//Debug.Log("New position of cube: " +newPositionOfCube);
 			if (newPositionOfCube.x < -maxDistanceFromCenter +startPosition.x)
 			{
 				newPositionOfCube.x = -maxDistanceFromCenter +startPosition.x;

@@ -6,11 +6,14 @@ public class SleeveController : Manager<SleeveController> {
 
 	List<Sleeve> sleevesAvaliable;
 
-	void Start()
+	protected override void onAwake()
 	{
+		base.onAwake();
 		sleevesAvaliable = new List<Sleeve>();
-		AddSleeves(12);
+		//AddSleeves(12);
 	}
+	
+		
 
 	public void AddSleeves(int numberOfNewSleeves)
 	{
@@ -18,6 +21,10 @@ public class SleeveController : Manager<SleeveController> {
 		{
 			AddSleeve();
 		}
+	}
+	public void AddSleeve(Sleeve addedSleeve)
+	{
+		sleevesAvaliable.Add(addedSleeve);
 	}
 
 	void AddSleeve()
@@ -28,5 +35,13 @@ public class SleeveController : Manager<SleeveController> {
 	public void UpdateSleevesInConveyor()
 	{
 		ConveyorController.Instance.SetupConveyor(sleevesAvaliable.ToArray());
+	}
+	public Sleeve[] GetActiveSleeves()
+	{
+		return sleevesAvaliable.ToArray();
+	}
+	public void UseSleeve(int positionInAvaliableSleeves)
+	{
+		SaveLoadController.Instance.UseSleeve(sleevesAvaliable[positionInAvaliableSleeves].id);
 	}
 }
