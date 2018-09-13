@@ -3,15 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Stack_Selection_Controller : MonoBehaviour {
-
-
+public class Stack_Selection_Controller : Manager<Stack_Selection_Controller>
+{
 	[SerializeField]
 	Sprite Non_Selected_Image;
 	[SerializeField]
 	Sprite Selected_Image;
 	[SerializeField]
-	GameObject[] Stack_Buttons;
+	public GameObject[] Stack_Buttons;
 
 	private int previousIndex;
 
@@ -27,6 +26,7 @@ public class Stack_Selection_Controller : MonoBehaviour {
 
 	public void SwitchStackButtonColor(int index)
 	{
+        /*
 		if ( index != previousIndex )
 		{
 			Stack_Buttons[previousIndex].GetComponent<Image>().sprite = Non_Selected_Image;
@@ -34,5 +34,6 @@ public class Stack_Selection_Controller : MonoBehaviour {
 			previousIndex = index;
 			Stack_Buttons[index].GetComponent<Image>().sprite = Selected_Image;
 		}
+        */
 	}
 }

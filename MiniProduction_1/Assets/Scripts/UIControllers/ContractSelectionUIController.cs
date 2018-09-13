@@ -58,7 +58,7 @@ public class ContractSelectionUIController : Manager<ContractSelectionUIControll
 		else
 		{
 			contractScreen.SetActive(true);
-			contractInfoButton.GetComponent<Image>().sprite = activeInfoSprite;
+			//contractInfoButton.GetComponent<Image>().sprite = activeInfoSprite;
 			UpdateContracts();
         	AkSoundEngine.PostEvent("play_contract_open", gameObject);
 		}
