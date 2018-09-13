@@ -12,19 +12,26 @@ public class TableCollision : MonoBehaviour {
      
         if (collision.gameObject== Table)
         {
-            
-            Invoke("CloseDown", 5);
+
+            Invoke("PChange", 0.5f);
+            Invoke("CloseDown", 2);
         }
 
    
     }
 
-    public void CloseDown()
+    public void PChange()
     {
-        
         GetComponent<SlimeSpawn>().enabled = false;
         GetComponent<Rigidbody>().isKinematic = true;
         transform.parent = Table.transform;
+        Table.GetComponent<TableScript>().ChangeParent();
+    }
+
+    public void CloseDown()
+    {
+        
+       
         Table.GetComponent<TableScript>().Moving = true;
         GetComponent<TableCollision>().enabled = false;
     }
