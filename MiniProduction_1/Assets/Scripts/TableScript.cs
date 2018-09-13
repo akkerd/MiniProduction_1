@@ -37,13 +37,13 @@ public class TableScript : MonoBehaviour {
                 PTravelled += 0.5f * Time.deltaTime;
                 transform.position = Vector3.Lerp(StartPosition.position, EndPosition.position, PTravelled);
                 transform.SetParent(UnsleeveManager.Instance.transform);
+                StackDeliveryController.Instance.SetColliderOnSleeve();
                 UnsleeveManager.Instance.DeactivatePrefab();
 
 
             }
             if (PTravelled >= 1)
-            {
-                StackDeliveryController.Instance.SetColliderOnSleeve();
+            {                
                 transform.SetParent(UnsleeveManager.Instance.transform);
                 UnsleeveManager.Instance.DestroyPrefab();
             }
