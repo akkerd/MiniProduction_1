@@ -41,6 +41,15 @@
 									</RTPCList>
 								</Property>
 							</PropertyList>
+							<ChildrenList>
+								<Bus Name="Contract" ID="{9FB0C2A3-66CF-4697-A8B8-7A32849B7021}">
+									<ReferenceList>
+										<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+											<ObjectRef Name="Plate_Medium" ID="{33384D0C-6ACB-4E3D-AC82-73AAB3AE1CA5}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+									</ReferenceList>
+								</Bus>
+							</ChildrenList>
 						</Bus>
 						<Bus Name="Music" ID="{0F785AEF-26F8-4450-ACCE-5E3D4C75000B}">
 							<PropertyList>
@@ -73,6 +82,17 @@
 									</RTPCList>
 								</Property>
 							</PropertyList>
+							<DuckingList>
+								<DuckItem>
+									<BusRef Name="SFX" ID="{8C28CA86-36D0-4526-A71B-9C0EE3E07DEF}"/>
+									<DuckingParam>
+										<Volume>-6</Volume>
+										<FadeInTime>1</FadeInTime>
+										<FadeOutTime>1</FadeOutTime>
+										<FadeCurve>FadeLinear</FadeCurve>
+									</DuckingParam>
+								</DuckItem>
+							</DuckingList>
 						</Bus>
 					</ChildrenList>
 				</Bus>

@@ -1115,6 +1115,14 @@
 					</PositioningInfo>
 				</RandomSequenceContainer>
 				<Sound Name="Drone" ID="{B7610CA3-6B1E-42FC-95B3-A3244E19E254}" ShortID="241368994">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-6</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{78994022-54A5-4744-93CC-9FE89A1BBFC7}"/>
