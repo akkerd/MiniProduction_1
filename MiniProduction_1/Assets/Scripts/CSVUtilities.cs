@@ -18,6 +18,10 @@ using UnityEngine;
 			string[] arr = str.Split(',');
 			return arr;
 		}
+		public static string[] fileToArr(string str) {
+			string[] arr = str.Split(';');
+			return arr;
+		}
 
 		public static string[] Reader(string fileName) {
 			try {

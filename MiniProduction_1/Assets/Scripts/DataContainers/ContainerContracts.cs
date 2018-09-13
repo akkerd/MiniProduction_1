@@ -24,8 +24,14 @@ public class ContainerContracts : MonoBehaviour {
 		List<string[]> files = new List<string[]>();
 		int timesRan = 0;
 		do{
-			string fileName = "Assets/Resources/Contracts/Contract" + currentFileNumber +".txt";
-			string[] tempArray = CSVUtilities.Reader(fileName);
+			//string fileName = "Assets/Resources/Contracts/Contract" + currentFileNumber +".txt";
+			//string[] tempArray = CSVUtilities.Reader(fileName);
+			TextAsset filename = (TextAsset)Resources.Load("Contracts/Contract" + currentFileNumber);
+			if (filename == null)
+			{
+				break;
+			}
+			string[] tempArray = CSVUtilities.fileToArr(filename.text);
 			if (tempArray == null)
 			{
 				break;
