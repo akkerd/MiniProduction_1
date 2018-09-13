@@ -47,6 +47,8 @@ public class UnsleeveManager : Manager<UnsleeveManager> {
     public void DeactivatePrefab()
     {
         Unsleeving.SetActive(false);
+        isCurrentlyUnsleeving = false;
+
     }
 
 }

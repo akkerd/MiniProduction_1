@@ -5,7 +5,7 @@ using UnityEngine;
 public class Contract {
 
 	public string description;
-	Stack[] stacks;
+	public Stack[] stacks;
 	Sleeve[] sleeveRewards;
 	public bool isCompleted = false;
 	public bool haveBeenShown = false;
