@@ -13,8 +13,8 @@ public class TableCollision : MonoBehaviour {
         if (collision.gameObject== Table)
         {
 
-            Invoke("PChange", 0.5f);
-            Invoke("CloseDown", 2);
+            Invoke("PChange", 2f);
+            Invoke("CloseDown", 4);
         }
 
    

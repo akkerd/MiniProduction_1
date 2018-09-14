@@ -91,6 +91,8 @@ public class MotionMatching : MonoBehaviour {
 
     public void StandUp()
     {
+        anim.applyRootMotion = true;
+        transform.parent = null;
         anim.Play("Standup", 0, 0.0246913580246914f);
         anim.speed = 1;
     }

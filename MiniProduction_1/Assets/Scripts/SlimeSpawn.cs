@@ -9,7 +9,7 @@ public class SlimeSpawn : MonoBehaviour {
     Cloth ClothComp;
     Rigidbody RigidBod;
     public bool FallsFromSide;
-    SkinnedMeshRenderer SMRendereder;
+    public SkinnedMeshRenderer SMRendereder;
     public GameObject Zipper;
     public bool FallsFromLeft = false;
   SlimeControl ZipperScript;
@@ -18,8 +18,8 @@ public class SlimeSpawn : MonoBehaviour {
     void Start()
     {
 
-        SMRendereder = gameObject.GetComponent<SkinnedMeshRenderer>();
-        SMRendereder.enabled = false;
+      // SMRendereder = gameObject.GetComponent<SkinnedMeshRenderer>();
+       // SMRendereder.enabled = false;
 
         if (gameObject.GetComponent<Cloth>() !=null) {
         ClothComp = gameObject.GetComponent<Cloth>();
@@ -34,7 +34,7 @@ public class SlimeSpawn : MonoBehaviour {
       
 
         ZipperScript = Zipper.GetComponent<SlimeControl>();
-        
+        SMRendereder.enabled = false;
     }
 
     // Update is called once per frame
@@ -82,10 +82,11 @@ public class SlimeSpawn : MonoBehaviour {
                 FallsFromLeft = true;
             }
 
-            if(ZipperScript.ZipperValY > transform.position.y && ZipperScript.ZipperValX < transform.position.x && FallsFromLeft)
+            if(ZipperScript.ZipperValY > transform.position.y+1.5f && ZipperScript.ZipperValX < transform.position.x && FallsFromLeft)
             {
 
                 RigidBod.isKinematic = false;
+                SMRendereder.enabled = true;
             }
 
         }
