@@ -10,13 +10,14 @@ public enum State
     Standup, Stasis, Confused, Scared, Strong, None
 };
 
-public class AnimatorTest : MonoBehaviour {
+public class MotionMatching : MonoBehaviour {
 
     Animator anim;
     AnimatorStateInfo animationState;
     private State CurrentState = State.None;
     private int CurrentAnimationI;
     private readonly Dictionary<State, int[]> Animations = new Dictionary<State, int[]>();
+    float[] Rotation = new float[3];
     private bool debug = false;
 
 	void Start () {
@@ -43,6 +44,12 @@ public class AnimatorTest : MonoBehaviour {
         for (int i = 0; i < StrongAnimations.Length; i++)
             StrongAnimations[i] = (Animator.StringToHash("strong" + i));
         Animations.Add(State.Strong, StrongAnimations);
+
+        Transform t = GetComponent<Transform>();
+        Rotation[0] = t.eulerAngles.x;
+        Rotation[1] = t.eulerAngles.y;
+        Rotation[2] = t.eulerAngles.z;
+
         anim.Play("Standup", 0, 0.0246913580246914f);
         anim.speed = 0;
     }
@@ -67,7 +74,7 @@ public class AnimatorTest : MonoBehaviour {
             {
                 Strong();
             }
-        } else if (animationState.normalizedTime > 0.99)
+        } else if (animationState.normalizedTime > 0.9)
         {
             if (CurrentState.Equals(State.Standup))
             {
@@ -109,14 +116,16 @@ public class AnimatorTest : MonoBehaviour {
         int frame = (int)Math.Round(animationState.normalizedTime * currentMatching.animation_total_frames[CurrentAnimationI]);
         int idx = nextMatching.to_idx_mapper[CurrentAnimationI][frame];
         int[] neighbors = nextMatching.neighbors[idx];
-        //int nextIdx = neighbors[UnityEngine.Random.Range(0, 5)];
         int nextIdx = neighbors[0];
         FrameMapper nextFrame = nextMatching.to_frame_mapper[nextIdx];
         CurrentAnimationI = nextFrame.AniIndex;
         CurrentState = StrToState(nextFrame.AniName);
         float normalizedTime = (float)nextFrame.Frame / nextMatching.animation_total_frames[CurrentAnimationI];
-        //anim.CrossFade(Animations[CurrentState][CurrentAnimationI], 1f, 0, normalizedTime);
-        anim.Play(Animations[CurrentState][CurrentAnimationI], -1, normalizedTime);
+
+        // So the sleeve looks straight when transitioning
+        GetComponent<Transform>().eulerAngles = new Vector3(Rotation[0], Rotation[1], Rotation[2]);
+
+        anim.Play(Animations[CurrentState][CurrentAnimationI], 0, normalizedTime);
     }
 
     private float NormalizeFrame(int frame, int totalFrames)
