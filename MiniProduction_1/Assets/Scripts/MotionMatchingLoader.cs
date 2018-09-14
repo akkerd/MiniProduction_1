@@ -29,7 +29,6 @@ public class MotionMatchingLoader : Manager<MotionMatchingLoader> {
     public Matching ToStrong;
     public Matching ToConfused;
     public Matching ToScared;
-    public int test;
     // Use this for initialization
     protected override void onAwake () {
         StasisMatching = JsonConvert.DeserializeObject<Matching>(File.ReadAllText(@"Assets\Animations\Data\stasis_matching.json"));

@@ -8,12 +8,13 @@ public class TableScript : MonoBehaviour {
     public Transform EndPosition;
     public Transform StartPosition;
     public float PTravelled =0;
+    public MotionMatching MMscript;
 
     bool haveDeactivated = false;
 
 	// Use this for initialization
 	void Start () {
-		
+        
 	}
 
     public void ChangeParent()
@@ -47,10 +48,14 @@ public class TableScript : MonoBehaviour {
 
 
             }
-            if (PTravelled >= 1)
-            {                
+            //Debug.Log(PTravelled);
+            if (PTravelled >= 0.5f)
+            {
+                Debug.Log("Sådan");
+                MMscript.StandUp();
                 transform.SetParent(UnsleeveManager.Instance.transform);
                 UnsleeveManager.Instance.DestroyPrefab();
+                
             }
 
         }      
