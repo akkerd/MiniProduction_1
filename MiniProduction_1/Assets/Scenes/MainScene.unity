@@ -2170,6 +2170,7 @@ MonoBehaviour:
   - {fileID: 42404655}
   - {fileID: 1333206735}
   scoringScreen: {fileID: 1062858494}
+  tableInt: 0
   raycastStackSelection:
     serializedVersion: 2
     m_Bits: 2048

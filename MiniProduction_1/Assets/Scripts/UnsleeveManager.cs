@@ -27,7 +27,7 @@ public class UnsleeveManager : Manager<UnsleeveManager> {
    public void CreateBodybag()
     {
 
-       Unsleeving = Instantiate(brick, new Vector3(-3.88f, 0.78f, 4.54f), Quaternion.identity);
+        Unsleeving = Instantiate(brick, new Vector3(-3.88f, 0.78f, 4.54f), Quaternion.identity);
         Unsleeving.GetComponent<EndPosReceiver>().Setpos( EndPosistions[count]);
     
         count += 1;
@@ -50,6 +50,10 @@ public class UnsleeveManager : Manager<UnsleeveManager> {
         isCurrentlyUnsleeving = false;
         StackDeliveryController.Instance.SetColliderOnSleeve();
 
+    }
+    public int getCount(){
+
+        return count;
     }
 
 }

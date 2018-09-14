@@ -23,6 +23,7 @@ public class StackDeliveryController : Manager<StackDeliveryController> {
     Vector3 m0;
     Vector3 startPosition;
 
+    public int tableInt;
     public LayerMask raycastStackSelection;
     public LayerMask raycastSleeveSelection;
     public bool stacksCreated;
@@ -93,6 +94,10 @@ public class StackDeliveryController : Manager<StackDeliveryController> {
         stacksCreated = true;
     }
 
+    public int getTableInt(){
+        return tableInt;
+    }
+
     private void moveStacksOnScreen()
     {
         if (childStacks.Count > 0 && Input.touchCount == 1)
@@ -143,6 +148,7 @@ public class StackDeliveryController : Manager<StackDeliveryController> {
                         //CombinedStackWithSleeve(chosenStack.GetComponent<StackObject>().stackNumber, receivingSleeve.name.ToCharArray()[6]);
                         char tempChar = receivingSleeve.name[6];
                         int tempint = int.Parse(tempChar.ToString());
+                        tableInt = tempint;
                         combinedSleevesInStackOrder[chosenStack.GetComponent<StackObject>().stackNumber] = ContractController.Instance.GetSleeveInPosition(tempint);
                         chosenStack.SetActive(false);
                         childStacks.Remove(chosenStack);
