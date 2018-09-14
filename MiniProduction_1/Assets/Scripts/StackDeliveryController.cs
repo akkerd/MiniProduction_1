@@ -10,7 +10,10 @@ public class StackDeliveryController : Manager<StackDeliveryController> {
     int numberOfActivatedSleeves = 0;
     [SerializeField]
 	GameObject[] colliders;
-    List<GameObject> childStacks;    
+    List<GameObject> childStacks;
+
+    [SerializeField]
+    GameObject scoringScreen;
 
 
     GameObject chosenStack = null;
@@ -147,6 +150,7 @@ public class StackDeliveryController : Manager<StackDeliveryController> {
                         chosenStack = null;
                         if (ContractController.Instance.isContractDone)
                         {
+                            scoringScreen.SetActive(true);
                             ScoringController.Instance.CalculateReport(ContractController.Instance.choosenSleevesForContract);
                         }
                     }

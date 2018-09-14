@@ -1473,6 +1473,11 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ced84d1d1439e4418861b6eb57de785, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &1062858494 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1110196560316072, guid: 3ced84d1d1439e4418861b6eb57de785,
+    type: 2}
+  m_PrefabInternal: {fileID: 1062858493}
 --- !u!1001 &1093089989
 Prefab:
   m_ObjectHideFlags: 0
@@ -2164,6 +2169,7 @@ MonoBehaviour:
   - {fileID: 1678464830}
   - {fileID: 42404655}
   - {fileID: 1333206735}
+  scoringScreen: {fileID: 1062858494}
   raycastStackSelection:
     serializedVersion: 2
     m_Bits: 2048

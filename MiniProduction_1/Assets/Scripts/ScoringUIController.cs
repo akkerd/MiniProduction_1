@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class ScoringUIController : Manager<ScoringUIController> {
 
@@ -30,6 +31,6 @@ public class ScoringUIController : Manager<ScoringUIController> {
 	{
 		scoringScreen.SetActive(false);
 		ContractController.Instance.FinishContract();
-	}	
+    }	
 
 }
