@@ -532,7 +532,7 @@ GameObject:
   - component: {fileID: 42404656}
   - component: {fileID: 42404657}
   m_Layer: 10
-  m_Name: Sleeve2Collider
+  m_Name: Sleeve3Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3454,7 +3454,7 @@ GameObject:
   - component: {fileID: 703813096}
   - component: {fileID: 703813097}
   m_Layer: 10
-  m_Name: Sleeve4Collider
+  m_Name: Sleeve0Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6647,7 +6647,7 @@ GameObject:
   - component: {fileID: 1333206736}
   - component: {fileID: 1333206737}
   m_Layer: 10
-  m_Name: Sleeve0Collider
+  m_Name: Sleeve4Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8576,7 +8576,7 @@ GameObject:
   - component: {fileID: 1678464831}
   - component: {fileID: 1678464832}
   m_Layer: 10
-  m_Name: Sleeve3Collider
+  m_Name: Sleeve2Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
