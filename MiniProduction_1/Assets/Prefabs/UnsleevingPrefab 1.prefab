@@ -73,6 +73,7 @@ GameObject:
   - component: {fileID: 114095144265482722}
   - component: {fileID: 114255339425631188}
   - component: {fileID: 114245321011838174}
+  - component: {fileID: 114801736410262394}
   m_Layer: 0
   m_Name: endpos
   m_TagString: Untagged
@@ -2108,7 +2109,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1405851633414946}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.88, y: 1, z: 4.54}
+  m_LocalPosition: {x: -3.037, y: 2.835, z: 4.059}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children:
   - {fileID: 4272164799867300}
@@ -3570,7 +3571,7 @@ MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1040292017394320}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -4095,6 +4096,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc145563d0ae0f545a81c70c43ad2752, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114801736410262394
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1040292017394320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cdaf5cbe090a6a4c93e6981783d9e4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EndposObject: {fileID: 0}
 --- !u!114 &114826114908967488
 MonoBehaviour:
   m_ObjectHideFlags: 1

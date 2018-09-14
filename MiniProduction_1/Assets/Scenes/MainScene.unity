@@ -296,15 +296,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4267386369407968, guid: 31f008b3d2e59ab49bc4c661891c7ee2, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -3.88
+      value: -3.037
       objectReference: {fileID: 0}
     - target: {fileID: 4267386369407968, guid: 31f008b3d2e59ab49bc4c661891c7ee2, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 2.835
       objectReference: {fileID: 0}
     - target: {fileID: 4267386369407968, guid: 31f008b3d2e59ab49bc4c661891c7ee2, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 4.54
+      value: 4.059
       objectReference: {fileID: 0}
     - target: {fileID: 4267386369407968, guid: 31f008b3d2e59ab49bc4c661891c7ee2, type: 2}
       propertyPath: m_LocalRotation.x
@@ -1928,6 +1928,34 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1230337364}
   m_Mesh: {fileID: 4300002, guid: 10f34f98de0dac54780d7b057f8cdf20, type: 3}
+--- !u!1 &1264971312
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1264971313}
+  m_Layer: 0
+  m_Name: UnsleevingTransform
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1264971313
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1264971312}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.209, y: 2.576, z: 2.462}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1267332104
 Prefab:
   m_ObjectHideFlags: 0
