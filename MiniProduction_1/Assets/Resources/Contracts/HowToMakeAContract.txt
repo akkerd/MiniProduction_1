@@ -1,0 +1,13 @@
+Number of stacks;Number of sleeves;ContractInfo;
+Lower strenght,Upper strenght,Lower agility,Upper agility,Lower Intelligence,Upper Intelligence,Lower Knowledge,Upper Knowledge,Lower beauty,Upper beauty,1 = male 0 = female,stack description;
+Lower strenght,Upper strenght,Lower agility,Upper agility,Lower Intelligence,Upper Intelligence,Lower Knowledge,Upper Knowledge,Lower beauty,Upper beauty,1 = male 0 = female,stack description;
+Lower strenght,Upper strenght,Lower agility,Upper agility,Lower Intelligence,Upper Intelligence,Lower Knowledge,Upper Knowledge,Lower beauty,Upper beauty,1 = male 0 = female,stack description;
+strenght,agility,intelligence,knowledge,beauty,false;
+strenght,agility,intelligence,knowledge,beauty,false;
+strenght,agility,intelligence,knowledge,beauty,false;
+
+
+
+
+
+<<<< The first line is setup stuff for the contract. There after comes the required amount of stacks, then the required amount of sleeves. "," is between each value and ";" between each stack/sleeve>>>>

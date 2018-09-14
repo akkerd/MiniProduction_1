@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{3ADFA3ED-74F6-456B-BA2C-59641A1C28BB}" SchemaVersion="89" RootDocumentID="{E7FA6859-C268-4205-B746-E4153D6A95AE}">
+	<Events>
+		<WorkUnit Name="Ambience" ID="{3ADFA3ED-74F6-456B-BA2C-59641A1C28BB}" OwnerID="{E7FA6859-C268-4205-B746-E4153D6A95AE}" PersistMode="Nested">
+			<ChildrenList>
+				<Event Name="Play_Clicks" ID="{0690F5D4-E667-4C3B-8C7F-12BAF9B3C88D}">
+					<ChildrenList>
+						<Action Name="" ID="{A9C4B135-D1CE-492C-AEBC-34934FAD22F7}" ShortID="6428347">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Clicks" ID="{17A68D4A-BEBC-4B70-BD98-9B1F7432F14B}" WorkUnitID="{5099C182-2621-47B5-9ED2-55ED74B8F20A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Ventilation" ID="{8F6247DC-7D5A-4EB2-986C-8E41E01B704E}">
+					<ChildrenList>
+						<Action Name="" ID="{D7C5E51D-050A-4624-AFD9-7C32E0350C53}" ShortID="807453034">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ventilation" ID="{B22DF292-F35E-4D65-B211-0A0E783EA51A}" WorkUnitID="{5099C182-2621-47B5-9ED2-55ED74B8F20A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Electric_anomalies" ID="{52A150D3-13D4-4798-8447-A5E94B3B93F8}">
+					<ChildrenList>
+						<Action Name="" ID="{1A107B8D-F03E-468E-AE83-6DE20CB773DE}" ShortID="245323379">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Electric_anomalies" ID="{58FD1FF1-8B5D-40FD-8438-50FEE8A504B2}" WorkUnitID="{5099C182-2621-47B5-9ED2-55ED74B8F20A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Screams" ID="{B853C90F-C762-4093-8CD4-35E152DD343E}">
+					<ChildrenList>
+						<Action Name="" ID="{A7A72E77-7257-4158-A715-E60727C81713}" ShortID="277238007">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Screams" ID="{E4191FD6-49DE-46A3-B5BD-E32F7B32A238}" WorkUnitID="{5099C182-2621-47B5-9ED2-55ED74B8F20A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Drone" ID="{EE859CC8-7C38-4251-8F3E-9960B91625E6}">
+					<ChildrenList>
+						<Action Name="" ID="{734A24A9-7266-4334-AC61-BEC5535B71CF}" ShortID="450767941">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Drone" ID="{B7610CA3-6B1E-42FC-95B3-A3244E19E254}" WorkUnitID="{5099C182-2621-47B5-9ED2-55ED74B8F20A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

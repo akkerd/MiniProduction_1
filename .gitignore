@@ -4,6 +4,14 @@
 [Bb]uild/
 [Bb]uilds/
 Assets/AssetStoreTools*
+*Assets/Private/*
+Assets/Private/*
+Assets/Private/
+Assets/Private.meta
+MiniProduction_1/MiniProduction_1_WwiseProject/.cache
+MiniProduction_1/Assets/Private/
+MiniProduction_1/Assets/Private.meta
+MiniProduction_1_WwiseProject/Originals/SFX/Altered Carbon.wav
 
 # Visual Studio cache directory
 .vs/
@@ -23,6 +31,7 @@ ExportedObj/
 *.svd
 *.pdb
 *.opendb
+*.DS_Store
 
 # Unity3D generated meta files
 *.pidb.meta
@@ -34,3 +43,5 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+MiniProduction_1/Assets/Scenes/Menu.unity
+MiniProduction_1/Assets/Rokoko.meta

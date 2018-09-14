@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="132">
+	<RootPaths>
+		<ProjectRoot>/Users/Makvaerk/Library/Application Support/Wwise2018/Bottles/wwise/dosdevices/y:/Documents/GitHub/MiniProduction_1/MiniProduction_1/MiniProduction_1_WwiseProject/</ProjectRoot>
+		<SourceFilesRoot>/Users/Makvaerk/Library/Application Support/Wwise2018/Bottles/wwise/dosdevices/y:/Documents/GitHub/MiniProduction_1/MiniProduction_1/MiniProduction_1_WwiseProject/.cache/Windows/</SourceFilesRoot>
+		<SoundBanksRoot>/Users/Makvaerk/Library/Application Support/Wwise2018/Bottles/wwise/dosdevices/y:/Documents/GitHub/MiniProduction_1/MiniProduction_1/MiniProduction_1_WwiseProject/GeneratedSoundBanks/Windows/</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>/Users/Makvaerk/Library/Application Support/Wwise2018/Bottles/wwise/dosdevices/y:/Documents/GitHub/MiniProduction_1/MiniProduction_1/MiniProduction_1_WwiseProject/GeneratedSoundBanks/Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="85412153" Language="SFX">
+			<ObjectPath>\SoundBanks\Main\Ambience</ObjectPath>
+			<ShortName>Ambience</ShortName>
+			<Path>Ambience.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2790046261" Name="Play_Clicks" ObjectPath="\Events\Default Work Unit\Ambience\Play_Clicks"/>
+				<Event Id="614939413" Name="Play_Electric_anomalies" ObjectPath="\Events\Default Work Unit\Ambience\Play_Electric_anomalies"/>
+				<Event Id="2700195184" Name="Play_Screams" ObjectPath="\Events\Default Work Unit\Ambience\Play_Screams"/>
+				<Event Id="2644260023" Name="Play_Ventilation" ObjectPath="\Events\Default Work Unit\Ambience\Play_Ventilation"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="3356241" Language="SFX">
+					<ShortName>Clicking_5.wav</ShortName>
+					<Path>SFX/Clicking_5_56D34C19.wem</Path>
+				</File>
+				<File Id="47870021" Language="SFX">
+					<ShortName>Clicking_3.wav</ShortName>
+					<Path>SFX/Clicking_3_56D34C19.wem</Path>
+				</File>
+				<File Id="100574540" Language="SFX">
+					<ShortName>Clatter_3.wav</ShortName>
+					<Path>SFX/Clatter_3_56D34C19.wem</Path>
+				</File>
+				<File Id="185010069" Language="SFX">
+					<ShortName>Clatter_2.wav</ShortName>
+					<Path>SFX/Clatter_2_56D34C19.wem</Path>
+				</File>
+				<File Id="185016637" Language="SFX">
+					<ShortName>Clatter_4.wav</ShortName>
+					<Path>SFX/Clatter_4_56D34C19.wem</Path>
+				</File>
+				<File Id="195017894" Language="SFX">
+					<ShortName>Electricity_3.wav</ShortName>
+					<Path>SFX/Electricity_3_56D34C19.wem</Path>
+				</File>
+				<File Id="218862165" Language="SFX">
+					<ShortName>Ventilation.wav</ShortName>
+					<Path>SFX/Ventilation_56D34C19.wem</Path>
+				</File>
+				<File Id="243342678" Language="SFX">
+					<ShortName>Clicking_1.wav</ShortName>
+					<Path>SFX/Clicking_1_56D34C19.wem</Path>
+				</File>
+				<File Id="258840346" Language="SFX">
+					<ShortName>Electricity.wav</ShortName>
+					<Path>SFX/Electricity_56D34C19.wem</Path>
+				</File>
+				<File Id="344055996" Language="SFX">
+					<ShortName>Clatter_7.wav</ShortName>
+					<Path>SFX/Clatter_7_56D34C19.wem</Path>
+				</File>
+				<File Id="365494530" Language="SFX">
+					<ShortName>HELL#03.3.wav</ShortName>
+					<Path>SFX/HELL#03.3_56D34C19.wem</Path>
+				</File>
+				<File Id="502733211" Language="SFX">
+					<ShortName>Clatter_5.wav</ShortName>
+					<Path>SFX/Clatter_5_56D34C19.wem</Path>
+				</File>
+				<File Id="507788029" Language="SFX">
+					<ShortName>Clatter_1.wav</ShortName>
+					<Path>SFX/Clatter_1_56D34C19.wem</Path>
+				</File>
+				<File Id="546680426" Language="SFX">
+					<ShortName>HELL#03.37.wav</ShortName>
+					<Path>SFX/HELL#03.37_56D34C19.wem</Path>
+				</File>
+				<File Id="565217426" Language="SFX">
+					<ShortName>Electricity_2.wav</ShortName>
+					<Path>SFX/Electricity_2_56D34C19.wem</Path>
+				</File>
+				<File Id="570026683" Language="SFX">
+					<ShortName>HELL#03.45.wav</ShortName>
+					<Path>SFX/HELL#03.45_56D34C19.wem</Path>
+				</File>
+				<File Id="585178607" Language="SFX">
+					<ShortName>Electricity_1.wav</ShortName>
+					<Path>SFX/Electricity_1_56D34C19.wem</Path>
+				</File>
+				<File Id="633863509" Language="SFX">
+					<ShortName>Electricity_4.wav</ShortName>
+					<Path>SFX/Electricity_4_56D34C19.wem</Path>
+				</File>
+				<File Id="641567372" Language="SFX">
+					<ShortName>Clicking_9.wav</ShortName>
+					<Path>SFX/Clicking_9_56D34C19.wem</Path>
+				</File>
+				<File Id="686040776" Language="SFX">
+					<ShortName>Clicking_8.wav</ShortName>
+					<Path>SFX/Clicking_8_56D34C19.wem</Path>
+				</File>
+				<File Id="695594794" Language="SFX">
+					<ShortName>Clicking_7.wav</ShortName>
+					<Path>SFX/Clicking_7_56D34C19.wem</Path>
+				</File>
+				<File Id="753669294" Language="SFX">
+					<ShortName>Clicking_2.wav</ShortName>
+					<Path>SFX/Clicking_2_56D34C19.wem</Path>
+				</File>
+				<File Id="816716594" Language="SFX">
+					<ShortName>HELL#03.9.wav</ShortName>
+					<Path>SFX/HELL#03.9_56D34C19.wem</Path>
+				</File>
+				<File Id="818452511" Language="SFX">
+					<ShortName>Clicking_4.wav</ShortName>
+					<Path>SFX/Clicking_4_56D34C19.wem</Path>
+				</File>
+				<File Id="901665005" Language="SFX">
+					<ShortName>HELL#03.33.wav</ShortName>
+					<Path>SFX/HELL#03.33_56D34C19.wem</Path>
+				</File>
+				<File Id="926541452" Language="SFX">
+					<ShortName>Clicking_6.wav</ShortName>
+					<Path>SFX/Clicking_6_56D34C19.wem</Path>
+				</File>
+				<File Id="998011696" Language="SFX">
+					<ShortName>Clicking.wav</ShortName>
+					<Path>SFX/Clicking_56D34C19.wem</Path>
+				</File>
+				<File Id="1002460909" Language="SFX">
+					<ShortName>Clatter_6.wav</ShortName>
+					<Path>SFX/Clatter_6_56D34C19.wem</Path>
+				</File>
+				<File Id="1040144216" Language="SFX">
+					<ShortName>HELL#03.49.wav</ShortName>
+					<Path>SFX/HELL#03.49_56D34C19.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="393239870" Language="SFX">
+			<ObjectPath>\SoundBanks\Main\SFX</ObjectPath>
+			<ShortName>SFX</ShortName>
+			<Path>SFX.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3055436258" Name="Play_contract_deselect" ObjectPath="\Events\Default Work Unit\Contract\Play_contract_deselect"/>
+				<Event Id="1352023247" Name="Play_contract_open" ObjectPath="\Events\Default Work Unit\Contract\Play_contract_open"/>
+				<Event Id="3222573011" Name="Play_contract_select" ObjectPath="\Events\Default Work Unit\Contract\Play_contract_select"/>
+				<Event Id="2531772615" Name="Play_contract_select_01" ObjectPath="\Events\Default Work Unit\Contract\Play_contract_select_01"/>
+				<Event Id="1702921318" Name="Play_contract_select_affirmative" ObjectPath="\Events\Default Work Unit\Contract\Play_contract_select_affirmative"/>
+				<Event Id="2029151984" Name="Play_fluid_leak" ObjectPath="\Events\Default Work Unit\Rack\Play_fluid_leak"/>
+				<Event Id="3522068789" Name="Play_menu_exit_select" ObjectPath="\Events\Default Work Unit\Menu\Play_menu_exit_select"/>
+				<Event Id="2167056030" Name="play_menu_select" ObjectPath="\Events\Default Work Unit\Menu\play_menu_select"/>
+				<Event Id="3875241205" Name="Play_menu_start_select" ObjectPath="\Events\Default Work Unit\Menu\Play_menu_start_select"/>
+				<Event Id="1079308955" Name="Play_slime_impact" ObjectPath="\Events\Default Work Unit\Rack\Play_slime_impact"/>
+				<Event Id="3149298709" Name="Play_Zipper_loop" ObjectPath="\Events\Default Work Unit\Rack\Play_Zipper_loop"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="7280614" Language="SFX">
+					<ShortName>Fluid_leak_2.wav</ShortName>
+					<Path>SFX/Fluid_leak_2_56D34C19.wem</Path>
+				</File>
+				<File Id="8260152" Language="SFX">
+					<ShortName>Contract\contract_deselect_1.wav</ShortName>
+					<Path>SFX/Contract/contract_deselect_1_56D34C19.wem</Path>
+				</File>
+				<File Id="11681909" Language="SFX">
+					<ShortName>Zipper_loop.wav</ShortName>
+					<Path>SFX/Zipper_loop_8956FC97.wem</Path>
+				</File>
+				<File Id="101673522" Language="SFX">
+					<ShortName>Fluid_leak_1.wav</ShortName>
+					<Path>SFX/Fluid_leak_1_56D34C19.wem</Path>
+				</File>
+				<File Id="133990861" Language="SFX">
+					<ShortName>Fluid_leak_5.wav</ShortName>
+					<Path>SFX/Fluid_leak_5_56D34C19.wem</Path>
+				</File>
+				<File Id="157647274" Language="SFX">
+					<ShortName>Contract\contract_select_3.wav</ShortName>
+					<Path>SFX/Contract/contract_select_3_56D34C19.wem</Path>
+				</File>
+				<File Id="211606250" Language="SFX">
+					<ShortName>slimy_impact_5.wav</ShortName>
+					<Path>SFX/slimy_impact_5_56D34C19.wem</Path>
+				</File>
+				<File Id="255867892" Language="SFX">
+					<ShortName>slimy_impact_3.wav</ShortName>
+					<Path>SFX/slimy_impact_3_56D34C19.wem</Path>
+				</File>
+				<File Id="274452425" Language="SFX">
+					<ShortName>slimy_impact_1.wav</ShortName>
+					<Path>SFX/slimy_impact_1_56D34C19.wem</Path>
+				</File>
+				<File Id="275948153" Language="SFX">
+					<ShortName>click_5.wav</ShortName>
+					<Path>SFX/click_5_56D34C19.wem</Path>
+				</File>
+				<File Id="401584748" Language="SFX">
+					<ShortName>slimy_impact_4.wav</ShortName>
+					<Path>SFX/slimy_impact_4_56D34C19.wem</Path>
+				</File>
+				<File Id="457147855" Language="SFX">
+					<ShortName>Menu\menu_start__select.wav</ShortName>
+					<Path>SFX/Menu/menu_start__select_56D34C19.wem</Path>
+				</File>
+				<File Id="458805218" Language="SFX">
+					<ShortName>Menu\menu_exit_select.wav</ShortName>
+					<Path>SFX/Menu/menu_exit_select_56D34C19.wem</Path>
+				</File>
+				<File Id="505386533" Language="SFX">
+					<ShortName>contract_select.wav</ShortName>
+					<Path>SFX/contract_select_56D34C19.wem</Path>
+				</File>
+				<File Id="513540313" Language="SFX">
+					<ShortName>Fluid_leak_3.wav</ShortName>
+					<Path>SFX/Fluid_leak_3_56D34C19.wem</Path>
+				</File>
+				<File Id="525688187" Language="SFX">
+					<ShortName>Contract\contract_select_affirmative_1.wav</ShortName>
+					<Path>SFX/Contract/contract_select_affirmative_1_56D34C19.wem</Path>
+				</File>
+				<File Id="526445884" Language="SFX">
+					<ShortName>Fluid_leak_6.wav</ShortName>
+					<Path>SFX/Fluid_leak_6_56D34C19.wem</Path>
+				</File>
+				<File Id="563182954" Language="SFX">
+					<ShortName>slimy_impact_2.wav</ShortName>
+					<Path>SFX/slimy_impact_2_56D34C19.wem</Path>
+				</File>
+				<File Id="836984824" Language="SFX">
+					<ShortName>slimy_impact_6.wav</ShortName>
+					<Path>SFX/slimy_impact_6_56D34C19.wem</Path>
+				</File>
+				<File Id="891523264" Language="SFX">
+					<ShortName>Fluid_leak_7.wav</ShortName>
+					<Path>SFX/Fluid_leak_7_56D34C19.wem</Path>
+				</File>
+				<File Id="980224971" Language="SFX">
+					<ShortName>slimy_impact_7.wav</ShortName>
+					<Path>SFX/slimy_impact_7_56D34C19.wem</Path>
+				</File>
+				<File Id="984642088" Language="SFX">
+					<ShortName>Contract\contract_open.wav</ShortName>
+					<Path>SFX/Contract/contract_open_56D34C19.wem</Path>
+				</File>
+				<File Id="1049990235" Language="SFX">
+					<ShortName>Fluid_leak_4.wav</ShortName>
+					<Path>SFX/Fluid_leak_4_56D34C19.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3991942870" Language="SFX">
+			<ObjectPath>\SoundBanks\Music\Music</ObjectPath>
+			<ShortName>Music</ShortName>
+			<Path>Music.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3884404148" Name="Play_Soundtrack" ObjectPath="\Events\Default Work Unit\Music\Play_Soundtrack"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="1049755003" Language="SFX">
+					<ShortName>Altered Carbon.wav</ShortName>
+					<Path>SFX/Altered Carbon_8956FC97.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

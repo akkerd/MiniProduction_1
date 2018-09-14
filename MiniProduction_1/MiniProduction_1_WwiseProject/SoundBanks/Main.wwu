@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{CC5CF97E-E9A0-40ED-9B93-01FC29F58407}" SchemaVersion="89">
+	<SoundBanks>
+		<WorkUnit Name="Main" ID="{CC5CF97E-E9A0-40ED-9B93-01FC29F58407}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Ambience" ID="{41A20916-6527-4734-8FBB-0B8AAA2C0E76}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Ambience" ID="{3ADFA3ED-74F6-456B-BA2C-59641A1C28BB}" WorkUnitID="{3ADFA3ED-74F6-456B-BA2C-59641A1C28BB}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="SFX" ID="{09279403-5082-43B6-AEAC-3B8B5AC9B1E5}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Rack" ID="{EDBDE295-897D-48B2-980E-ADD99B7BF185}" WorkUnitID="{EDBDE295-897D-48B2-980E-ADD99B7BF185}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Contract" ID="{7A98CD8E-7576-4C7A-9711-756D47FC4865}" WorkUnitID="{7A98CD8E-7576-4C7A-9711-756D47FC4865}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Menu" ID="{8A495955-DBD4-4F4C-BCDE-C466A817CBF1}" WorkUnitID="{8A495955-DBD4-4F4C-BCDE-C466A817CBF1}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3884404148	Play_Soundtrack			\Default Work Unit\Music\Play_Soundtrack	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	1049755003	Altered Carbon	Y:\Documents\GitHub\MiniProduction_1\MiniProduction_1\MiniProduction_1_WwiseProject\.cache\Mac\SFX\Altered Carbon_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Soundtrack\Altered Carbon		81144144
+

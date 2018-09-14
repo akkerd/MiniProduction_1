@@ -1,0 +1,9 @@
+3;5;Today I've got a soldier, a low-end meth guy, and some scummy criminal. Don't worry too much about the crook, put him in whatever.;
+80,100,80,100,40,60,0,20,60,80,1,Client was a former soldier, needs a strong, fit body below the age of 43. Wasn't too bright.;
+60,70,50,70,80,100,80,100,40,60,1,Low-end Meth, previous body was middle aged on the taller side, fit and smart.;
+10,30,10,30,10,30,10,30,10,30,1,Some low life criminal, was middle aged, short and fat. Not too clever. Put him in whatever.;
+0,20,30,30,30,0;
+50,50,50,50,50,1;
+20,80,10,80,10,0;
+40,40,70,40,100,0;
+100,100,40,5,80,1;

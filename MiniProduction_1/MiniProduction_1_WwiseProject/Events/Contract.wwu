@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{7A98CD8E-7576-4C7A-9711-756D47FC4865}" SchemaVersion="89" RootDocumentID="{E7FA6859-C268-4205-B746-E4153D6A95AE}">
+	<Events>
+		<WorkUnit Name="Contract" ID="{7A98CD8E-7576-4C7A-9711-756D47FC4865}" OwnerID="{E7FA6859-C268-4205-B746-E4153D6A95AE}" PersistMode="Nested">
+			<ChildrenList>
+				<Event Name="Play_contract_deselect" ID="{C9F3C1C6-7456-460C-8382-0A1AF7FE19CD}">
+					<ChildrenList>
+						<Action Name="" ID="{2E7B06FA-F4D0-4FBE-92D9-EC71E5BFBD95}" ShortID="619464473">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="contract_deselect_1" ID="{B40BEACE-14BD-4092-B4E5-65E859D2E1BC}" WorkUnitID="{6A9FC1E3-FDBD-4383-9337-89849EE27963}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_contract_open" ID="{E48AC6A3-B877-42CE-AF07-29D50D500B0B}">
+					<ChildrenList>
+						<Action Name="" ID="{59843053-9E76-4E75-AA73-6208BD7DC0FD}" ShortID="1056645911">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="contract_open" ID="{1B4E6546-037F-4D22-A9E5-EE971C204ECA}" WorkUnitID="{6A9FC1E3-FDBD-4383-9337-89849EE27963}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_contract_select" ID="{B1F1FE03-C2C6-4834-A45D-11B99D888C3A}">
+					<ChildrenList>
+						<Action Name="" ID="{4C01A654-AC66-46AE-A178-9DD1B038D1A2}" ShortID="221486573">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="contract_select_3" ID="{F270B77A-6C29-43C3-A2FF-8B2871DE6FBB}" WorkUnitID="{6A9FC1E3-FDBD-4383-9337-89849EE27963}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_contract_select_affirmative" ID="{18142BB9-A2B1-4A28-BC66-79A604E9FE6C}">
+					<ChildrenList>
+						<Action Name="" ID="{761F029F-6DF7-4A07-BCCD-D740FE6A5EE8}" ShortID="109850723">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="contract_select_affirmative_1" ID="{3D293826-C357-4D7A-98F8-C9699DE185A9}" WorkUnitID="{6A9FC1E3-FDBD-4383-9337-89849EE27963}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_contract_select_01" ID="{54C9DCE3-5D29-46F4-97B5-B22A89F97DC4}">
+					<ChildrenList>
+						<Action Name="" ID="{E22A5DAC-85AB-49A5-919F-D878C9E7D385}" ShortID="268437803">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="contract_select" ID="{BCC71677-C43D-4BD4-9B2D-E702D00673A6}" WorkUnitID="{3683C0D3-8A29-4E60-B125-96431C2F01A8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_contract_select_affirmative_2" ID="{45E90430-84F0-42D3-A7A6-6F5EB753C266}">
+					<ChildrenList>
+						<Action Name="" ID="{6E377E01-BE4D-4B3B-AE62-846DCA666DE5}" ShortID="1063646040">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="contract_select_affirmative_2" ID="{0B8BDA8D-2DC1-4865-807B-EC17998D3A12}" WorkUnitID="{6A9FC1E3-FDBD-4383-9337-89849EE27963}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
