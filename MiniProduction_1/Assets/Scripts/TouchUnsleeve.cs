@@ -45,7 +45,7 @@ public class TouchUnsleeve : MonoBehaviour {
                     if (Input.GetMouseButton(0))
                     {
                         recipient.SendMessage("OnTouchStay", hit.point, SendMessageOptions.DontRequireReceiver);
-                    if (Vector3.Distance(Zipper.transform.position, hit.point) <= 0.2f ) {
+                    if (Vector3.Distance(Zipper.transform.position, hit.point) <= 0.6f ) {
                         Zipper.transform.position = new Vector3(hit.point.x, hit.point.y, hit.transform.gameObject.transform.position.z);
                        
                     }
@@ -89,7 +89,7 @@ public class TouchUnsleeve : MonoBehaviour {
                 if (touch.phase == TouchPhase.Moved)
                 {
                     recipient.SendMessage("OnTouchStay", hit.point, SendMessageOptions.DontRequireReceiver);
-                        if (Vector3.Distance(Zipper.transform.position, hit.point) <= 0.2f)
+                        if (Vector3.Distance(Zipper.transform.position, hit.point) <= 0.6f)
                         {
                             Zipper.transform.position = new Vector3(hit.point.x, hit.point.y, hit.transform.gameObject.transform.position.z);
                         }
