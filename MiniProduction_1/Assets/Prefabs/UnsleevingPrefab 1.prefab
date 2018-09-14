@@ -4085,6 +4085,7 @@ MonoBehaviour:
   StartPosition: {fileID: 4165538752314212}
   PTravelled: 0
   MMscript: {fileID: 114123226576051994}
+  count: 0
 --- !u!114 &114772662000007742
 MonoBehaviour:
   m_ObjectHideFlags: 1
