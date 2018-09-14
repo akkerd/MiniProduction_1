@@ -45,7 +45,6 @@ namespace UnityEditor
 
             get
             {
-                Debug.Log("here");
                 if (Application.identifier.ToString().Contains("dev"))
                 {
                     return ("testing_build" + ".apk");
