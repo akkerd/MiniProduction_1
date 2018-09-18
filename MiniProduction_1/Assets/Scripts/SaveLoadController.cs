@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(ContainerContracts))]
 public class SaveLoadController : Manager<SaveLoadController> {
@@ -13,10 +14,13 @@ public class SaveLoadController : Manager<SaveLoadController> {
 	protected override void onAwake()
 	{
 		base.onAwake();
-		DontDestroyOnLoad(this);
+		//DontDestroyOnLoad(this);
 		container = GetComponent<ContainerContracts>();
 		container.Setup();
+		//Debug.Log("Sup");
 	}
+	
+	
 	void Start()
 	{
 		ResetAllContracts();

@@ -23,7 +23,8 @@ public class MenuScene : MonoBehaviour {
     {
         Debug.Log("Pushed button");
         AkSoundEngine.PostEvent("play_menu_start_select",gameObject);
-        SceneManager.LoadScene(1);
+        //SceneManager.LoadScene(1);
+        SceneController.Instance.LoadMainScene();
         
     }
 
