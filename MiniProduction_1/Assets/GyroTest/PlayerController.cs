@@ -3,14 +3,34 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
-	public enum ControlMethod {Spring, Direct, Gyro};
-	// Use this for initialization
-	void Start () {
-		
+	Vector3 prevLocation;
+	float furthestToTheLeft;
+	float startXForFurthers;
+	public bool isMoving = false;
+
+	void Start()
+	{
+		startXForFurthers = transform.position.x -1;
+		furthestToTheLeft = startXForFurthers;
 	}
-	
-	// Update is called once per frame
-	void Update () {
+	void Update()
+	{
+		if (transform.position.x < furthestToTheLeft)
+		{
+			furthestToTheLeft = transform.position.x;
+			isMoving =true;
+		}
+		if (isMoving)
+		{
+			if (transform.position.x > furthestToTheLeft)
+			{
+				GameLogic.Instance.playerReachedApex = true;
+				isMoving = false;
+			furthestToTheLeft = startXForFurthers;
+
+
+			}
+		}
 		
 	}
 }

@@ -30,6 +30,8 @@ public class SpringObject : MonoBehaviour, IPointerClickHandler,IDragHandler, IB
 	public float mass = 80;
 	public ForceMode forceMode;
 
+	public FloatVariable test;
+
 	public void ResetEverything()
 	{
 		enemy.transform.position = enemyStartPosition;
@@ -47,6 +49,7 @@ public class SpringObject : MonoBehaviour, IPointerClickHandler,IDragHandler, IB
 
 	void SettingPublicVariables()
 	{
+		test.Value = 10;
 		rigidbody.drag = drag;
 		rigidbody.mass = mass;
 	}
@@ -58,6 +61,7 @@ public class SpringObject : MonoBehaviour, IPointerClickHandler,IDragHandler, IB
 
     public void OnEndDrag(PointerEventData eventData)
     {
+		GameLogic.Instance.PlayerAttacked();
         ThrowPlayer();
 		ResetDragObjectPosition();
     }
@@ -69,11 +73,29 @@ public class SpringObject : MonoBehaviour, IPointerClickHandler,IDragHandler, IB
 		Vector3 angle = Vector3.Normalize(startPosition - currentPosition);
 		angle.z = 0;
 		float distance = Vector3.Distance(startPosition,currentPosition) / 100;
+		distance = Mathf.Max(distance,5.5f);
+		Debug.Log("Distance: " + distance);
+		Ray testRay = new Ray(player.transform.position,angle);
+		RaycastHit[] hits = Physics.RaycastAll(testRay);
+
+		for (int i = 0; i < hits.Length; i++)
+		{
+			if (hits[i].collider.name == "Block")
+			{
+				//GameLogic.Instance.isEnemyHit = true;
+			}
+		}
+
 		Vector3 forceToAt = angle *(distance) * force; 
-		Debug.Log(forceToAt);
+		//Debug.Log(forceToAt);
 		rigidbody.AddForce(forceToAt,forceMode);
 		player.GetComponent<MovePlayerBack>().MoveBack();
-		enemy.GetComponent<MovePlayerBack>().MoveBack();
+		//enemy.GetComponent<MovePlayerBack>().MoveBack();
+		MovePlayerBack[] temp = enemy.transform.GetComponentsInChildren<MovePlayerBack>();
+		foreach (MovePlayerBack item in temp)
+		{
+			item.MoveBack();
+		}
 
 	}
 	void ResetDragObjectPosition()
@@ -110,13 +132,17 @@ public class SpringObject : MonoBehaviour, IPointerClickHandler,IDragHandler, IB
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        Debug.Log("Clicking");
+        //Debug.Log("Clicking");
     }
 
     public void OnDrag(PointerEventData eventData)
     {
         //transform.position = Camera.main.ScreenToViewportPoint(eventData.position);
 		transform.position = eventData.position;
-		Debug.Log(eventData.position);
+		//Debug.Log(eventData.position);
     }
+	void OnDisable()
+	{
+		ResetDragObjectPosition();
+	}
 }
